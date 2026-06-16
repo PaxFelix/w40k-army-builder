@@ -1046,7 +1046,7 @@
                         "factionKeywords": [
                                 "Adepta Sororitas"
                         ],
-                        "leaderText": "This model can be attached to the following units: Arco-flagellants; Battle Sisters Squad; Celestian Insidiants; Dominion Squad; Sanctifiers; Sisters Novitiate Squad; Holy Mission.",
+                        "leaderText": "This model can be attached to the following units: Arco-flagellants; Battle Sisters Squad; Celestian Insidiants; Dominion Squad; Sanctifiers; Sisters Novitiate Squad.",
                         "compositionText": "1 Preacher This model is equipped with: zealot’s vindictor."
                 },
                 {

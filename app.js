@@ -906,9 +906,16 @@ function isLeaderUnit(ref) {
 function canLead(leaderRef, bodyRef) {
     if (!leaderRef || !bodyRef) return false;
     const name = (bodyRef.name || "").toLowerCase();
-    // Exact match, or a weapon-variant datasheet ("Ironkin Steeljacks with …")
-    // whose base name is the named leader target.
-    return parseLeaderTargets(leaderRef).some(t => name === t || name.startsWith(t + " with "));
+    const kws = (bodyRef.keywords || []).map(k => k.toLowerCase());
+    return parseLeaderTargets(leaderRef).some(t =>
+        // Exact unit name, or a weapon-variant datasheet ("Ironkin Steeljacks with …").
+        name === t ||
+        name.startsWith(t + " with ") ||
+        // Keyword-based Leader abilities ("Can be attached to WOLFKIN."), including
+        // the "<KEYWORD> units" phrasing.
+        kws.includes(t) ||
+        kws.includes(t.replace(/\s+units?$/, ""))
+    );
 }
 
 // The leader army-unit currently attached to a given bodyguard, or null.

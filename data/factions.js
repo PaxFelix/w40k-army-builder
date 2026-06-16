@@ -333,3 +333,39 @@ const DATA = {
         });
     });
 })();
+
+/**
+ * Black Templars is a Space Marines Chapter. Its characters can lead the shared
+ * Adeptus Astartes battleline / infantry squads, but those datasheets live in
+ * the Space Marines faction (other Chapters bundle them too). Copy the squads
+ * Black Templars Leaders reference into the Black Templars faction so leader
+ * attachment works in the army builder. Uses the already-verified Space Marines
+ * datasheets — no duplicated hand-entry.
+ */
+(function shareSquadsWithBlackTemplars() {
+    "use strict";
+    const ed = DATA["10th"];
+    if (!ed || !ed.factions) {
+        return;
+    }
+    const sm = ed.factions.find(function (f) { return f.id === "space-marines"; });
+    const bt = ed.factions.find(function (f) { return f.id === "black-templars"; });
+    if (!sm || !bt) {
+        return;
+    }
+    const SHARED_SQUADS = [
+        "Assault Intercessor Squad", "Bladeguard Veteran Squad", "Company Heroes",
+        "Desolation Squad", "Devastator Squad", "Hellblaster Squad", "Infernus Squad",
+        "Intercessor Squad", "Sternguard Veteran Squad", "Tactical Squad"
+    ];
+    const have = new Set(bt.units.map(function (u) { return u.name; }));
+    SHARED_SQUADS.forEach(function (name) {
+        if (have.has(name)) {
+            return;
+        }
+        const src = sm.units.find(function (u) { return u.name === name; });
+        if (src) {
+            bt.units.push(JSON.parse(JSON.stringify(src)));
+        }
+    });
+})();

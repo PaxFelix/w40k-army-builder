@@ -1894,7 +1894,7 @@
                         "factionKeywords": [
                                 "Astra Militarum"
                         ],
-                        "leaderText": "This model can be attached to the following units: Attilan Rough Riders; Cadian Shock Troops; Catachan Jungle Fighters; Death Riders; Kasrkin; Krieg Combat Engineers; Death Korps of Krieg; REGIMENT units; SQUADRON units; TITANIC units.",
+                        "leaderText": "This model can be attached to the following units: Attilan Rough Riders; Cadian Shock Troops; Catachan Jungle Fighters; Death Riders; Kasrkin; Krieg Combat Engineers; Death Korps of Krieg.",
                         "compositionText": "1 Lord Solar Leontus – EPIC HERO This model is equipped with: Sol’s Righteous Gaze; Conquest; Konstantin’s hooves."
                 },
                 {
