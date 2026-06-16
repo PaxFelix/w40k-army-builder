@@ -19,7 +19,293 @@
         armyRules: [
             { name: "Dark Pacts", flavour: "", text: "" }
         ],
-        detachments: [],
+        detachments: [
+            {
+                name: "Veterans of the Long War",
+                flavour: "",
+                rule: { name: "Focus of Hatred", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Eager for Vengeance", cost: 20 },
+                    { name: "Eye of Abaddon", cost: 15 },
+                    { name: "Mark of Legend", cost: 10 },
+                    { name: "Warmaster's Gift", cost: 15, restriction: "CHAOS LORD model only." },
+                ],
+                stratagems: [
+                    { name: "Endless Ire", cp: 2, type: "Epic Deed" },
+                    { name: "Contemptuous Disregard", cp: 1, type: "Battle Tactic" },
+                    { name: "Bringers of Despair", cp: 2, type: "Epic Deed" },
+                    { name: "Black Crusade", cp: 1, type: "Strategic Ploy" },
+                    { name: "Let the Galaxy Burn", cp: 1, type: "Battle Tactic" },
+                    { name: "Millennia of Experience", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Deceptors",
+                flavour: "",
+                rule: { name: "Masters of Misdirection", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Cursed Fang", cost: 10, restriction: "HERETIC ASTARTES INFANTRY model only." },
+                    { name: "Falsehood", cost: 10 },
+                    { name: "Shroud of Obfuscation", cost: 15, restriction: "HERETIC ASTARTES INFANTRY model only." },
+                    { name: "Soul Link", cost: 5, restriction: "HERETIC ASTARTES INFANTRY model only." },
+                ],
+                stratagems: [
+                    { name: "Detonator", cp: 1, type: "Wargear" },
+                    { name: "From All Sides", cp: 1, type: "Battle Tactic" },
+                    { name: "Pick Them Off", cp: 1, type: "Battle Tactic" },
+                    { name: "Coils of Deception", cp: 1, type: "Strategic Ploy" },
+                    { name: "Relentless Pursuit", cp: 1, type: "Strategic Ploy" },
+                    { name: "Scrambled Coordinates", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Renegade Raiders",
+                flavour: "",
+                rule: { name: "Raiders and Reavers", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Despot's Claim", cost: 15, restriction: "HERETIC ASTARTES model only." },
+                    { name: "Dread Reaver", cost: 15, restriction: "HERETIC ASTARTES model only." },
+                    { name: "Mark of the Hound", cost: 25, restriction: "HERETIC ASTARTES model only." },
+                    { name: "Tyrant's Lash", cost: 20, restriction: "HERETIC ASTARTES model only." },
+                ],
+                stratagems: [
+                    { name: "Unfailingly Obdurate", cp: 1, type: "Battle Tactic" },
+                    { name: "Scour and Seize", cp: 1, type: "Battle Tactic" },
+                    { name: "Opportunistic Raiders", cp: 1, type: "Strategic Ploy" },
+                    { name: "Warpcharged Engines", cp: 1, type: "Wargear" },
+                    { name: "Ruinous Raid", cp: 1, type: "Battle Tactic" },
+                    { name: "Reavers' Haste", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Dread Talons",
+                flavour: "",
+                rule: { name: "Terror Descends (Aura)", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Eater of Dread", cost: 15, restriction: "HERETIC ASTARTES model only." },
+                    { name: "Night's Shroud", cost: 20 },
+                    { name: "Warp-fuelled Thrusters", cost: 20, restriction: "JUMP PACK CHAOS LORD model only." },
+                    { name: "Willbreaker", cost: 10, restriction: "HERETIC ASTARTES model only." },
+                ],
+                stratagems: [
+                    { name: "Depthless Cruelty", cp: 1, type: "Battle Tactic" },
+                    { name: "Bloody Example", cp: 1, type: "Epic Deed" },
+                    { name: "Pitiless Hunters", cp: 1, type: "Battle Tactic" },
+                    { name: "Relentless Terror", cp: 1, type: "Strategic Ploy" },
+                    { name: "Screaming Descent", cp: 1, type: "Strategic Ploy" },
+                    { name: "Merciless Pursuit", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Fellhammer Siege-host",
+                flavour: "",
+                rule: { name: "Iron Fortitude", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Bastion Plate", cost: 10 },
+                    { name: "Iron Artifice", cost: 10, restriction: "HERETIC ASTARTES INFANTRY model only." },
+                    { name: "Ironbound Enmity", cost: 15, restriction: "HERETIC ASTARTES model only." },
+                    { name: "Warp Tracer", cost: 20, restriction: "HERETIC ASTARTES model only." },
+                ],
+                stratagems: [
+                    { name: "Persistent Assailants", cp: 1, type: "Battle Tactic" },
+                    { name: "Brutal Attrition", cp: 1, type: "Epic Deed" },
+                    { name: "Pitiless Cannonade", cp: 1, type: "Battle Tactic" },
+                    { name: "Point-blank Destruction", cp: 1, type: "Battle Tactic" },
+                    { name: "Steadfast Determination", cp: 1, type: "Strategic Ploy" },
+                    { name: "Siegecraft", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Pactbound Zealots",
+                flavour: "",
+                rule: { name: "Marks of Chaos", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Eye of Tzeentch", cost: 15, restriction: "HERETIC ASTARTES TZEENTCH model only." },
+                    { name: "Intoxicating Elixir", cost: 15, restriction: "HERETIC ASTARTES SLAANESH model only." },
+                    { name: "Orbs of Unlife", cost: 15, restriction: "HERETIC ASTARTES NURGLE model only." },
+                    { name: "Talisman of Burning Blood", cost: 15, restriction: "HERETIC ASTARTES KHORNE model only." },
+                ],
+                stratagems: [
+                    { name: "Eye of the Gods", cp: 1, type: "Epic Deed" },
+                    { name: "Eternal Hate", cp: 1, type: "Strategic Ploy" },
+                    { name: "Profane Zeal", cp: 1, type: "Battle Tactic" },
+                    { name: "Skinshift", cp: 1, type: "Epic Deed" },
+                    { name: "Torpefying Refrain", cp: 1, type: "Strategic Ploy" },
+                    { name: "Festering Miasma", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Chaos Cult",
+                flavour: "",
+                rule: { name: "Desperate Devotion", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Amulet of Tainted Vigour", cost: 20, restriction: "DARK APOSTLE model only." },
+                    { name: "Cultist's Brand", cost: 20, restriction: "DARK APOSTLE or DAMNED model only." },
+                    { name: "Incendiary Goad", cost: 15, restriction: "DARK APOSTLE or DAMNED model only." },
+                    { name: "Warped Foresight", cost: 10, restriction: "DARK APOSTLE or DAMNED model only." },
+                ],
+                stratagems: [
+                    { name: "Chosen for Glory", cp: 1, type: "Battle Tactic" },
+                    { name: "Selfless Demise", cp: 1, type: "Strategic Ploy" },
+                    { name: "Infernal Sacrifice", cp: 1, type: "Battle Tactic" },
+                    { name: "Crazed Focus", cp: 1, type: "Battle Tactic" },
+                    { name: "Reckless Haste", cp: 1, type: "Strategic Ploy" },
+                    { name: "Mortal Thralls", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Soulforged Warpack",
+                flavour: "",
+                rule: { name: "Debt to the Soul Forge", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Forge's Blessing", cost: 20, restriction: "HERETIC ASTARTES model only." },
+                    { name: "Invigorated Mechatendrils", cost: 15, restriction: "WARPSMITH model only." },
+                    { name: "Tempting Addendum", cost: 25, restriction: "HERETIC ASTARTES model only." },
+                    { name: "Soul Harvester", cost: 15, restriction: "HERETIC ASTARTES model only." },
+                ],
+                stratagems: [
+                    { name: "Desperate Pledge", cp: 1, type: "Battle Tactic" },
+                    { name: "Glut of Souls", cp: 1, type: "Strategic Ploy" },
+                    { name: "Daemonic Possession", cp: 1, type: "Epic Deed" },
+                    { name: "Unstoppable Rampage", cp: 1, type: "Strategic Ploy" },
+                    { name: "Predatory Pursuit", cp: 1, type: "Strategic Ploy" },
+                    { name: "Feeding Frenzy", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Cabal of Chaos",
+                flavour: "",
+                rule: { name: "Empyric Wellspring", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Touched by the Warp", cost: 10 },
+                    { name: "Eyes of Z'desh", cost: 25, restriction: "HERETIC ASTARTES model only." },
+                    { name: "Mind Blade", cost: 25, restriction: "PSYKER model only." },
+                    { name: "Infernal Avatar", cost: 20 },
+                ],
+                stratagems: [
+                    { name: "Baleful Blessing", cp: 1, type: "Epic Deed" },
+                    { name: "No Rest in Death", cp: 1, type: "Strategic Ploy" },
+                    { name: "Mutation's Curse", cp: 1, type: "Strategic Ploy" },
+                    { name: "Soulseekers", cp: 1, type: "Strategic Ploy" },
+                    { name: "Unholy Haste", cp: 1, type: "Epic Deed" },
+                    { name: "Shroud of Chaos", cp: 1, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Creations of Bile",
+                flavour: "",
+                rule: { name: "Experimental Augmentations", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Surgical Precision", cost: 10, restriction: "HERETIC ASTARTES model (excluding DAMNED models) only." },
+                    { name: "Living Carapace", cost: 15, restriction: "CHAOS LORD model only." },
+                    { name: "Helm of All-seeing", cost: 25, restriction: "HERETIC ASTARTES INFANTRY model (excluding DAMNED models) only." },
+                    { name: "Prime Test Subject", cost: 35, restriction: "HERETIC ASTARTES INFANTRY model (excluding DAMNED models) only." },
+                ],
+                stratagems: [
+                    { name: "Monstrous Visages", cp: 1, type: "Strategic Ploy" },
+                    { name: "Masters Are Watching", cp: 1, type: "Strategic Ploy" },
+                    { name: "Specimens for the Spider", cp: 2, type: "Strategic Ploy" },
+                    { name: "Delayed Mutations", cp: 2, type: "Strategic Ploy" },
+                    { name: "Diabolic Regeneration", cp: 1, type: "Strategic Ploy" },
+                    { name: "Autostimulants", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Nightmare Hunt",
+                flavour: "",
+                rule: { name: "Terror Made Manifest", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Greyveil Hex", cost: 25, restriction: "CHAOS LORD model only." },
+                    { name: "Warp-fuelled Thrusters", cost: 20, restriction: "CHAOS LORD JUMP PACK model only." },
+                    { name: "Terrorglut Parasite", cost: 20, restriction: "HERETIC ASTARTES model only." },
+                    { name: "Sorrowscent Vulture", cost: 35, restriction: "CHAOS LORD JUMP PACK model only." },
+                ],
+                stratagems: [
+                    { name: "Talons Sunk Deep", cp: 1, type: "" },
+                    { name: "Prey on the Weak", cp: 1, type: "" },
+                    { name: "Sadistic Display", cp: 1, type: "" },
+                    { name: "Malicious Surge", cp: 1, type: "" },
+                    { name: "Relentless Terror", cp: 1, type: "" },
+                    { name: "Horrific Incursion", cp: 1, type: "" },
+                ]
+            },
+            {
+                name: "Huron's Marauders",
+                flavour: "",
+                rule: { name: "Tyrannical Motivation", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Voice of the Tyrant", cost: 25 },
+                    { name: "Raid Leader", cost: 20 },
+                    { name: "Dread Reputation", cost: 25 },
+                    { name: "Eager for Bloodshed", cost: 30, restriction: "HERETIC ASTARTES model only." },
+                ],
+                stratagems: [
+                    { name: "Hardened Killers", cp: 1, type: "Battle Tactic" },
+                    { name: "At the Tyrant's Command", cp: 1, type: "Strategic Ploy" },
+                    { name: "Seize the Prize", cp: 1, type: "Battle Tactic" },
+                    { name: "Reavers' Flurry", cp: 1, type: "Battle Tactic" },
+                    { name: "To the Favoured the Spoils", cp: 1, type: "Strategic Ploy" },
+                    { name: "Encircling Surge", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Renegade Warband",
+                flavour: "",
+                rule: { name: "Slaves to None", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Weaponised Hatred", cost: 35, restriction: "HERETIC ASTARTES model only." },
+                    { name: "Eyes of the Hunter", cost: 15, restriction: "HERETIC ASTARTES model only." },
+                    { name: "Fratricidal Trophies", cost: 5, restriction: "HERETIC ASTARTES TERMINATOR model only." },
+                    { name: "Empyric Symbiote", cost: 15, restriction: "HERETIC ASTARTES model only." },
+                ],
+                stratagems: [
+                    { name: "Never Outgunned", cp: 1, type: "Epic Deed" },
+                    { name: "Vengeful Destruction", cp: 1, type: "Battle Tactic" },
+                    { name: "Undying Hatred", cp: 1, type: "Strategic Ploy" },
+                    { name: "Renegade Claim", cp: 1, type: "Strategic Ploy" },
+                    { name: "Corrupted Munitions", cp: 1, type: "Battle Tactic" },
+                    { name: "Reavers' Reaction", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Warpstrike Champions",
+                flavour: "",
+                rule: { name: "Warp Portals", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Infernal Fulgurite", cost: 20 },
+                    { name: "Eye of the Warp", cost: 15, restriction: "HERETIC ASTARTES model with the Deep Strike ability only." },
+                    { name: "Akshur's Binding Runes", cost: 20, restriction: "HERETIC ASTARTES model with the Deep Strike ability only." },
+                    { name: "Tzagulla", cost: 25, restriction: "HERETIC ASTARTES model with the Deep Strike ability only." },
+                ],
+                stratagems: [
+                    { name: "Empyric Dislocation", cp: 1, type: "Battle Tactic" },
+                    { name: "Armour of Corruption", cp: 2, type: "Strategic Ploy" },
+                    { name: "Warp Flicker", cp: 1, type: "Strategic Ploy" },
+                    { name: "Warp-tainted", cp: 1, type: "Strategic Ploy" },
+                    { name: "Siegebreaker Strike", cp: 1, type: "Strategic Ploy" },
+                    { name: "Portal of Spite", cp: 1, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Cult of the Arkifane",
+                flavour: "",
+                rule: { name: "Soul Forge Boons", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Wyredjinn", cost: 25 },
+                    { name: "Cybinfernal Font", cost: 20 },
+                    { name: "Mark of the Soul Forges", cost: 20 },
+                    { name: "Crown of Worms", cost: 15, restriction: "WARPSMITH model only." },
+                ],
+                stratagems: [
+                    { name: "Touch of the Arkifane", cp: 1, type: "Battle Tactic" },
+                    { name: "Balefire Boon", cp: 1, type: "Battle Tactic" },
+                    { name: "Soul-tally Offering", cp: 2, type: "Battle Tactic" },
+                    { name: "Biomechanoid Regeneration", cp: 1, type: "Epic Deed" },
+                    { name: "Forge-fire Surge", cp: 1, type: "Strategic Ploy" },
+                    { name: "Unholy Fortitude", cp: 1, type: "Strategic Ploy" },
+                ]
+            }
+        ],
         units: [
                 {
                         "id": "csm-abaddon-the-despoiler",

@@ -19,7 +19,124 @@
         armyRules: [
             { name: "Harbingers of Dread", flavour: "", text: "" }
         ],
-        detachments: [],
+        detachments: [
+            {
+                name: "Traitoris Lance",
+                flavour: "",
+                rule: { name: "Paragons of Terror", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Nightmare's Master", cost: 20, restriction: "CHAOS KNIGHTS model only." },
+                    { name: "Tyrant's Shadow", cost: 25, restriction: "CHAOS KNIGHTS model only." },
+                    { name: "Malevolent Heraldry", cost: 30, restriction: "CHAOS KNIGHTS model only." },
+                    { name: "Veil of Medrengard", cost: 35, restriction: "CHAOS KNIGHTS model only." },
+                ],
+                stratagems: [
+                    { name: "Pterrorshades", cp: 1, type: "Wargear" },
+                    { name: "Conquerors Without Mercy", cp: 1, type: "Battle Tactic" },
+                    { name: "Disdain for the Weak", cp: 1, type: "Strategic Ploy" },
+                    { name: "A Long Leash", cp: 1, type: "Strategic Ploy" },
+                    { name: "Imperious Advance", cp: 1, type: "Epic Deed" },
+                    { name: "Storm of Darkness", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Infernal Lance",
+                flavour: "",
+                rule: { name: "Malefic Surge", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Knight Diabolus", cost: 25, restriction: "CHAOS KNIGHTS model only." },
+                    { name: "Blasphemous Engine", cost: 35, restriction: "CHAOS KNIGHTS model only." },
+                    { name: "Fleshmetal Fusion", cost: 35, restriction: "CHAOS KNIGHTS model only." },
+                    { name: "Bestial Aspect", cost: 20, restriction: "CHAOS KNIGHTS model only." },
+                ],
+                stratagems: [
+                    { name: "Profane Symbiosis", cp: 1, type: "Battle Tactic" },
+                    { name: "Hellforged Construction", cp: 1, type: "Battle Tactic" },
+                    { name: "Corrupting Taint", cp: 1, type: "Epic Deed" },
+                    { name: "Unleash Balefire", cp: 1, type: "Wargear" },
+                    { name: "Warp Vision", cp: 1, type: "Wargear" },
+                    { name: "Diabolic Bulwark", cp: 1, type: "Wargear" },
+                ]
+            },
+            {
+                name: "Lords of Dread",
+                flavour: "",
+                rule: { name: "Tyrannical Court", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Throne Mechanicum of Skulls", cost: 25, restriction: "CHAOS KNIGHTS model only." },
+                    { name: "Blade of Celerity", cost: 35, restriction: "CHAOS KNIGHTS model only." },
+                    { name: "Warp-borne Stalker", cost: 25, restriction: "CHAOS KNIGHTS model only." },
+                    { name: "Putrid Carapace", cost: 30, restriction: "CHAOS KNIGHTS model only." },
+                    { name: "Mirror of Fates", cost: 30, restriction: "CHAOS KNIGHTS model only." },
+                    { name: "Blessing of the Dark Master", cost: 20, restriction: "CHAOS KNIGHTS model only." },
+                ],
+                stratagems: [
+                    { name: "Claimed for the Dark Gods", cp: 1, type: "Epic Deed" },
+                    { name: "Spiteful Demise", cp: 1, type: "Epic Deed" },
+                    { name: "Runes of Disdain", cp: 2, type: "Epic Deed" },
+                    { name: "Titanic Duel", cp: 1, type: "Epic Deed" },
+                    { name: "Trophy Hunter", cp: 1, type: "Epic Deed" },
+                    { name: "Crushed Like Vermin", cp: 1, type: "Epic Deed" },
+                ]
+            },
+            {
+                name: "Helhunt Lance",
+                flavour: "",
+                rule: { name: "Masters of the Pack", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Aspect of the Beast", cost: 30, restriction: "CHAOS KNIGHTS model only." },
+                    { name: "Hunter's Helm", cost: 15, restriction: "CHAOS KNIGHTS model only." },
+                    { name: "Octagram of Conjuration", cost: 40, restriction: "KNIGHT ABOMINANT model only." },
+                    { name: "Throne Tyrannicus", cost: 25, restriction: "TITANIC CHAOS KNIGHTS model only." },
+                ],
+                stratagems: [
+                    { name: "Feral Arrogance", cp: 1, type: "Strategic Ploy" },
+                    { name: "Merciless Fusillade", cp: 1, type: "Battle Tactic" },
+                    { name: "Beasthide Manifestation", cp: 1, type: "Battle Tactic" },
+                    { name: "Flush the Quarry", cp: 1, type: "Battle Tactic" },
+                    { name: "Contemptuous Volleys", cp: 1, type: "Strategic Ploy" },
+                    { name: "Goaded Beast", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Houndpack Lance",
+                flavour: "",
+                rule: { name: "Marked Prey", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Preyslayer's Mantle", cost: 15, restriction: "WAR DOG model only." },
+                    { name: "Final Howl (Aura)", cost: 20, restriction: "WAR DOG model only." },
+                    { name: "Loping Predator", cost: 10, restriction: "WAR DOG model only." },
+                    { name: "Panoply of the Cursed Knight", cost: 15, restriction: "WAR DOG model only." },
+                ],
+                stratagems: [
+                    { name: "Vox-howl", cp: 2, type: "Battle Tactic" },
+                    { name: "Hungry for Combat", cp: 1, type: "Battle Tactic" },
+                    { name: "Cunning Hunter", cp: 1, type: "Strategic Ploy" },
+                    { name: "Animalistic Rage", cp: 1, type: "Battle Tactic" },
+                    { name: "Harrying Hounds", cp: 1, type: "Strategic Ploy" },
+                    { name: "Encircling Pack", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Iconoclast Fiefdom",
+                flavour: "",
+                rule: { name: "Dreaded Masters", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Profane Altar", cost: 20, restriction: "CHAOS KNIGHTS model only." },
+                    { name: "Pave the Way", cost: 15, restriction: "CHAOS KNIGHTS model only." },
+                    { name: "Tyrant's Banner", cost: 5, restriction: "CHAOS KNIGHTS model only." },
+                    { name: "Diabolical Resilience", cost: 35, restriction: "CHAOS KNIGHTS model only." },
+                ],
+                stratagems: [
+                    { name: "Avenge the Masters!", cp: 1, type: "Strategic Ploy" },
+                    { name: "Wretched Masses", cp: 2, type: "Battle Tactic" },
+                    { name: "Soul Hunger", cp: 1, type: "Battle Tactic" },
+                    { name: "Unrestrained Rage", cp: 1, type: "Strategic Ploy" },
+                    { name: "Worthless Chattel", cp: 1, type: "Strategic Ploy" },
+                    { name: "Preserve the Idols", cp: 1, type: "Strategic Ploy" },
+                ]
+            }
+        ],
         units: [
                 {
                         "id": "ck-knight-abominant",
