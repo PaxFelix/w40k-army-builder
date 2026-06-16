@@ -895,7 +895,7 @@ function parseLeaderTargets(ref) {
     rest = rest.replace(/\(.*?\)/g, "").replace(/\.\s*$/, "").trim();
     return rest
         .split(/[;,]| and (?=[A-Z])| or (?=[A-Z])/)
-        .map(s => s.replace(/^the following units?:?/i, "").replace(/\s+/g, " ").trim().toLowerCase())
+        .map(s => s.replace(/^the following units?:?/i, "").replace(/\*/g, "").replace(/\s+/g, " ").trim().toLowerCase())
         .filter(Boolean);
 }
 
@@ -905,7 +905,10 @@ function isLeaderUnit(ref) {
 
 function canLead(leaderRef, bodyRef) {
     if (!leaderRef || !bodyRef) return false;
-    return parseLeaderTargets(leaderRef).includes((bodyRef.name || "").toLowerCase());
+    const name = (bodyRef.name || "").toLowerCase();
+    // Exact match, or a weapon-variant datasheet ("Ironkin Steeljacks with …")
+    // whose base name is the named leader target.
+    return parseLeaderTargets(leaderRef).some(t => name === t || name.startsWith(t + " with "));
 }
 
 // The leader army-unit currently attached to a given bodyguard, or null.
