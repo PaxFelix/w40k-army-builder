@@ -19,7 +19,122 @@
         armyRules: [
             { name: "Shadow of Chaos", flavour: "", text: "" }
         ],
-        detachments: [],
+        detachments: [
+            {
+                name: "Daemonic Incursion",
+                flavour: "",
+                rule: { name: "Warp Rifts", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "A'rgath, the King of Blades", cost: 20, restriction: "KHORNE LEGIONES DAEMONICA model only." },
+                    { name: "Soulstealer", cost: 15, restriction: "SLAANESH LEGIONES DAEMONICA model only." },
+                    { name: "The Endless Gift", cost: 30, restriction: "NURGLE LEGIONES DAEMONICA model only." },
+                    { name: "The Everstave", cost: 25, restriction: "TZEENTCH LEGIONES DAEMONICA model only." },
+                ],
+                stratagems: [
+                    { name: "Corrupt Realspace", cp: 1, type: "Strategic Ploy" },
+                    { name: "Warp Surge", cp: 1, type: "Strategic Ploy" },
+                    { name: "Draught of Terror", cp: 1, type: "Battle Tactic" },
+                    { name: "Denizens of the Warp", cp: 1, type: "Strategic Ploy" },
+                    { name: "The Realm of Chaos", cp: 1, type: "Battle Tactic" },
+                    { name: "Daemonic Invulnerability", cp: 1, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Shadow Legion",
+                flavour: "",
+                rule: { name: "Thralls of the First Prince", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Leaping Shadows", cost: 25, restriction: "SHADOW LEGION model only." },
+                    { name: "Mantle of Gloom (Aura)", cost: 20, restriction: "SHADOW LEGION model only." },
+                    { name: "Fade to Darkness", cost: 30, restriction: "SHADOW LEGION model only." },
+                    { name: "Malice Made Manifest", cost: 25, restriction: "SHADOW LEGION model only." },
+                ],
+                stratagems: [
+                    { name: "Spiteful Demise", cp: 1, type: "Strategic Ploy" },
+                    { name: "Channelled Wrath", cp: 1, type: "Strategic Ploy" },
+                    { name: "Death Denied", cp: 1, type: "Battle Tactic" },
+                    { name: "Encroaching Darkness", cp: 1, type: "Battle Tactic" },
+                    { name: "Shade Path", cp: 2, type: "Battle Tactic" },
+                    { name: "Binding Shadow", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Blood Legion",
+                flavour: "",
+                rule: { name: "Murdercall", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Slaughterthirst (Aura)", cost: 25, restriction: "LEGIONES DAEMONICA KHORNE model only." },
+                    { name: "Fury's Cage", cost: 20, restriction: "LEGIONES DAEMONICA KHORNE MONSTER model only." },
+                    { name: "Brazenmaw", cost: 15, restriction: "LEGIONES DAEMONICA KHORNE model only." },
+                    { name: "Gateway Unto Damnation", cost: 10, restriction: "LEGIONES DAEMONICA KHORNE MONSTER model only." },
+                ],
+                stratagems: [
+                    { name: "Wrath Undeniable", cp: 1, type: "Strategic Ploy" },
+                    { name: "Gore-hungry Onslaught", cp: 1, type: "Strategic Ploy" },
+                    { name: "Skulls Beget Blood", cp: 1, type: "Strategic Ploy" },
+                    { name: "Blood Begets Skulls", cp: 1, type: "Strategic Ploy" },
+                    { name: "Fools' Flight", cp: 2, type: "Strategic Ploy" },
+                    { name: "Sheathed in Brass", cp: 1, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Legion of Excess",
+                flavour: "",
+                rule: { name: "Beguiling Aura", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "False Majesty (Aura)", cost: 30, restriction: "LEGIONES DAEMONICA SLAANESH model only." },
+                    { name: "Dreaming Crown (Aura)", cost: 30, restriction: "LEGIONES DAEMONICA SLAANESH model only." },
+                    { name: "Avatar of Perfection", cost: 15, restriction: "LEGIONES DAEMONICA SLAANESH MONSTER model only." },
+                    { name: "Soul Glutton", cost: 10, restriction: "LEGIONES DAEMONICA SLAANESH MONSTER model only." },
+                ],
+                stratagems: [
+                    { name: "Thieves of Pain", cp: 1, type: "Strategic Ploy" },
+                    { name: "Archagonists", cp: 2, type: "Battle Tactic" },
+                    { name: "Sensory Excruciation", cp: 1, type: "Strategic Ploy" },
+                    { name: "Phantasmal Longing", cp: 1, type: "Strategic Ploy" },
+                    { name: "Cavalcade of Blades", cp: 1, type: "Battle Tactic" },
+                    { name: "Overwhelming Excess", cp: 1, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Plague Legion",
+                flavour: "",
+                rule: { name: "Melancholic Miasma", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Cankerblight", cost: 15, restriction: "LEGIONES DAEMONICA NURGLE model only." },
+                    { name: "Maggot Maws", cost: 15, restriction: "LEGIONES DAEMONICA NURGLE model only." },
+                    { name: "Droning Shroud (Aura)", cost: 35, restriction: "LEGIONES DAEMONICA NURGLE MONSTER model only." },
+                    { name: "Font of Spores (Aura)", cost: 20, restriction: "LEGIONES DAEMONICA NURGLE MONSTER model only." },
+                ],
+                stratagems: [
+                    { name: "Seeping Virulence", cp: 1, type: "Battle Tactic" },
+                    { name: "Fever Visions", cp: 1, type: "Battle Tactic" },
+                    { name: "Foetid Resurgence", cp: 2, type: "Strategic Ploy" },
+                    { name: "Rot and Renewal", cp: 1, type: "Strategic Ploy" },
+                    { name: "Murkshadows", cp: 1, type: "Battle Tactic" },
+                    { name: "Plague of Woes", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Scintillating Legion",
+                flavour: "",
+                rule: { name: "Fates in Flux", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Inescapable Eye", cost: 10, restriction: "LEGIONES DAEMONICA TZEENTCH model only." },
+                    { name: "Infernal Puppeteer", cost: 25, restriction: "LEGIONES DAEMONICA TZEENTCH MONSTER model only." },
+                    { name: "Neverblade", cost: 20, restriction: "LEGIONES DAEMONICA TZEENTCH MONSTER model only." },
+                    { name: "Improbable Shield (Aura)", cost: 30, restriction: "LEGIONES DAEMONICA TZEENTCH model only." },
+                ],
+                stratagems: [
+                    { name: "Impossible Eclipse", cp: 1, type: "Strategic Ploy" },
+                    { name: "Pyrogenesis", cp: 1, type: "Battle Tactic" },
+                    { name: "Flickering Reality", cp: 1, type: "Strategic Ploy" },
+                    { name: "Fateborne Nightmares", cp: 1, type: "Strategic Ploy" },
+                    { name: "Ficklefire", cp: 1, type: "Strategic Ploy" },
+                    { name: "Delirium Unmade", cp: 1, type: "Strategic Ploy" },
+                ]
+            }
+        ],
         units: [
                 {
                         "id": "cd-belakor",

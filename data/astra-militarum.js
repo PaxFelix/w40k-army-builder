@@ -19,7 +19,179 @@
         armyRules: [
             { name: "Born Soldiers", flavour: "", text: "" }
         ],
-        detachments: [],
+        detachments: [
+            {
+                name: "Combined Arms",
+                flavour: "",
+                rule: { name: "Born Soldiers", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Death Mask of Ollanius", cost: 10, restriction: "OFFICER model only." },
+                    { name: "Drill Commander", cost: 20, restriction: "OFFICER model only." },
+                    { name: "Grand Strategist", cost: 15, restriction: "OFFICER model only." },
+                    { name: "Reactive Command", cost: 15, restriction: "OFFICER model only." },
+                ],
+                stratagems: [
+                    { name: "Coordinated Action", cp: 1, type: "Battle Tactic" },
+                    { name: "Reinforcements!", cp: 2, type: "Strategic Ploy" },
+                    { name: "Flexible Command", cp: 2, type: "Strategic Ploy" },
+                    { name: "Fields of Fire", cp: 1, type: "Battle Tactic" },
+                    { name: "Inspired Command", cp: 1, type: "Epic Deed" },
+                    { name: "Stalwart Protector", cp: 1, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Siege Regiment",
+                flavour: "",
+                rule: { name: "Artillery Support", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Eager Advance", cost: 20, restriction: "INFANTRY OFFICER model only." },
+                    { name: "Flash Grenades", cost: 20, restriction: "INFANTRY OFFICER model only." },
+                    { name: "Legacy Sidearm", cost: 10, restriction: "INFANTRY OFFICER model only." },
+                    { name: "Stalwart's Honours", cost: 15, restriction: "OFFICER model only." },
+                ],
+                stratagems: [
+                    { name: "Trench Fighters", cp: 1, type: "Battle Tactic" },
+                    { name: "Over the Top", cp: 2, type: "Strategic Ploy" },
+                    { name: "Flare Burst", cp: 1, type: "Wargear" },
+                    { name: "Callous Sacrifice", cp: 1, type: "Battle Tactic" },
+                    { name: "Furious Fusillade", cp: 1, type: "Strategic Ploy" },
+                    { name: "Minefield", cp: 1, type: "Wargear" },
+                ]
+            },
+            {
+                name: "Mechanised Assault",
+                flavour: "",
+                rule: { name: "Armoured Fist", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Bold Leadership", cost: 25, restriction: "INFANTRY OFFICER model only." },
+                    { name: "Sacred Unguents", cost: 10, restriction: "ASTRA MILITARUM TECH-PRIEST ENGINSEER model only." },
+                    { name: "Smoke Grenades", cost: 10, restriction: "INFANTRY OFFICER model only." },
+                    { name: "Vanguard Honours", cost: 15, restriction: "INFANTRY OFFICER model only." },
+                ],
+                stratagems: [
+                    { name: "Vox-relay", cp: 1, type: "Wargear" },
+                    { name: "Rapid Dispersal", cp: 1, type: "Strategic Ploy" },
+                    { name: "Clear and Secure", cp: 1, type: "Battle Tactic" },
+                    { name: "Swift Interception", cp: 1, type: "Battle Tactic" },
+                    { name: "Hasty Extraction", cp: 1, type: "Battle Tactic" },
+                    { name: "Move Out", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Hammer of the Emperor",
+                flavour: "",
+                rule: { name: "Iron Tread", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Calm Under Fire", cost: 15, restriction: "VEHICLE OFFICER model only." },
+                    { name: "Indomitable Steed", cost: 15, restriction: "VEHICLE OFFICER model only." },
+                    { name: "Regimental Banner", cost: 20, restriction: "VEHICLE OFFICER model only." },
+                    { name: "Veteran Crew", cost: 20, restriction: "VEHICLE OFFICER model only." },
+                ],
+                stratagems: [
+                    { name: "Final Hour", cp: 1, type: "Epic Deed" },
+                    { name: "Blazing Advance", cp: 1, type: "Battle Tactic" },
+                    { name: "Tactical Withdrawal", cp: 1, type: "Strategic Ploy" },
+                    { name: "Crash Through", cp: 1, type: "Strategic Ploy" },
+                    { name: "Furious Cannonade", cp: 1, type: "Battle Tactic" },
+                    { name: "Ablative Plating", cp: 2, type: "Wargear" },
+                ]
+            },
+            {
+                name: "Recon Element",
+                flavour: "",
+                rule: { name: "Masters of Camouflage", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Guerrilla Honours", cost: 25, restriction: "INFANTRY OFFICER model only." },
+                    { name: "Scare Gas Grenades", cost: 5, restriction: "ASTRA MILITARUM INFANTRY model only." },
+                    { name: "Survival Gear", cost: 5, restriction: "ASTRA MILITARUM INFANTRY model only." },
+                    { name: "Tripwires", cost: 20, restriction: "ASTRA MILITARUM INFANTRY model only." },
+                ],
+                stratagems: [
+                    { name: "Crack Shots", cp: 1, type: "Battle Tactic" },
+                    { name: "Draw Them Out", cp: 1, type: "Strategic Ploy" },
+                    { name: "Scramble Field", cp: 1, type: "Wargear" },
+                    { name: "Courageous Diversion", cp: 1, type: "Strategic Ploy" },
+                    { name: "Tanglefoot Grenades", cp: 1, type: "Wargear" },
+                    { name: "Scouting Outriders", cp: 1, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Bridgehead Strike",
+                flavour: "",
+                rule: { name: "Only the Best", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Bombast-class Vox-array", cost: 35, restriction: "MILITARUM TEMPESTUS OFFICER model only." },
+                    { name: "Priority-drop Beacon", cost: 30, restriction: "MILITARUM TEMPESTUS OFFICER model only." },
+                    { name: "Shroud Projector", cost: 15, restriction: "MILITARUM TEMPESTUS OFFICER model only." },
+                    { name: "Advance Augury", cost: 15, restriction: "INFANTRY OFFICER model only." },
+                ],
+                stratagems: [
+                    { name: "Bellicosa Drop", cp: 1, type: "Battle Tactic" },
+                    { name: "Firing Hot", cp: 2, type: "Battle Tactic" },
+                    { name: "Fire and Relocate", cp: 1, type: "Strategic Ploy" },
+                    { name: "Servo-designators", cp: 1, type: "Strategic Ploy" },
+                    { name: "Aerial Extraction", cp: 1, type: "Epic Deed" },
+                    { name: "On My Position", cp: 1, type: "Epic Deed" },
+                ]
+            },
+            {
+                name: "Grizzled Company",
+                flavour: "",
+                rule: { name: "Ruthless Discipline", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Abhuman Detail", cost: 20, restriction: "COMMISSAR model only." },
+                    { name: "Aquilan Eye", cost: 20, restriction: "ASTRA MILITARUM OFFICER model only." },
+                    { name: "Spec Ops Veteran", cost: 15, restriction: "ASTRA MILITARUM INFANTRY OFFICER model only." },
+                    { name: "Laud Hailer", cost: 10, restriction: "ASTRA MILITARUM OFFICER model only." },
+                ],
+                stratagems: [
+                    { name: "Snap to It", cp: 1, type: "" },
+                    { name: "No Retreat!", cp: 1, type: "" },
+                    { name: "Veteran Sharpshooters", cp: 1, type: "" },
+                    { name: "Purging Fire", cp: 1, type: "" },
+                    { name: "Mordian Minute", cp: 1, type: "" },
+                    { name: "Additional Armour", cp: 1, type: "" },
+                ]
+            },
+            {
+                name: "Steel Hammer",
+                flavour: "",
+                rule: { name: "Ceaseless Cannonade", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Battalion Commander", cost: 30, restriction: "ASTRA MILITARUM TITANIC CHARACTER model only." },
+                    { name: "Titan Killer", cost: 20, restriction: "ASTRA MILITARUM TITANIC CHARACTER model only." },
+                    { name: "Engine Speaker", cost: 15, restriction: "ASTRA MILITARUM TECH-PRIEST ENGINSEER model only." },
+                    { name: "Assault Hatches", cost: 25, restriction: "ASTRA MILITARUM TITANIC CHARACTER TRANSPORT model only." },
+                ],
+                stratagems: [
+                    { name: "Engine of Wrath", cp: 1, type: "Epic Deed" },
+                    { name: "Imposing Arrival", cp: 1, type: "Strategic Ploy" },
+                    { name: "Adamantine Behemoth", cp: 1, type: "Strategic Ploy" },
+                    { name: "Shattering Salvo", cp: 1, type: "Strategic Ploy" },
+                    { name: "Withering Firepower", cp: 1, type: "Strategic Ploy" },
+                    { name: "Accuracy Under Pressure", cp: 2, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Armoured Infantry",
+                flavour: "",
+                rule: { name: "Squadron Command", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Exemplary Officer", cost: 20, restriction: "INFANTRY OFFICER model only." },
+                    { name: "Master Manoeuvrist", cost: 15, restriction: "INFANTRY OFFICER model only." },
+                    { name: "Omnissian Unguents (Aura)", cost: 35, restriction: "ASTRA MILITARUM TECH-PRIEST ENGINSEER model only." },
+                    { name: "Grand Strategist", cost: 25, restriction: "OFFICER model only." },
+                ],
+                stratagems: [
+                    { name: "Order the Advance", cp: 1, type: "Battle Tactic" },
+                    { name: "Mobile Firebase", cp: 1, type: "Strategic Ploy" },
+                    { name: "Burst of Speed", cp: 1, type: "Strategic Ploy" },
+                    { name: "Supporting Ordnance", cp: 1, type: "Battle Tactic" },
+                    { name: "Combined Fire", cp: 1, type: "Battle Tactic" },
+                    { name: "Opening Salvo", cp: 1, type: "Battle Tactic" },
+                ]
+            }
+        ],
         units: [
                 {
                         "id": "am-cadian-castellan",
