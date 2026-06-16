@@ -35,64 +35,172 @@
                 name: "Awakened Dynasty",
                 flavour: "",
                 rule: { name: "Command Protocols", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Veil of Darkness", cost: 20, restriction: "NECRONS model only." },
+                    { name: "Nether-realm Casket", cost: 20, restriction: "NECRONS model only." },
+                    { name: "Phasal Subjugator (Aura)", cost: 35, restriction: "NECRONS model only." },
+                    { name: "Enaegic Dermal Bond", cost: 30, restriction: "NECRONS model only." },
+                ],
+                stratagems: [
+                    { name: "Protocol of the Eternal Revenant", cp: 1, type: "Epic Deed" },
+                    { name: "Protocol of the Undying Legions", cp: 1, type: "Strategic Ploy" },
+                    { name: "Protocol of the Hungry Void", cp: 1, type: "Battle Tactic" },
+                    { name: "Protocol of the Sudden Storm", cp: 1, type: "Strategic Ploy" },
+                    { name: "Protocol of the Conquering Tyrant", cp: 1, type: "Battle Tactic" },
+                    { name: "Protocol of the Vengeful Stars", cp: 2, type: "Strategic Ploy" },
+                ]
             },
             {
                 name: "Annihilation Legion",
                 flavour: "",
                 rule: { name: "Annihilation Protocol", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Eternal Madness", cost: 25, restriction: "NECRONS model only." },
+                    { name: "Ingrained Superiority", cost: 10, restriction: "NECRONS model only." },
+                    { name: "Soulless Reaper", cost: 20, restriction: "DESTROYER CULT model only." },
+                    { name: "Eldritch Nightmare", cost: 15, restriction: "DESTROYER CULT model only." },
+                ],
+                stratagems: [
+                    { name: "Masks of Death", cp: 1, type: "Strategic Ploy" },
+                    { name: "The Spoor of Frailty", cp: 1, type: "Battle Tactic" },
+                    { name: "Murderous Reanimation", cp: 1, type: "Battle Tactic" },
+                    { name: "Pitiless Hunters", cp: 1, type: "Battle Tactic" },
+                    { name: "Blood-fuelled Cruelty", cp: 1, type: "Battle Tactic" },
+                    { name: "Insanity's Ire", cp: 1, type: "Strategic Ploy" },
+                ]
             },
             {
                 name: "Canoptek Court",
                 flavour: "",
                 rule: { name: "Power Matrix", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Dimensional Sanctum", cost: 20, restriction: "CRYPTEK model only." },
+                    { name: "Hyperphasic Fulcrum", cost: 15, restriction: "CRYPTEK model only." },
+                    { name: "Autodivinator", cost: 15, restriction: "CRYPTEK model only." },
+                    { name: "Metalodermal Tesla Weave", cost: 10, restriction: "CRYPTEK model only." },
+                ],
+                stratagems: [
+                    { name: "Curse of the Cryptek", cp: 1, type: "Battle Tactic" },
+                    { name: "Cynosure of Eradication", cp: 2, type: "Battle Tactic" },
+                    { name: "Solar Pulse", cp: 1, type: "Strategic Ploy" },
+                    { name: "Reactive Subroutines", cp: 1, type: "Strategic Ploy" },
+                    { name: "Countertemporal Shift", cp: 1, type: "Strategic Ploy" },
+                    { name: "Suboptimal Facade", cp: 1, type: "Strategic Ploy" },
+                ]
             },
             {
                 name: "Obeisance Phalanx",
                 flavour: "",
                 rule: { name: "Worthy Foes", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Honourable Combatant", cost: 10, restriction: "OVERLORD model only." },
+                    { name: "Unflinching Will", cost: 20, restriction: "OVERLORD model only." },
+                    { name: "Warrior Noble", cost: 15, restriction: "OVERLORD model only." },
+                    { name: "Eternal Conqueror", cost: 25, restriction: "OVERLORD model only." },
+                ],
+                stratagems: [
+                    { name: "Your Time Is Nigh", cp: 1, type: "Epic Deed" },
+                    { name: "Enslaved Artifice", cp: 1, type: "Battle Tactic" },
+                    { name: "Nanoassembly Protocols", cp: 1, type: "Battle Tactic" },
+                    { name: "Sentinels of Eternity", cp: 1, type: "Epic Deed" },
+                    { name: "Suffer No Rival", cp: 1, type: "Battle Tactic" },
+                    { name: "Territorial Obsession", cp: 1, type: "Strategic Ploy" },
+                ]
             },
             {
                 name: "Hypercrypt Legion",
                 flavour: "",
                 rule: { name: "Hyperphasing", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Dimensional Overseer", cost: 25, restriction: "NECRONS model only." },
+                    { name: "Arisen Tyrant", cost: 25, restriction: "NECRONS model only." },
+                    { name: "Hyperspatial Transfer Node", cost: 15, restriction: "NECRONS model only." },
+                    { name: "Osteoclave Fulcrum", cost: 20, restriction: "NECRONS model only." },
+                ],
+                stratagems: [
+                    { name: "Hyperphasic Recall", cp: 2, type: "Strategic Ploy" },
+                    { name: "Quantum Deflection", cp: 1, type: "Wargear" },
+                    { name: "Reanimation Crypts", cp: 1, type: "Strategic Ploy" },
+                    { name: "Cosmic Precision", cp: 1, type: "Strategic Ploy" },
+                    { name: "Dimensional Corridor", cp: 2, type: "Strategic Ploy" },
+                    { name: "Entropic Damping", cp: 1, type: "Wargear" },
+                ]
             },
             {
                 name: "Starshatter Arsenal",
                 flavour: "",
                 rule: { name: "Relentless Onslaught", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Dread Majesty (Aura)", cost: 30, restriction: "OVERLORD or CATACOMB COMMAND BARGE model only." },
+                    { name: "Miniaturised Nebuloscope", cost: 15, restriction: "NECRONS model only." },
+                    { name: "Demanding Leader", cost: 10, restriction: "NECRONS model only." },
+                    { name: "Chrono-impedance Fields", cost: 25, restriction: "NECRONS model only." },
+                ],
+                stratagems: [
+                    { name: "Merciless Reclamation", cp: 2, type: "Battle Tactic" },
+                    { name: "Unyielding Forms", cp: 2, type: "Battle Tactic" },
+                    { name: "Chronoshift", cp: 1, type: "Strategic Ploy" },
+                    { name: "Dimensional Tunnel", cp: 1, type: "Strategic Ploy" },
+                    { name: "Endless Servitude", cp: 1, type: "Strategic Ploy" },
+                    { name: "Reactive Reposition", cp: 1, type: "Strategic Ploy" },
+                ]
             },
             {
                 name: "Cryptek Conclave",
                 flavour: "",
                 rule: { name: "Technosorcerous Augmentations", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Quantum Abacus", cost: 15, restriction: "NECRONS model only." },
+                    { name: "Atomic Disintegrators", cost: 10, restriction: "CRYPTEK model only." },
+                    { name: "Gauntlet of Compression", cost: 20, restriction: "NECRONS model only." },
+                    { name: "Gravitic Bolas", cost: 15, restriction: "CRYPTEK model only." },
+                ],
+                stratagems: [
+                    { name: "Molecular Targeting", cp: 1, type: "Battle Tactic" },
+                    { name: "Microscarab Swarm", cp: 1, type: "Wargear" },
+                    { name: "Animus Curse", cp: 1, type: "Wargear" },
+                    { name: "Synergistic Empowerment", cp: 1, type: "Strategic Ploy" },
+                    { name: "Untapped Power", cp: 1, type: "Battle Tactic" },
+                    { name: "Potentiality Syphon", cp: 1, type: "Strategic Ploy" },
+                ]
             },
             {
                 name: "Cursed Legion",
                 flavour: "",
                 rule: { name: "Cold Fervour", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Destroyer Ankh", cost: 20, restriction: "CATACOMB COMMAND BARGE or OVERLORD model only." },
+                    { name: "Murdermind", cost: 15, restriction: "CRYPTEK model only." },
+                    { name: "Mark of the Nekrosor", cost: 20, restriction: "DESTROYER CULT model only." },
+                    { name: "Cursed Circlet", cost: 25, restriction: "DESTROYER CULT model only." },
+                ],
+                stratagems: [
+                    { name: "Methodical Murder", cp: 1, type: "Battle Tactic" },
+                    { name: "Image of Death", cp: 1, type: "Battle Tactic" },
+                    { name: "Mortis Protocols", cp: 1, type: "Strategic Ploy" },
+                    { name: "Driven to Butchery", cp: 1, type: "Strategic Ploy" },
+                    { name: "Spreading Madness", cp: 1, type: "Battle Tactic" },
+                    { name: "Unnatural Aggression", cp: 2, type: "Strategic Ploy" },
+                ]
             },
             {
                 name: "Pantheon of Woe",
                 flavour: "",
                 rule: { name: "Cosmic Distortion", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Singularity Matrix", cost: 55, restriction: "C'TAN SHARD OF THE DECEIVER model only." },
+                    { name: "Quantum Goad", cost: 45, restriction: "C'TAN SHARD OF THE NIGHTBRINGER model only." },
+                    { name: "Animus Damper", cost: 35, restriction: "C'TAN SHARD OF THE VOID DRAGON model only." },
+                    { name: "Reletavistic Tether", cost: 40, restriction: "TRANSCENDENT C'TAN model only." },
+                ],
+                stratagems: [
+                    { name: "Disharmonisation Cascade", cp: 1, type: "Epic Deed" },
+                    { name: "Molecular Erosion", cp: 1, type: "Strategic Ploy" },
+                    { name: "Mass Transmogrification", cp: 1, type: "Epic Deed" },
+                    { name: "Entrophasic Aura Targeting", cp: 1, type: "Battle Tactic" },
+                    { name: "Chronodistortion", cp: 1, type: "Battle Tactic" },
+                    { name: "Phase Melding", cp: 1, type: "Strategic Ploy" },
+                ]
             }
         ],
 
