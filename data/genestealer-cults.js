@@ -19,7 +19,122 @@
         armyRules: [
             { name: "Cult Ambush", flavour: "", text: "" }
         ],
-        detachments: [],
+        detachments: [
+            {
+                name: "Host of Ascension",
+                flavour: "",
+                rule: { name: "A Perfect Ambush", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Prowling Agitant", cost: 15, restriction: "GENESTEALER CULTS model only." },
+                    { name: "A Chink in Their Armour", cost: 20, restriction: "GENESTEALER CULTS model only." },
+                    { name: "Our Time Is Nigh", cost: 20, restriction: "GENESTEALER CULTS model only." },
+                    { name: "Assassination Edict", cost: 15, restriction: "GENESTEALER CULTS model only." },
+                ],
+                stratagems: [
+                    { name: "Coordinated Trap", cp: 2, type: "Battle Tactic" },
+                    { name: "Primed and Readied", cp: 2, type: "Battle Tactic" },
+                    { name: "Tunnel Crawlers", cp: 1, type: "Strategic Ploy" },
+                    { name: "Lying in Wait", cp: 1, type: "Strategic Ploy" },
+                    { name: "Return to the Shadows", cp: 1, type: "Strategic Ploy" },
+                    { name: "A Deadly Snare", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Xenocreed Congregation",
+                flavour: "",
+                rule: { name: "Unquestioning Fanaticism", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Gene-sire's Reliquant", cost: 5, restriction: "MAGUS, PRIMUS or ACOLYTE ICONWARD model only." },
+                    { name: "Denunciator of Tyrants", cost: 25, restriction: "MAGUS, PRIMUS or ACOLYTE ICONWARD model only." },
+                    { name: "Deeds That Speak to the Masses", cost: 25, restriction: "MAGUS, PRIMUS or ACOLYTE ICONWARD model only." },
+                    { name: "Incendiary Inspiration", cost: 15, restriction: "MAGUS, PRIMUS or ACOLYTE ICONWARD model only." },
+                ],
+                stratagems: [
+                    { name: "Vengeance for the Martyr!", cp: 1, type: "Epic Deed" },
+                    { name: "Frenzied Devotion", cp: 1, type: "Battle Tactic" },
+                    { name: "Tireless Fervour", cp: 1, type: "Strategic Ploy" },
+                    { name: "Transcendent Celerity", cp: 1, type: "Strategic Ploy" },
+                    { name: "The Downtrodden Rise", cp: 2, type: "Strategic Ploy" },
+                    { name: "The Path of Anguish", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Biosanctic Broodsurge",
+                flavour: "",
+                rule: { name: "Hypermorphic Fury", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Predatory Instincts", cost: 20, restriction: "ABOMINANT, BIOPHAGUS or PATRIARCH model only." },
+                    { name: "Biomorph Adaptation", cost: 25, restriction: "ABOMINANT or PATRIARCH model only." },
+                    { name: "Mutagenic Regeneration", cost: 10, restriction: "ABOMINANT, BIOPHAGUS or PATRIARCH model only." },
+                    { name: "Alien Majesty", cost: 15, restriction: "ABOMINANT, BIOPHAGUS or PATRIARCH model only." },
+                ],
+                stratagems: [
+                    { name: "Evasive Vanguard", cp: 1, type: "Strategic Ploy" },
+                    { name: "Saintly Paroxysm", cp: 1, type: "Epic Deed" },
+                    { name: "Gene-twisted Muscle", cp: 1, type: "Battle Tactic" },
+                    { name: "Hyper-metabolic Vigour", cp: 1, type: "Battle Tactic" },
+                    { name: "Stimulated Bio-surge", cp: 1, type: "Battle Tactic" },
+                    { name: "Bio-horror Revelation", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Outlander Claw",
+                flavour: "",
+                rule: { name: "Rapid Takeover", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Serpentine Tactics", cost: 10, restriction: "GENESTEALER CULTS MOUNTED model only." },
+                    { name: "Cartographic Data-leech", cost: 10, restriction: "GENESTEALER CULTS model only." },
+                    { name: "Starfall Shells", cost: 10, restriction: "GENESTEALER CULTS MOUNTED model only." },
+                    { name: "Assault Commando", cost: 15, restriction: "GENESTEALER CULTS model only." },
+                ],
+                stratagems: [
+                    { name: "Along Shadowed Trails", cp: 1, type: "Strategic Ploy" },
+                    { name: "Devoted Crew", cp: 1, type: "Battle Tactic" },
+                    { name: "Close-range Shoot-out", cp: 1, type: "Battle Tactic" },
+                    { name: "Rapid Feint", cp: 1, type: "Strategic Ploy" },
+                    { name: "Deft Manoeuvring", cp: 1, type: "Battle Tactic" },
+                    { name: "Encircling the Prey", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Brood Brother Auxilia",
+                flavour: "",
+                rule: { name: "Integrated Tactics", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Martial Espionage", cost: 25, restriction: "GENESTEALER CULTS INFANTRY model only." },
+                    { name: "Adaptive Reprisal", cost: 15, restriction: "GENESTEALER CULTS INFANTRY model only." },
+                    { name: "The Hero Returned", cost: 20, restriction: "GENESTEALER CULTS INFANTRY model only." },
+                    { name: "Firepoint Commander", cost: 10, restriction: "GENESTEALER CULTS INFANTRY model only." },
+                ],
+                stratagems: [
+                    { name: "In the Shadow of Iron", cp: 1, type: "Strategic Ploy" },
+                    { name: "Regimental Reinforcements", cp: 1, type: "Strategic Ploy" },
+                    { name: "Suppress and Overwhelm", cp: 1, type: "Strategic Ploy" },
+                    { name: "Acceptable Losses", cp: 2, type: "Strategic Ploy" },
+                    { name: "Symbiotic Destruction", cp: 1, type: "Battle Tactic" },
+                    { name: "A Dark Network", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Final Day",
+                flavour: "",
+                rule: { name: "Psionic Parasitism", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Synaptic Auger", cost: 15, restriction: "TYRANIDS model only." },
+                    { name: "Enraptured Damnation", cost: 10, restriction: "GENESTEALER CULTS model only." },
+                    { name: "Vanguard Tyrant", cost: 25, restriction: "WINGED HIVE TYRANT model only." },
+                    { name: "Inhuman Integration", cost: 20, restriction: "GENESTEALER CULTS model only." },
+                ],
+                stratagems: [
+                    { name: "Hyperferocity", cp: 1, type: "Battle Tactic" },
+                    { name: "Psi Surge", cp: 1, type: "Strategic Ploy" },
+                    { name: "Avenge the Star Children", cp: 1, type: "Battle Tactic" },
+                    { name: "Divine Imperative", cp: 1, type: "Battle Tactic" },
+                    { name: "Darting Attacks", cp: 1, type: "Strategic Ploy" },
+                    { name: "Resistance Tunnels", cp: 1, type: "Strategic Ploy" },
+                ]
+            }
+        ],
         units: [
                 {
                         "id": "gsc-abominant",

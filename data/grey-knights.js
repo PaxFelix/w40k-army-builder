@@ -19,7 +19,122 @@
         armyRules: [
             { name: "Teleport Assault", flavour: "", text: "" }
         ],
-        detachments: [],
+        detachments: [
+            {
+                name: "Brotherhood Strike",
+                flavour: "",
+                rule: { name: "Fury of Titan", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Banishing Wave (Psychic)", cost: 20, restriction: "GREY KNIGHTS model only." },
+                    { name: "Blinding Aura", cost: 10, restriction: "GREY KNIGHTS model only." },
+                    { name: "Purity of Purpose", cost: 15, restriction: "GREY KNIGHTS model only." },
+                    { name: "Tome of Forbidden Ways", cost: 25, restriction: "GREY KNIGHTS model only." },
+                ],
+                stratagems: [
+                    { name: "Truesilver Channelling", cp: 2, type: "Strategic Ploy" },
+                    { name: "Combat Manifestation", cp: 1, type: "Epic Deed" },
+                    { name: "Purgation Pattern", cp: 1, type: "Battle Tactic" },
+                    { name: "Duty Unending", cp: 1, type: "Strategic Ploy" },
+                    { name: "Shining Veil", cp: 1, type: "Battle Tactic" },
+                    { name: "Expeditious Exit", cp: 2, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Hallowed Conclave",
+                flavour: "",
+                rule: { name: "Duty Before All", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Eye of the Augurium", cost: 25, restriction: "GREY KNIGHTS model only." },
+                    { name: "Inescapable Judgement (Psychic)", cost: 20, restriction: "GREY KNIGHTS model only." },
+                    { name: "Sanctic Reaper", cost: 15, restriction: "GREY KNIGHTS TERMINATOR model only." },
+                    { name: "Nemesis Rounds", cost: 10, restriction: "GREY KNIGHTS TERMINATOR model only." },
+                ],
+                stratagems: [
+                    { name: "Giants of the Battlefield", cp: 1, type: "Battle Tactic" },
+                    { name: "Unending Fidelity", cp: 1, type: "Strategic Ploy" },
+                    { name: "Point-blank Purgation", cp: 1, type: "Strategic Ploy" },
+                    { name: "Grind Them Underfoot", cp: 1, type: "Strategic Ploy" },
+                    { name: "Precognitive Strategies", cp: 1, type: "Strategic Ploy" },
+                    { name: "Shining Resolve", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Banishers",
+                flavour: "",
+                rule: { name: "Channelled Force", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Sigil of the Hunt", cost: 10, restriction: "GREY KNIGHTS model only." },
+                    { name: "The Ephemeral Tome", cost: 15, restriction: "GREY KNIGHTS INFANTRY model only." },
+                    { name: "The Sixty-sixth Seal", cost: 25, restriction: "GREY KNIGHTS model only." },
+                    { name: "Pyresoul (Psychic)", cost: 20, restriction: "GREY KNIGHTS model only." },
+                ],
+                stratagems: [
+                    { name: "Hexwrought Reprisal", cp: 1, type: "Epic Deed" },
+                    { name: "Warding Chant", cp: 1, type: "Epic Deed" },
+                    { name: "Chaos Bane", cp: 1, type: "Epic Deed" },
+                    { name: "Celerity", cp: 1, type: "Epic Deed" },
+                    { name: "Circle of Sanctuary", cp: 1, type: "Epic Deed" },
+                    { name: "Shadow of Anarch", cp: 1, type: "Epic Deed" },
+                ]
+            },
+            {
+                name: "Sanctic Spearhead",
+                flavour: "",
+                rule: { name: "Mailed Fist", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Driven by Duty", cost: 10, restriction: "GREY KNIGHTS WALKER model only." },
+                    { name: "Quickening Foci", cost: 15, restriction: "GREY KNIGHTS INFANTRY model only." },
+                    { name: "Sigil of Exigence", cost: 30, restriction: "GREY KNIGHTS model only." },
+                    { name: "Spiritus Machina", cost: 25, restriction: "GREY KNIGHTS INFANTRY model only." },
+                ],
+                stratagems: [
+                    { name: "Truesilver Will", cp: 1, type: "Epic Deed" },
+                    { name: "Abominus-class Targets", cp: 1, type: "Battle Tactic" },
+                    { name: "Armoured Aegis", cp: 1, type: "Strategic Ploy" },
+                    { name: "Redoubled Assault", cp: 1, type: "Strategic Ploy" },
+                    { name: "Force Wave", cp: 1, type: "Strategic Ploy" },
+                    { name: "Argent Wrath", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Augurium Task Force",
+                flavour: "",
+                rule: { name: "Prescient Redeployment", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Grimoire of Conjunctions", cost: 10, restriction: "GREY KNIGHTS model only." },
+                    { name: "Shield of Prophecy", cost: 20, restriction: "GREY KNIGHTS model only." },
+                    { name: "A Foot in the Future", cost: 15, restriction: "GREY KNIGHTS model only." },
+                    { name: "Doomseer's Amulet", cost: 25, restriction: "GREY KNIGHTS model only." },
+                ],
+                stratagems: [
+                    { name: "Aggressive Anticipation", cp: 1, type: "Battle Tactic" },
+                    { name: "Appointed Hour", cp: 1, type: "Battle Tactic" },
+                    { name: "Forewarned Evasion", cp: 1, type: "Epic Deed" },
+                    { name: "Necessary End", cp: 1, type: "Epic Deed" },
+                    { name: "Redirected Strike", cp: 1, type: "Epic Deed" },
+                    { name: "Mirage of Echoes", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Warpbane Task Force",
+                flavour: "",
+                rule: { name: "Hallowed Ground", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Mandulian Reliquary", cost: 20, restriction: "GREY KNIGHTS model only." },
+                    { name: "Radiant Champion", cost: 15, restriction: "GREY KNIGHTS INFANTRY model only." },
+                    { name: "Phial of the Abyss", cost: 25, restriction: "GREY KNIGHTS INFANTRY model only." },
+                    { name: "Paragon of Sanctity", cost: 10, restriction: "GREY KNIGHTS model only." },
+                ],
+                stratagems: [
+                    { name: "Sanctified Kill Zone", cp: 1, type: "Battle Tactic" },
+                    { name: "Flames of Sanctity", cp: 1, type: "Strategic Ploy" },
+                    { name: "Hallowed Beacon", cp: 1, type: "Battle Tactic" },
+                    { name: "Fires of Covenant", cp: 1, type: "Battle Tactic" },
+                    { name: "Aegis Eternal", cp: 1, type: "Battle Tactic" },
+                    { name: "Repelling Sphere", cp: 1, type: "Battle Tactic" },
+                ]
+            }
+        ],
         units: [
                 {
                         "id": "gk-brother-captain",
