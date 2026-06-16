@@ -19,7 +19,122 @@
         armyRules: [
             { name: "Code Chivalric", flavour: "", text: "" }
         ],
-        detachments: [],
+        detachments: [
+            {
+                name: "Valourstrike Lance",
+                flavour: "",
+                rule: { name: "Bold Gallantry", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Bearer of the Iron Chalice", cost: 20, restriction: "IMPERIAL KNIGHTS model only." },
+                    { name: "Bearer of the Evanescent Ion", cost: 15, restriction: "IMPERIAL KNIGHTS model only." },
+                    { name: "Bearer of the Judicant's Helm", cost: 25, restriction: "IMPERIAL KNIGHTS model only." },
+                    { name: "Bearer of the Lancer's Sigil", cost: 25, restriction: "IMPERIAL KNIGHTS model only." },
+                ],
+                stratagems: [
+                    { name: "Run Them Through!", cp: 1, type: "Strategic Ploy" },
+                    { name: "Thunderstomp", cp: 1, type: "Battle Tactic" },
+                    { name: "Full Tilt", cp: 2, type: "Battle Tactic" },
+                    { name: "Vow of Retribution", cp: 1, type: "Strategic Ploy" },
+                    { name: "Tactical Foil", cp: 1, type: "Strategic Ploy" },
+                    { name: "Rotate Ion Shields", cp: 1, type: "Wargear" },
+                ]
+            },
+            {
+                name: "Gate Warden Lance",
+                flavour: "",
+                rule: { name: "Dauntless Defenders", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Acquisitor-at-Arms", cost: 15, restriction: "IMPERIAL KNIGHTS model only." },
+                    { name: "Purgation's Hand", cost: 20, restriction: "IMPERIAL KNIGHTS model only." },
+                    { name: "Augury Halo", cost: 20, restriction: "IMPERIAL KNIGHTS model only." },
+                    { name: "Vengeful Tread", cost: 15, restriction: "IMPERIAL KNIGHTS model only." },
+                ],
+                stratagems: [
+                    { name: "Drive Them Out!", cp: 1, type: "Battle Tactic" },
+                    { name: "Lancebreaker", cp: 1, type: "Strategic Ploy" },
+                    { name: "Steadfast Superiority", cp: 1, type: "Battle Tactic" },
+                    { name: "Marshal the Defence", cp: 1, type: "Battle Tactic" },
+                    { name: "Titanic Bombardment", cp: 1, type: "Battle Tactic" },
+                    { name: "Fortress of Intimidation", cp: 1, type: "Epic Deed" },
+                ]
+            },
+            {
+                name: "Questoris Companions",
+                flavour: "",
+                rule: { name: "Heroes of Legend", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Herald of Triumph", cost: 15, restriction: "IMPERIAL KNIGHTS model only." },
+                    { name: "Wyrmslayer Divination", cost: 10, restriction: "IMPERIAL KNIGHTS model only." },
+                    { name: "Pennant of Silvered Fury", cost: 15, restriction: "IMPERIAL KNIGHTS model only." },
+                    { name: "Crushing Condemnation", cost: 10, restriction: "IMPERIAL KNIGHTS model only." },
+                ],
+                stratagems: [
+                    { name: "Courageous Stand", cp: 1, type: "Epic Deed" },
+                    { name: "Titanic Duel", cp: 1, type: "Epic Deed" },
+                    { name: "Moment of Glory", cp: 1, type: "Epic Deed" },
+                    { name: "Hero's Tread", cp: 1, type: "Epic Deed" },
+                    { name: "Unstoppable Warrior", cp: 2, type: "Epic Deed" },
+                    { name: "Driven by the Past", cp: 1, type: "Epic Deed" },
+                ]
+            },
+            {
+                name: "Spearhead-at-arms",
+                flavour: "",
+                rule: { name: "Knightly Teachings", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Mentor's Pride", cost: 20, restriction: "IMPERIAL KNIGHTS model only." },
+                    { name: "Fables of Nightmare", cost: 10, restriction: "IMPERIAL KNIGHTS model only." },
+                    { name: "Tales of Heroism", cost: 10, restriction: "IMPERIAL KNIGHTS model only." },
+                    { name: "Martial Tuition", cost: 15, restriction: "IMPERIAL KNIGHTS model only." },
+                ],
+                stratagems: [
+                    { name: "Virtue of Courage", cp: 1, type: "Battle Tactic" },
+                    { name: "Exemplar's Wisdom", cp: 1, type: "Battle Tactic" },
+                    { name: "Mantle of the Mentor", cp: 1, type: "Strategic Ploy" },
+                    { name: "Thin Their Ranks", cp: 1, type: "Battle Tactic" },
+                    { name: "Let Duty Be Your Shield", cp: 1, type: "Epic Deed" },
+                    { name: "Squires of the Hunt", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Freeblade Company",
+                flavour: "",
+                rule: { name: "Knights of Legend", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Bringer of Justice", cost: 30, restriction: "IMPERIAL KNIGHTS model only." },
+                    { name: "Hunter's Eye", cost: 25, restriction: "IMPERIAL KNIGHTS model only." },
+                    { name: "Mysterious Guardian", cost: 35, restriction: "IMPERIAL KNIGHTS model only." },
+                    { name: "Sanctuary", cost: 20, restriction: "IMPERIAL KNIGHTS model only." },
+                ],
+                stratagems: [
+                    { name: "Noble Sacrifice", cp: 1, type: "Epic Deed" },
+                    { name: "Strength from Exile", cp: 1, type: "Battle Tactic" },
+                    { name: "Full Tilt", cp: 1, type: "Wargear" },
+                    { name: "Point-blank Barrage", cp: 1, type: "Strategic Ploy" },
+                    { name: "Survivor of Strife", cp: 1, type: "Epic Deed" },
+                    { name: "Flanking Manoeuvres", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Questor Forgepact",
+                flavour: "",
+                rule: { name: "Cogbound Alliance", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Omnissian Champion", cost: 30, restriction: "IMPERIAL KNIGHTS model only." },
+                    { name: "Knight of the Opus Machina", cost: 20, restriction: "IMPERIAL KNIGHTS model only." },
+                    { name: "Magos Questoris", cost: 35, restriction: "TECH-PRIEST model only." },
+                    { name: "Vocifer Magnificat (Aura)", cost: 15, restriction: "IMPERIAL KNIGHTS model only." },
+                ],
+                stratagems: [
+                    { name: "Omnissiah's Grace", cp: 1, type: "Strategic Ploy" },
+                    { name: "Vengeance of the Machine Cult", cp: 1, type: "Strategic Ploy" },
+                    { name: "Bonded Imperative", cp: 1, type: "Epic Deed" },
+                    { name: "Machine Focus", cp: 1, type: "Strategic Ploy" },
+                    { name: "Aggression Begets Aggression", cp: 1, type: "Strategic Ploy" },
+                    { name: "Thronegheist Fury", cp: 1, type: "Strategic Ploy" },
+                ]
+            }
+        ],
         units: [
                 {
                         "id": "ik-knight-destrier",
