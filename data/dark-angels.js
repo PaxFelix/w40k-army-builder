@@ -26,13 +26,101 @@
         ],
 
         detachments: [
-            { name: "Gladius Task Force", flavour: "", rule: { name: "Combat Doctrines", flavour: "", text: "", restrictions: "" }, enhancements: [], stratagems: [] },
-            { name: "Anvil Siege Force", flavour: "", rule: { name: "Shield of the Imperium", flavour: "", text: "", restrictions: "" }, enhancements: [], stratagems: [] },
-            { name: "Firestorm Assault Force", flavour: "", rule: { name: "Close-range Eradication", flavour: "", text: "", restrictions: "" }, enhancements: [], stratagems: [] },
-            { name: "Ironstorm Spearhead", flavour: "", rule: { name: "Armoured Wrath", flavour: "", text: "", restrictions: "" }, enhancements: [], stratagems: [] },
-            { name: "Stormlance Task Force", flavour: "", rule: { name: "Lightning Assault", flavour: "", text: "", restrictions: "" }, enhancements: [], stratagems: [] },
-            { name: "1st Company Task Force", flavour: "", rule: { name: "Extremis-level Threat", flavour: "", text: "", restrictions: "" }, enhancements: [], stratagems: [] },
-            { name: "Vanguard Spearhead", flavour: "", rule: { name: "Shadow Masters", flavour: "", text: "", restrictions: "" }, enhancements: [], stratagems: [] }
+            {
+                name: "Unforgiven Task Force",
+                flavour: "",
+                rule: { name: "Grim Resolve", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Shroud of Heroes", cost: 25, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Stubborn Tenacity", cost: 15, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Weapons of the First Legion", cost: 15, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Pennant of Remembrance", cost: 10, restriction: "ANCIENT model only." },
+                ],
+                stratagems: [
+                    { name: "Armour of Contempt", cp: 1, type: "Battle Tactic" },
+                    { name: "Unforgiven Fury", cp: 1, type: "Battle Tactic" },
+                    { name: "Intractable", cp: 1, type: "Strategic Ploy" },
+                    { name: "Fire Discipline", cp: 1, type: "Battle Tactic" },
+                    { name: "Grim Retribution", cp: 1, type: "Strategic Ploy" },
+                    { name: "Unbreakable Lines", cp: 2, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Inner Circle Task Force",
+                flavour: "",
+                rule: { name: "Vowed Target", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Champion of the Deathwing", cost: 15, restriction: "DEATHWING model only." },
+                    { name: "Eye of the Unseen", cost: 10, restriction: "DEATHWING model only." },
+                    { name: "Singular Will", cost: 20, restriction: "DEATHWING model only." },
+                    { name: "Deathwing Assault", cost: 30, restriction: "DEATHWING model with the Deep Strike ability only." },
+                ],
+                stratagems: [
+                    { name: "Armour of Contempt", cp: 1, type: "Battle Tactic" },
+                    { name: "Martial Mastery", cp: 1, type: "Epic Deed" },
+                    { name: "Duty Unto Death", cp: 1, type: "Strategic Ploy" },
+                    { name: "Relic Teleportarium", cp: 1, type: "Strategic Ploy" },
+                    { name: "Wrath of the Lion", cp: 1, type: "Epic Deed" },
+                    { name: "Unmatched Fortitude", cp: 1, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Company of Hunters",
+                flavour: "",
+                rule: { name: "Masters of Manoeuvre", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Master-crafted Weapon", cost: 10, restriction: "RAVENWING model only." },
+                    { name: "Mounted Strategist", cost: 30, restriction: "RAVENWING model only." },
+                    { name: "Master of Manoeuvre", cost: 15, restriction: "RAVENWING model only." },
+                    { name: "Recon Hunter", cost: 20, restriction: "RAVENWING model only." },
+                ],
+                stratagems: [
+                    { name: "Hunters' Trail", cp: 1, type: "Strategic Ploy" },
+                    { name: "Armour of Contempt", cp: 1, type: "Battle Tactic" },
+                    { name: "Talon Strike", cp: 1, type: "Strategic Ploy" },
+                    { name: "Death on the Wind", cp: 1, type: "Battle Tactic" },
+                    { name: "High-speed Focus", cp: 1, type: "Battle Tactic" },
+                    { name: "Rapid Reappraisal", cp: 1, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Wrath of the Rock",
+                flavour: "",
+                rule: { name: "Dutiful Tenacity", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Tempered in Battle (Aura)", cost: 10, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Ancient Weapons", cost: 25, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Deathwing Assault", cost: 15, restriction: "DEATHWING model with the Deep Strike ability only." },
+                    { name: "Lord of the Ravenwing", cost: 10, restriction: "RAVENWING model only." },
+                ],
+                stratagems: [
+                    { name: "Inescapable Justice", cp: 2, type: "Battle Tactic" },
+                    { name: "Lion's Will", cp: 1, type: "Strategic Ploy" },
+                    { name: "Armour of Contempt", cp: 1, type: "Battle Tactic" },
+                    { name: "Tactical Mastery", cp: 1, type: "Battle Tactic" },
+                    { name: "Relics of the Dark Age", cp: 1, type: "Strategic Ploy" },
+                    { name: "Leonine Aggression", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Lion's Blade Task Force",
+                flavour: "",
+                rule: { name: "In the Lion's Claws", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Calibanite Armaments", cost: 15, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Lord of the Hunt", cost: 15, restriction: "RAVENWING model only." },
+                    { name: "Stalwart Champion", cost: 25, restriction: "CAPTAIN, CHAPLAIN or LIEUTENANT model only." },
+                    { name: "Fulgus Magna", cost: 20, restriction: "DEATHWING model only." },
+                ],
+                stratagems: [
+                    { name: "Overpowering Exaction", cp: 1, type: "Strategic Ploy" },
+                    { name: "Armour of Contempt", cp: 1, type: "Battle Tactic" },
+                    { name: "Strength in Unity", cp: 1, type: "Battle Tactic" },
+                    { name: "Knights of Iron", cp: 1, type: "Strategic Ploy" },
+                    { name: "Illuminating Fire", cp: 1, type: "Battle Tactic" },
+                    { name: "Inescapable Wrath", cp: 2, type: "Strategic Ploy" },
+                ]
+            }
         ],
 
         units: [

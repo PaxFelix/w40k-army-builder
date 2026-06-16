@@ -19,7 +19,122 @@
         armyRules: [
             { name: "Nurgle's Gift", flavour: "", text: "" }
         ],
-        detachments: [],
+        detachments: [
+            {
+                name: "Virulent Vectorium",
+                flavour: "",
+                rule: { name: "Worldblight", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Daemon Weapon of Nurgle", cost: 10, restriction: "DEATH GUARD model only." },
+                    { name: "Furnace of Plagues", cost: 25, restriction: "DEATH GUARD model only." },
+                    { name: "Arch Contaminator", cost: 25, restriction: "DEATH GUARD model only." },
+                    { name: "Revolting Regeneration", cost: 20, restriction: "DEATH GUARD model only." },
+                ],
+                stratagems: [
+                    { name: "Putrid Detonation", cp: 1, type: "Strategic Ploy" },
+                    { name: "Disgustingly Resilient", cp: 2, type: "Battle Tactic" },
+                    { name: "Plaguesurge", cp: 2, type: "Epic Deed" },
+                    { name: "Leechspore Eruption", cp: 1, type: "Epic Deed" },
+                    { name: "Overwhelming Generosity", cp: 1, type: "Wargear" },
+                    { name: "Creeping Blight", cp: 1, type: "Wargear" },
+                ]
+            },
+            {
+                name: "Mortarion's Hammer",
+                flavour: "",
+                rule: { name: "Miasmic Bombardment", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Eye of Affliction", cost: 20, restriction: "DEATH GUARD model only." },
+                    { name: "Bilemaw Blight", cost: 10, restriction: "MALIGNANT PLAGUECASTER only." },
+                    { name: "Shriekworm Familiar", cost: 15, restriction: "DEATH GUARD model only." },
+                    { name: "Tendrilous Emissions", cost: 30, restriction: "LORD OF VIRULENCE only." },
+                ],
+                stratagems: [
+                    { name: "Blighted Land", cp: 2, type: "Strategic Ploy" },
+                    { name: "Relentless Grind", cp: 1, type: "Strategic Ploy" },
+                    { name: "Drawn to Despair", cp: 1, type: "Battle Tactic" },
+                    { name: "Font of Filth", cp: 1, type: "Strategic Ploy" },
+                    { name: "Eyestinger Storm", cp: 1, type: "Strategic Ploy" },
+                    { name: "Stinking Mire", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Champions of Contagion",
+                flavour: "",
+                rule: { name: "Manifold Maladies", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Final Ingredient", cost: 20, restriction: "BIOLOGUS PUTRIFIER only." },
+                    { name: "Visions of Virulence", cost: 15, restriction: "MALIGNANT PLAGUECASTER only." },
+                    { name: "Needle of Nurgle", cost: 25, restriction: "PLAGUE SURGEON only." },
+                    { name: "Cornucophagus", cost: 35, restriction: "LORD OF POXES only." },
+                ],
+                stratagems: [
+                    { name: "Blessings of Filth", cp: 1, type: "Battle Tactic" },
+                    { name: "Malignance Magnified", cp: 2, type: "Battle Tactic" },
+                    { name: "Grotesque Fortitude", cp: 1, type: "Battle Tactic" },
+                    { name: "Rabid Infusion", cp: 1, type: "Strategic Ploy" },
+                    { name: "Mobile Vector", cp: 1, type: "Strategic Ploy" },
+                    { name: "Death's Heads", cp: 1, type: "Wargear" },
+                ]
+            },
+            {
+                name: "Tallyband Summoners",
+                flavour: "",
+                rule: { name: "Reverberant Rancidity", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Beckoning Blight", cost: 20, restriction: "DEATH GUARD model only." },
+                    { name: "Fell Harvester", cost: 10, restriction: "DEATH GUARD model only." },
+                    { name: "Entropic Knell", cost: 15, restriction: "GREAT UNCLEAN ONE only." },
+                    { name: "Tome of Bounteous Blessings", cost: 20, restriction: "MALIGNANT PLAGUECASTER only." },
+                ],
+                stratagems: [
+                    { name: "Persistent Pests", cp: 1, type: "Strategic Ploy" },
+                    { name: "Clutching Corruption", cp: 1, type: "Battle Tactic" },
+                    { name: "All Is Rot", cp: 1, type: "Strategic Ploy" },
+                    { name: "Fleshy Avalanche", cp: 1, type: "Strategic Ploy" },
+                    { name: "Avatars of Decay", cp: 1, type: "Strategic Ploy" },
+                    { name: "Mireslick", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Shamblerot Vectorium",
+                flavour: "",
+                rule: { name: "Numberless Horde", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Witherbone Pipes", cost: 25, restriction: "NOXIOUS BLIGHTBRINGER only." },
+                    { name: "Lord of the Walking Pox", cost: 15, restriction: "DEATH GUARD model only." },
+                    { name: "Sorrowsyphon", cost: 10, restriction: "MALIGNANT PLAGUECASTER only." },
+                    { name: "Talisman of Burgeoning", cost: 25, restriction: "DEATH GUARD model only." },
+                ],
+                stratagems: [
+                    { name: "Grip of the Walking Pox", cp: 1, type: "Strategic Ploy" },
+                    { name: "Smeared with Filth", cp: 1, type: "Strategic Ploy" },
+                    { name: "Gnawing Hunger", cp: 1, type: "Battle Tactic" },
+                    { name: "Hidden Amongst the Dead", cp: 1, type: "Strategic Ploy" },
+                    { name: "Shock and Horror", cp: 1, type: "Strategic Ploy" },
+                    { name: "Shambling Wall", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Death Lord's Chosen",
+                flavour: "",
+                rule: { name: "Deadly Vectors", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Face of Death", cost: 10, restriction: "TERMINATOR model only." },
+                    { name: "Vile Vigour", cost: 15, restriction: "TERMINATOR model only." },
+                    { name: "Warprot Talisman", cost: 30, restriction: "TERMINATOR model only." },
+                    { name: "Helm of the Fly King", cost: 20, restriction: "TERMINATOR model only." },
+                ],
+                stratagems: [
+                    { name: "Blooming Pestilence", cp: 1, type: "Epic Deed" },
+                    { name: "Grim Reapers", cp: 1, type: "Battle Tactic" },
+                    { name: "Undying Spite", cp: 1, type: "Strategic Ploy" },
+                    { name: "Signal Pox", cp: 1, type: "Epic Deed" },
+                    { name: "Mortarion's Teachings", cp: 1, type: "Strategic Ploy" },
+                    { name: "Sickening Impact", cp: 1, type: "Strategic Ploy" },
+                ]
+            }
+        ],
         units: [
                 {
                         "id": "dg-biologus-putrifier",
