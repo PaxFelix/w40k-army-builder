@@ -12927,7 +12927,7 @@
                               "max": 1
                     },
                     "compositionText": "1 Cyberwolf",
-                    "leaderText": "Can be attached to WOLFKIN.",
+                    "leaderText": "Can be attached to Fenrisian Wolves.",
                     "keywords": [
                               "Beast",
                               "Character",
@@ -13338,7 +13338,7 @@
                               "max": 1
                     },
                     "compositionText": "1 Lukas the Trickster \u2013 EPIC HERO",
-                    "leaderText": "Can be attached to MASTER OF MISCHIEF.",
+                    "leaderText": "Can be attached to Blood Claws.",
                     "keywords": [
                               "Infantry",
                               "Character",
