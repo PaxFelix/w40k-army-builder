@@ -35,43 +35,115 @@
                 name: "Talons of the Emperor",
                 flavour: "",
                 rule: { name: "Revered Companions", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Aegis Projector", cost: 20, restriction: "ADEPTUS CUSTODES model only." },
+                    { name: "Champion of the Imperium", cost: 25, restriction: "ADEPTUS CUSTODES model only." },
+                    { name: "Gift of Terran Artifice", cost: 15, restriction: "ADEPTUS CUSTODES model only." },
+                    { name: "Radiant Mantle", cost: 30, restriction: "ADEPTUS CUSTODES model only." },
+                ],
+                stratagems: [
+                    { name: "Hunt As One", cp: 1, type: "Strategic Ploy" },
+                    { name: "Talons Interlocked", cp: 1, type: "Battle Tactic" },
+                    { name: "Empyric Severance", cp: 1, type: "Battle Tactic" },
+                    { name: "Emperor's Executioners", cp: 2, type: "Battle Tactic" },
+                    { name: "Taloned Pincer", cp: 1, type: "Battle Tactic" },
+                    { name: "Shield of Honour", cp: 1, type: "Epic Deed" },
+                ]
             },
             {
                 name: "Shield Host",
                 flavour: "",
                 rule: { name: "Martial Mastery", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Auric Mantle", cost: 15, restriction: "SHIELD-CAPTAIN or BLADE CHAMPION model only." },
+                    { name: "Castellan's Mark", cost: 20, restriction: "SHIELD-CAPTAIN model only." },
+                    { name: "From the Hall of Armouries", cost: 25, restriction: "SHIELD-CAPTAIN model only." },
+                    { name: "Panoptispex", cost: 5, restriction: "SHIELD-CAPTAIN or BLADE CHAMPION model only." },
+                ],
+                stratagems: [
+                    { name: "Arcane Genetic Alchemy", cp: 1, type: "Battle Tactic" },
+                    { name: "Avenge the Fallen", cp: 1, type: "Strategic Ploy" },
+                    { name: "Unwavering Sentinels", cp: 1, type: "Strategic Ploy" },
+                    { name: "Multipotentiality", cp: 1, type: "Strategic Ploy" },
+                    { name: "Vigilance Eternal", cp: 1, type: "Strategic Ploy" },
+                    { name: "Archeotech Munitions", cp: 1, type: "Wargear" },
+                ]
             },
             {
                 name: "Null Maiden Vigil",
                 flavour: "",
                 rule: { name: "Creeping Dread", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Enhanced Voidsheen Cloak", cost: 10, restriction: "ANATHEMA PSYKANA model only." },
+                    { name: "Huntress' Eye", cost: 15, restriction: "ANATHEMA PSYKANA model only." },
+                    { name: "Oblivion Knight", cost: 25, restriction: "ANATHEMA PSYKANA model only." },
+                    { name: "Raptor Blade", cost: 5, restriction: "ANATHEMA PSYKANA model only." },
+                ],
+                stratagems: [
+                    { name: "Desperation's Price", cp: 1, type: "Strategic Ploy" },
+                    { name: "Witch Hunters", cp: 1, type: "Battle Tactic" },
+                    { name: "Anathema Blademastery", cp: 1, type: "Battle Tactic" },
+                    { name: "Psy-chaff Volley", cp: 1, type: "Strategic Ploy" },
+                    { name: "Purgation Sweep", cp: 1, type: "Battle Tactic" },
+                    { name: "Psychic Abominations", cp: 1, type: "Strategic Ploy" },
+                ]
             },
             {
                 name: "Auric Champions",
                 flavour: "",
                 rule: { name: "Assemblage of Might", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Blade Imperator", cost: 25, restriction: "ADEPTUS CUSTODES model only." },
+                    { name: "Inspirational Exemplar", cost: 10, restriction: "ADEPTUS CUSTODES model only." },
+                    { name: "Martial Philosopher", cost: 30, restriction: "ADEPTUS CUSTODES model only." },
+                    { name: "Veiled Blade", cost: 25, restriction: "ADEPTUS CUSTODES model only." },
+                ],
+                stratagems: [
+                    { name: "Slayer of Champions", cp: 1, type: "Epic Deed" },
+                    { name: "Superhuman Reserves", cp: 2, type: "Epic Deed" },
+                    { name: "The Emperor's Auspice", cp: 1, type: "Epic Deed" },
+                    { name: "Earning of a Name", cp: 1, type: "Epic Deed" },
+                    { name: "Vigil Unending", cp: 2, type: "Epic Deed" },
+                    { name: "Shoulder the Mantle", cp: 1, type: "Epic Deed" },
+                ]
             },
             {
                 name: "Solar Spearhead",
                 flavour: "",
                 rule: { name: "Auric Armour", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Adamantine Talisman", cost: 25, restriction: "ADEPTUS CUSTODES model only." },
+                    { name: "Augury Uplink", cost: 35, restriction: "ADEPTUS CUSTODES model only." },
+                    { name: "Honoured Fallen (Aura)", cost: 15, restriction: "ADEPTUS CUSTODES VEHICLE model only." },
+                    { name: "Veteran of the Kataphraktoi", cost: 10, restriction: "ADEPTUS CUSTODES INFANTRY or ADEPTUS CUSTODES MOUNTED model only." },
+                ],
+                stratagems: [
+                    { name: "Flawless Construction", cp: 1, type: "Battle Tactic" },
+                    { name: "Emperor's Vengeance", cp: 1, type: "Battle Tactic" },
+                    { name: "Wrathful Advance", cp: 1, type: "Battle Tactic" },
+                    { name: "Unstoppable", cp: 1, type: "Strategic Ploy" },
+                    { name: "Relentless Persecution", cp: 1, type: "Strategic Ploy" },
+                    { name: "Punishment Inescapable", cp: 1, type: "Strategic Ploy" },
+                ]
             },
             {
                 name: "Lions of the Emperor",
                 flavour: "",
                 rule: { name: "Against All Odds", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Superior Creation", cost: 25, restriction: "ADEPTUS CUSTODES INFANTRY model only." },
+                    { name: "Praesidius", cost: 25, restriction: "ADEPTUS CUSTODES model only." },
+                    { name: "Fierce Conqueror", cost: 15, restriction: "SHIELD-CAPTAIN model only." },
+                    { name: "Admonimortis", cost: 10, restriction: "SHIELD-CAPTAIN model only." },
+                ],
+                stratagems: [
+                    { name: "Gilded Champion", cp: 1, type: "Strategic Ploy" },
+                    { name: "Defiant to the Last", cp: 1, type: "Strategic Ploy" },
+                    { name: "Peerless Warrior", cp: 1, type: "Battle Tactic" },
+                    { name: "Unleash the Lions", cp: 1, type: "Strategic Ploy" },
+                    { name: "Manoeuvre and Fire", cp: 1, type: "Strategic Ploy" },
+                    { name: "Swift As the Eagle", cp: 1, type: "Strategic Ploy" },
+                ]
             }
         ],
 
