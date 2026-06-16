@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>W40K Army Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;900&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-left">
+            <button id="nav-toggle" class="nav-toggle" aria-label="Menu">&#9776;</button>
+            <h1 class="app-title">W40K Army Builder</h1>
+        </div>
+        <div class="header-right">
+            <div class="global-search">
+                <input type="text" id="global-search" class="global-search-input"
+                       placeholder="Search all units…" autocomplete="off" spellcheck="false"
+                       aria-label="Search units across all factions">
+                <div id="global-search-results" class="global-search-results hidden"></div>
+            </div>
+            <select id="edition-select" class="edition-select">
+                <option value="10th">10th Edition</option>
+                <option value="11th">11th Edition</option>
+            </select>
+        </div>
+    </header>
+
+    <nav id="sidebar" class="sidebar">
+        <ul class="nav-list">
+            <li><a href="#" data-view="factions" class="nav-link active">Factions</a></li>
+            <li><a href="#" data-view="rules" class="nav-link">Faction Rules</a></li>
+            <li><a href="#" data-view="army" class="nav-link">My Army</a></li>
+            <li><a href="#" data-view="saved" class="nav-link">Saved Lists</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content" class="main-content">
+        <!-- Factions View -->
+        <section id="view-factions" class="view active">
+            <div class="view-header">
+                <h2>Select Faction</h2>
+            </div>
+            <div id="faction-grid" class="faction-grid"></div>
+        </section>
+
+        <!-- Unit Browser View -->
+        <section id="view-units" class="view">
+            <div class="view-header">
+                <button id="back-to-factions" class="btn-back">&larr; Factions</button>
+                <h2 id="faction-title">Units</h2>
+            </div>
+            <div class="unit-filters">
+                <input type="text" id="unit-search" class="unit-search" placeholder="Search units...">
+                <select id="role-filter" class="role-filter">
+                    <option value="all">All Roles</option>
+                    <option value="character">Character</option>
+                    <option value="battleline">Battleline</option>
+                    <option value="infantry">Infantry</option>
+                    <option value="mounted">Mounted</option>
+                    <option value="vehicle">Vehicle</option>
+                    <option value="monster">Monster</option>
+                    <option value="fortification">Fortification</option>
+                </select>
+            </div>
+            <div id="unit-list" class="unit-list"></div>
+        </section>
+
+        <!-- Unit Detail / Datasheet View -->
+        <section id="view-datasheet" class="view">
+            <div class="view-header">
+                <button id="back-to-units" class="btn-back">&larr; Units</button>
+                <h2 id="datasheet-title">Datasheet</h2>
+            </div>
+            <div id="datasheet-content" class="datasheet-content"></div>
+        </section>
+
+        <!-- Faction Rules View (army rules, detachments, stratagems, enhancements) -->
+        <section id="view-rules" class="view">
+            <div class="view-header">
+                <h2 id="rules-title">Faction Rules</h2>
+            </div>
+            <div class="rules-toolbar">
+                <select id="rules-faction-select" class="role-filter"></select>
+            </div>
+            <div id="rules-content" class="rules-content"></div>
+        </section>
+
+        <!-- Army Builder View -->
+        <section id="view-army" class="view">
+            <div class="view-header">
+                <h2>My Army</h2>
+                <div class="army-meta">
+                    <span id="army-points" class="army-points">0 pts</span>
+                    <span class="army-separator">/</span>
+                    <input type="number" id="points-limit" class="points-limit" value="2000" step="50" min="500" max="5000">
+                </div>
+            </div>
+            <div id="army-validation" class="army-validation"></div>
+            <div class="army-actions">
+                <button id="btn-add-unit" class="btn btn-primary">+ Add Unit</button>
+                <button id="btn-save-army" class="btn btn-secondary">Save List</button>
+                <button id="btn-clear-army" class="btn btn-danger">Clear</button>
+            </div>
+            <div id="army-list" class="army-list"></div>
+        </section>
+
+        <!-- Saved Lists View -->
+        <section id="view-saved" class="view">
+            <div class="view-header">
+                <h2>Saved Army Lists</h2>
+            </div>
+            <div id="saved-lists" class="saved-lists"></div>
+        </section>
+
+        <footer class="app-footer">
+            This is an unofficial, fan-made tool and is not affiliated with, endorsed, or sponsored by Games Workshop.
+            Warhammer 40,000 and all associated names, races, characters, vehicles, locations, units, illustrations and
+            imagery are either &reg;, &trade; and/or &copy; Games Workshop Limited. Used without permission. No challenge
+            to their status is intended. All rights reserved to their respective owners. For personal, non-commercial use only.
+        </footer>
+    </main>
+
+    <!-- Modal for unit selection when adding to army -->
+    <div id="modal-overlay" class="modal-overlay hidden">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 id="modal-title">Select Unit</h3>
+                <button id="modal-close" class="modal-close">&times;</button>
+            </div>
+            <div id="modal-content" class="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- Faction modules: must load BEFORE data/factions.js (the assembler) -->
+    <script src="data/black-templars.js"></script>
+    <script src="data/thousand-sons.js"></script>
+    <script src="data/necrons.js"></script>
+    <script src="data/votann.js"></script>
+    <script src="data/custodes.js"></script>
+    <script src="data/salamanders.js"></script>
+    <script src="data/space-marines.js"></script>
+    <script src="data/ultramarines.js"></script>
+    <script src="data/dark-angels.js"></script>
+    <script src="data/white-scars.js"></script>
+    <script src="data/space-wolves.js"></script>
+    <script src="data/orks.js"></script>
+    <script src="data/aeldari.js"></script>
+    <script src="data/chaos-space-marines.js"></script>
+    <script src="data/death-guard.js"></script>
+    <script src="data/tyranids.js"></script>
+    <script src="data/astra-militarum.js"></script>
+    <script src="data/tau-empire.js"></script>
+    <script src="data/drukhari.js"></script>
+    <script src="data/adepta-sororitas.js"></script>
+    <script src="data/emperors-children.js"></script>
+    <script src="data/world-eaters.js"></script>
+    <script src="data/genestealer-cults.js"></script>
+    <script src="data/adeptus-mechanicus.js"></script>
+    <script src="data/imperial-knights.js"></script>
+    <script src="data/chaos-knights.js"></script>
+    <script src="data/grey-knights.js"></script>
+    <script src="data/imperial-agents.js"></script>
+    <script src="data/chaos-daemons.js"></script>
+    <script src="data/ability-glossary.js"></script>
+    <script src="data/unit-ability-text.js"></script>
+    <script src="data/factions.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

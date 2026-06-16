@@ -1,0 +1,1360 @@
+/**
+ * W40K Army Builder — Chaos Knights (10th Edition)
+ *
+ * Datasheets from Codex: Chaos Knights. Names-only abilities/rules;
+ * stats, weapons, points and keywords are factual game data.
+ * Legends and Forge World datasheets are intentionally omitted.
+ *
+ * Self-registers into window.W40K_FACTIONS, assembled by data/factions.js.
+ */
+(function () {
+    "use strict";
+
+    const ck = {
+        id: "chaos-knights",
+        name: "Chaos Knights",
+        icon: "🐲",
+        allegiance: "Chaos",
+        flavour: "",
+        armyRules: [
+            { name: "Harbingers of Dread", flavour: "", text: "" }
+        ],
+        detachments: [],
+        units: [
+                {
+                        "id": "ck-knight-abominant",
+                        "name": "Knight Abominant",
+                        "role": "character",
+                        "points": [
+                                {
+                                        "models": 1,
+                                        "cost": 355
+                                }
+                        ],
+                        "stats": {
+                                "m": "10\"",
+                                "t": 11,
+                                "sv": "3+",
+                                "w": 26,
+                                "ld": "6+",
+                                "oc": 10
+                        },
+                        "weapons": {
+                                "ranged": [
+                                        {
+                                                "name": "Diabolus heavy stubber",
+                                                "range": "36\"",
+                                                "a": 3,
+                                                "bs": "3+",
+                                                "s": 5,
+                                                "ap": 0,
+                                                "d": 1,
+                                                "keywords": [
+                                                        "Rapid Fire 3"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Volkite combustor",
+                                                "range": "30\"",
+                                                "a": 12,
+                                                "bs": "3+",
+                                                "s": 12,
+                                                "ap": 0,
+                                                "d": 3,
+                                                "keywords": [
+                                                        "Devastating Wounds"
+                                                ]
+                                        }
+                                ],
+                                "melee": [
+                                        {
+                                                "name": "Balemace",
+                                                "range": "Melee",
+                                                "a": 3,
+                                                "ws": "3+",
+                                                "s": 8,
+                                                "ap": -1,
+                                                "d": 2,
+                                                "keywords": [
+                                                        "Extra Attacks"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Electroscourge",
+                                                "range": "Melee",
+                                                "a": 9,
+                                                "ws": "3+",
+                                                "s": 10,
+                                                "ap": -2,
+                                                "d": 3,
+                                                "keywords": [
+                                                        "Sustained Hits 1"
+                                                ]
+                                        }
+                                ]
+                        },
+                        "abilities": {
+                                "core": [
+                                        "Deadly Demise D6"
+                                ],
+                                "faction": [
+                                        "Harbingers of Dread",
+                                        "Super-heavy Walker"
+                                ],
+                                "wargear": [],
+                                "other": [
+                                        "Vortex Terrors",
+                                        "Warp Storms"
+                                ]
+                        },
+                        "keywords": [
+                                "Vehicle",
+                                "Walker",
+                                "Titanic",
+                                "Towering",
+                                "Abhorrent",
+                                "Psyker",
+                                "Character",
+                                "Chaos",
+                                "Knight Abominant"
+                        ],
+                        "factionKeywords": [
+                                "Chaos Knights"
+                        ],
+                        "compositionText": "1 Knight Abominant This model is equipped with: diabolus heavy stubber; volkite combustor; balemace; electroscourge. DAMAGED: 1-9 WOUNDS REMAINING While this model has 1-9 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+                },
+                {
+                        "id": "ck-knight-desecrator",
+                        "name": "Knight Desecrator",
+                        "role": "character",
+                        "points": [
+                                {
+                                        "models": 1,
+                                        "cost": 355
+                                }
+                        ],
+                        "stats": {
+                                "m": "10\"",
+                                "t": 11,
+                                "sv": "3+",
+                                "w": 26,
+                                "ld": "6+",
+                                "oc": 10
+                        },
+                        "weapons": {
+                                "ranged": [
+                                        {
+                                                "name": "Desecrator laser destructor",
+                                                "range": "72\"",
+                                                "a": 3,
+                                                "bs": "2+",
+                                                "s": 18,
+                                                "ap": -4,
+                                                "d": "D6+3",
+                                                "keywords": []
+                                        },
+                                        {
+                                                "name": "Diabolus heavy stubber",
+                                                "range": "36\"",
+                                                "a": 3,
+                                                "bs": "2+",
+                                                "s": 5,
+                                                "ap": 0,
+                                                "d": 1,
+                                                "keywords": [
+                                                        "Rapid Fire 3"
+                                                ]
+                                        }
+                                ],
+                                "melee": [
+                                        {
+                                                "name": "Reaper chainsword – strike",
+                                                "range": "Melee",
+                                                "a": 4,
+                                                "ws": "3+",
+                                                "s": 14,
+                                                "ap": -4,
+                                                "d": 6,
+                                                "keywords": []
+                                        },
+                                        {
+                                                "name": "Reaper chainsword – sweep",
+                                                "range": "Melee",
+                                                "a": 12,
+                                                "ws": "3+",
+                                                "s": 9,
+                                                "ap": -3,
+                                                "d": 2,
+                                                "keywords": []
+                                        },
+                                        {
+                                                "name": "Warpstrike claw – strike",
+                                                "range": "Melee",
+                                                "a": 4,
+                                                "ws": "3+",
+                                                "s": 20,
+                                                "ap": -3,
+                                                "d": 8,
+                                                "keywords": []
+                                        },
+                                        {
+                                                "name": "Warpstrike claw – sweep",
+                                                "range": "Melee",
+                                                "a": 8,
+                                                "ws": "3+",
+                                                "s": 10,
+                                                "ap": -2,
+                                                "d": 3,
+                                                "keywords": []
+                                        }
+                                ]
+                        },
+                        "abilities": {
+                                "core": [
+                                        "Deadly Demise D6"
+                                ],
+                                "faction": [
+                                        "Harbingers of Dread",
+                                        "Super-heavy Walker"
+                                ],
+                                "wargear": [],
+                                "other": [
+                                        "Obsessive Ruthlessness",
+                                        "Taskmaster"
+                                ]
+                        },
+                        "keywords": [
+                                "Vehicle",
+                                "Walker",
+                                "Titanic",
+                                "Towering",
+                                "Abhorrent",
+                                "Character",
+                                "Chaos",
+                                "Knight Desecrator"
+                        ],
+                        "factionKeywords": [
+                                "Chaos Knights"
+                        ],
+                        "compositionText": "1 Knight Desecrator This model is equipped with: desecrator laser destructor; diabolus heavy stubber; reaper chainsword. DAMAGED: 1-9 WOUNDS REMAINING While this model has 1-9 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+                },
+                {
+                        "id": "ck-knight-despoiler",
+                        "name": "Knight Despoiler",
+                        "role": "character",
+                        "points": [
+                                {
+                                        "models": 1,
+                                        "cost": 390
+                                }
+                        ],
+                        "stats": {
+                                "m": "10\"",
+                                "t": 11,
+                                "sv": "3+",
+                                "w": 26,
+                                "ld": "6+",
+                                "oc": 10
+                        },
+                        "weapons": {
+                                "ranged": [
+                                        {
+                                                "name": "Daemonbreath meltagun",
+                                                "range": "12\"",
+                                                "a": 1,
+                                                "bs": "3+",
+                                                "s": 9,
+                                                "ap": -4,
+                                                "d": "D6",
+                                                "keywords": [
+                                                        "Melta 2"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Daemonbreath thermal cannon",
+                                                "range": "24\"",
+                                                "a": "2D3",
+                                                "bs": "3+",
+                                                "s": 12,
+                                                "ap": -4,
+                                                "d": "D6",
+                                                "keywords": [
+                                                        "Blast",
+                                                        "Melta 6"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Despoiler battle cannon",
+                                                "range": "72\"",
+                                                "a": "D6+3",
+                                                "bs": "3+",
+                                                "s": 10,
+                                                "ap": -1,
+                                                "d": 3,
+                                                "keywords": [
+                                                        "Blast",
+                                                        "Rapid Fire D6+3"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Despoiler gatling cannon",
+                                                "range": "36\"",
+                                                "a": 18,
+                                                "bs": "3+",
+                                                "s": 6,
+                                                "ap": -2,
+                                                "d": 2,
+                                                "keywords": []
+                                        },
+                                        {
+                                                "name": "Diabolus heavy stubber",
+                                                "range": "36\"",
+                                                "a": 3,
+                                                "bs": "3+",
+                                                "s": 5,
+                                                "ap": 0,
+                                                "d": 1,
+                                                "keywords": [
+                                                        "Rapid Fire 3"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Havoc missile pod",
+                                                "range": "48\"",
+                                                "a": "D6+1",
+                                                "bs": "3+",
+                                                "s": 5,
+                                                "ap": 0,
+                                                "d": 1,
+                                                "keywords": [
+                                                        "Blast",
+                                                        "Indirect Fire"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Heavy darkflamer",
+                                                "range": "12\"",
+                                                "a": "D6",
+                                                "bs": "N/A",
+                                                "s": 5,
+                                                "ap": -1,
+                                                "d": 1,
+                                                "keywords": [
+                                                        "Ignores Cover",
+                                                        "Torrent"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Hellstorm autocannons",
+                                                "range": "48\"",
+                                                "a": 3,
+                                                "bs": "3+",
+                                                "s": 7,
+                                                "ap": -1,
+                                                "d": 2,
+                                                "keywords": [
+                                                        "Anti-Fly 2+",
+                                                        "Twin-Linked"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Ruinspear rocket pod",
+                                                "range": "48\"",
+                                                "a": 3,
+                                                "bs": "3+",
+                                                "s": 8,
+                                                "ap": -2,
+                                                "d": "D6",
+                                                "keywords": []
+                                        }
+                                ],
+                                "melee": [
+                                        {
+                                                "name": "Reaper chainsword – strike",
+                                                "range": "Melee",
+                                                "a": 4,
+                                                "ws": "3+",
+                                                "s": 14,
+                                                "ap": -4,
+                                                "d": 6,
+                                                "keywords": []
+                                        },
+                                        {
+                                                "name": "Reaper chainsword – sweep",
+                                                "range": "Melee",
+                                                "a": 12,
+                                                "ws": "3+",
+                                                "s": 9,
+                                                "ap": -3,
+                                                "d": 2,
+                                                "keywords": []
+                                        },
+                                        {
+                                                "name": "Titanic feet",
+                                                "range": "Melee",
+                                                "a": 4,
+                                                "ws": "4+",
+                                                "s": 8,
+                                                "ap": -1,
+                                                "d": 2,
+                                                "keywords": []
+                                        },
+                                        {
+                                                "name": "Warpstrike claw – strike",
+                                                "range": "Melee",
+                                                "a": 4,
+                                                "ws": "3+",
+                                                "s": 20,
+                                                "ap": -3,
+                                                "d": 8,
+                                                "keywords": []
+                                        },
+                                        {
+                                                "name": "Warpstrike claw – sweep",
+                                                "range": "Melee",
+                                                "a": 8,
+                                                "ws": "3+",
+                                                "s": 10,
+                                                "ap": -2,
+                                                "d": 3,
+                                                "keywords": []
+                                        }
+                                ]
+                        },
+                        "abilities": {
+                                "core": [
+                                        "Deadly Demise D6"
+                                ],
+                                "faction": [
+                                        "Harbingers of Dread",
+                                        "Super-heavy Walker"
+                                ],
+                                "wargear": [],
+                                "other": [
+                                        "Dread Dominion",
+                                        "Seething Hatred"
+                                ]
+                        },
+                        "keywords": [
+                                "Vehicle",
+                                "Walker",
+                                "Titanic",
+                                "Towering",
+                                "Abhorrent",
+                                "Character",
+                                "Chaos",
+                                "Knight Despoiler"
+                        ],
+                        "factionKeywords": [
+                                "Chaos Knights"
+                        ],
+                        "compositionText": "1 Knight Despoiler This model is equipped with: daemonbreath meltagun; reaper chainsword; titanic feet; warpstrike claw. DAMAGED: 1-9 WOUNDS REMAINING While this model has 1-9 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+                },
+                {
+                        "id": "ck-knight-rampager",
+                        "name": "Knight Rampager",
+                        "role": "character",
+                        "points": [
+                                {
+                                        "models": 1,
+                                        "cost": 365
+                                }
+                        ],
+                        "stats": {
+                                "m": "12\"",
+                                "t": 11,
+                                "sv": "3+",
+                                "w": 26,
+                                "ld": "6+",
+                                "oc": 10
+                        },
+                        "weapons": {
+                                "ranged": [
+                                        {
+                                                "name": "Diabolus heavy stubber",
+                                                "range": "36\"",
+                                                "a": 3,
+                                                "bs": "3+",
+                                                "s": 5,
+                                                "ap": 0,
+                                                "d": 1,
+                                                "keywords": [
+                                                        "Rapid Fire 3"
+                                                ]
+                                        }
+                                ],
+                                "melee": [
+                                        {
+                                                "name": "Reaper chainsword – strike",
+                                                "range": "Melee",
+                                                "a": 6,
+                                                "ws": "2+",
+                                                "s": 14,
+                                                "ap": -4,
+                                                "d": 6,
+                                                "keywords": [
+                                                        "Sustained Hits 1"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Reaper chainsword – sweep",
+                                                "range": "Melee",
+                                                "a": 18,
+                                                "ws": "2+",
+                                                "s": 9,
+                                                "ap": -3,
+                                                "d": 2,
+                                                "keywords": [
+                                                        "Sustained Hits 1"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Warpstrike claw – strike",
+                                                "range": "Melee",
+                                                "a": 6,
+                                                "ws": "2+",
+                                                "s": 20,
+                                                "ap": -3,
+                                                "d": 8,
+                                                "keywords": [
+                                                        "Sustained Hits 1"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Warpstrike claw – sweep",
+                                                "range": "Melee",
+                                                "a": 12,
+                                                "ws": "2+",
+                                                "s": 10,
+                                                "ap": -2,
+                                                "d": 3,
+                                                "keywords": [
+                                                        "Sustained Hits 1"
+                                                ]
+                                        }
+                                ]
+                        },
+                        "abilities": {
+                                "core": [
+                                        "Deadly Demise D6"
+                                ],
+                                "faction": [
+                                        "Harbingers of Dread",
+                                        "Super-heavy Walker"
+                                ],
+                                "wargear": [],
+                                "other": [
+                                        "Bloodlust",
+                                        "Frenzied Rampage"
+                                ]
+                        },
+                        "keywords": [
+                                "Vehicle",
+                                "Walker",
+                                "Titanic",
+                                "Towering",
+                                "Abhorrent",
+                                "Character",
+                                "Chaos",
+                                "Knight Rampager"
+                        ],
+                        "factionKeywords": [
+                                "Chaos Knights"
+                        ],
+                        "compositionText": "1 Knight Rampager This model is equipped with: diabolus heavy stubber; reaper chainsword; warpstrike claw. DAMAGED: 1-7 WOUNDS REMAINING While this model has 1-7 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+                },
+                {
+                        "id": "ck-knight-ruinator",
+                        "name": "Knight Ruinator",
+                        "role": "character",
+                        "points": [
+                                {
+                                        "models": 1,
+                                        "cost": 355
+                                }
+                        ],
+                        "stats": {
+                                "m": "10\"",
+                                "t": 11,
+                                "sv": "3+",
+                                "w": 26,
+                                "ld": "6+",
+                                "oc": 10
+                        },
+                        "weapons": {
+                                "ranged": [
+                                        {
+                                                "name": "Darkflame lance",
+                                                "range": "18\"",
+                                                "a": "2D6",
+                                                "bs": "N/A",
+                                                "s": 8,
+                                                "ap": -1,
+                                                "d": 2,
+                                                "keywords": [
+                                                        "Ignores Cover",
+                                                        "Torrent"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Terrorpulse missiles",
+                                                "range": "36\"",
+                                                "a": "2D6",
+                                                "bs": "3+",
+                                                "s": 8,
+                                                "ap": -2,
+                                                "d": 2,
+                                                "keywords": [
+                                                        "Blast"
+                                                ]
+                                        }
+                                ],
+                                "melee": [
+                                        {
+                                                "name": "Fellbore – strike",
+                                                "range": "Melee",
+                                                "a": 4,
+                                                "ws": "3+",
+                                                "s": 14,
+                                                "ap": -3,
+                                                "d": 6,
+                                                "keywords": [
+                                                        "Anti-Monster 2+",
+                                                        "Anti-Vehicle 2+"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Fellbore – sweep",
+                                                "range": "Melee",
+                                                "a": 10,
+                                                "ws": "3+",
+                                                "s": 9,
+                                                "ap": -2,
+                                                "d": 2,
+                                                "keywords": []
+                                        }
+                                ]
+                        },
+                        "abilities": {
+                                "core": [
+                                        "Deadly Demise D6"
+                                ],
+                                "faction": [
+                                        "Harbingers of Dread",
+                                        "Super-heavy Walker"
+                                ],
+                                "wargear": [],
+                                "other": [
+                                        "Methodical Destruction",
+                                        "Close-range Killers"
+                                ]
+                        },
+                        "keywords": [
+                                "Vehicle",
+                                "Walker",
+                                "Titanic",
+                                "Towering",
+                                "Abhorrent",
+                                "Character",
+                                "Chaos",
+                                "Knight Ruinator"
+                        ],
+                        "factionKeywords": [
+                                "Chaos Knights"
+                        ],
+                        "compositionText": "1 Knight Ruinator This model is equipped with: darkflame lance; terrorpulse missiles; fellbore. DAMAGED: 1-9 WOUNDS REMAINING While this model has 1-9 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+                },
+                {
+                        "id": "ck-knight-tyrant",
+                        "name": "Knight Tyrant",
+                        "role": "character",
+                        "points": [
+                                {
+                                        "models": 1,
+                                        "cost": 410
+                                }
+                        ],
+                        "stats": {
+                                "m": "8\"",
+                                "t": 12,
+                                "sv": "3+",
+                                "w": 28,
+                                "ld": "6+",
+                                "oc": 10
+                        },
+                        "weapons": {
+                                "ranged": [
+                                        {
+                                                "name": "Brimstone volcano lance",
+                                                "range": "60\"",
+                                                "a": "D3",
+                                                "bs": "3+",
+                                                "s": 20,
+                                                "ap": -5,
+                                                "d": "D6+8",
+                                                "keywords": [
+                                                        "Blast"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Darkflame cannon",
+                                                "range": "18\"",
+                                                "a": "3D6",
+                                                "bs": "N/A",
+                                                "s": 8,
+                                                "ap": -1,
+                                                "d": 2,
+                                                "keywords": [
+                                                        "Ignores Cover",
+                                                        "Torrent"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Ectoplasma decimator – standard",
+                                                "range": "36\"",
+                                                "a": "D6+3",
+                                                "bs": "3+",
+                                                "s": 8,
+                                                "ap": -3,
+                                                "d": 2,
+                                                "keywords": [
+                                                        "Blast"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Ectoplasma decimator – supercharge",
+                                                "range": "36\"",
+                                                "a": "D6+3",
+                                                "bs": "3+",
+                                                "s": 9,
+                                                "ap": -4,
+                                                "d": 3,
+                                                "keywords": [
+                                                        "Blast",
+                                                        "Hazardous"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Gheiststrike missile launcher",
+                                                "range": "72\"",
+                                                "a": 1,
+                                                "bs": "3+",
+                                                "s": 12,
+                                                "ap": -6,
+                                                "d": "D6+1",
+                                                "keywords": [
+                                                        "Anti-Titanic 4+",
+                                                        "Devastating Wounds"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Twin daemonbreath meltagun",
+                                                "range": "12\"",
+                                                "a": 1,
+                                                "bs": "3+",
+                                                "s": 9,
+                                                "ap": -4,
+                                                "d": "D6",
+                                                "keywords": [
+                                                        "Melta 2",
+                                                        "Twin-Linked"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Twin Desecrator cannon",
+                                                "range": "36\"",
+                                                "a": "D6",
+                                                "bs": "3+",
+                                                "s": 6,
+                                                "ap": 0,
+                                                "d": 1,
+                                                "keywords": [
+                                                        "Blast",
+                                                        "Twin-Linked"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Warpshock harpoon",
+                                                "range": "12\"",
+                                                "a": "D3",
+                                                "bs": "3+",
+                                                "s": 24,
+                                                "ap": -6,
+                                                "d": 12,
+                                                "keywords": [
+                                                        "Blast",
+                                                        "Devastating Wounds"
+                                                ]
+                                        }
+                                ],
+                                "melee": [
+                                        {
+                                                "name": "Titanic feet",
+                                                "range": "Melee",
+                                                "a": 4,
+                                                "ws": "4+",
+                                                "s": 8,
+                                                "ap": -1,
+                                                "d": 2,
+                                                "keywords": []
+                                        }
+                                ]
+                        },
+                        "abilities": {
+                                "core": [
+                                        "Deadly Demise D6+2"
+                                ],
+                                "faction": [
+                                        "Harbingers of Dread",
+                                        "Super-heavy Walker"
+                                ],
+                                "wargear": [],
+                                "other": [
+                                        "Infernal Aegis",
+                                        "Bastion of Corruption"
+                                ]
+                        },
+                        "keywords": [
+                                "Vehicle",
+                                "Walker",
+                                "Titanic",
+                                "Towering",
+                                "Character",
+                                "Chaos",
+                                "Knight Tyrant"
+                        ],
+                        "factionKeywords": [
+                                "Chaos Knights"
+                        ],
+                        "compositionText": "1 Knight Tyrant This model is equipped with: brimstone volcano lance; ectoplasma decimator; 2 gheiststrike missile launchers; 2 twin daemonbreath meltaguns; twin Desecrator cannon; titanic feet. DAMAGED: 1-10 WOUNDS REMAINING While this model has 1-10 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+                },
+                {
+                        "id": "ck-war-dog-brigand",
+                        "name": "War Dog Brigand",
+                        "role": "vehicle",
+                        "points": [
+                                {
+                                        "models": 1,
+                                        "cost": 140
+                                }
+                        ],
+                        "stats": {
+                                "m": "12\"",
+                                "t": 9,
+                                "sv": "3+",
+                                "w": 14,
+                                "ld": "7+",
+                                "oc": 6
+                        },
+                        "weapons": {
+                                "ranged": [
+                                        {
+                                                "name": "Avenger chaincannon",
+                                                "range": "24\"",
+                                                "a": 12,
+                                                "bs": "3+",
+                                                "s": 6,
+                                                "ap": -1,
+                                                "d": 1,
+                                                "keywords": []
+                                        },
+                                        {
+                                                "name": "Daemonbreath spear",
+                                                "range": "18\"",
+                                                "a": 2,
+                                                "bs": "3+",
+                                                "s": 12,
+                                                "ap": -4,
+                                                "d": "D6",
+                                                "keywords": [
+                                                        "Melta 4"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Diabolus heavy stubber",
+                                                "range": "36\"",
+                                                "a": 3,
+                                                "bs": "3+",
+                                                "s": 5,
+                                                "ap": 0,
+                                                "d": 1,
+                                                "keywords": [
+                                                        "Rapid Fire 3"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Havoc multi-launcher",
+                                                "range": "48\"",
+                                                "a": "D6",
+                                                "bs": "3+",
+                                                "s": 5,
+                                                "ap": 0,
+                                                "d": 1,
+                                                "keywords": [
+                                                        "Blast",
+                                                        "Indirect Fire"
+                                                ]
+                                        }
+                                ],
+                                "melee": [
+                                        {
+                                                "name": "Armoured feet",
+                                                "range": "Melee",
+                                                "a": 4,
+                                                "ws": "3+",
+                                                "s": 6,
+                                                "ap": 0,
+                                                "d": 1,
+                                                "keywords": []
+                                        }
+                                ]
+                        },
+                        "abilities": {
+                                "core": [
+                                        "Deadly Demise D3"
+                                ],
+                                "faction": [
+                                        "Harbingers of Dread"
+                                ],
+                                "wargear": [],
+                                "other": [
+                                        "Brigand"
+                                ]
+                        },
+                        "keywords": [
+                                "Vehicle",
+                                "Walker",
+                                "Chaos",
+                                "War Dog",
+                                "Brigand"
+                        ],
+                        "factionKeywords": [
+                                "Chaos Knights"
+                        ],
+                        "compositionText": "1 War Dog Brigand This model is equipped with: avenger chaincannon; daemonbreath spear; diabolus heavy stubber; armoured feet. DAMAGED: 1-5 WOUNDS REMAINING While this model has 1-5 wounds remaining, subtract 3 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+                },
+                {
+                        "id": "ck-war-dog-executioner",
+                        "name": "War Dog Executioner",
+                        "role": "vehicle",
+                        "points": [
+                                {
+                                        "models": 1,
+                                        "cost": 130
+                                }
+                        ],
+                        "stats": {
+                                "m": "12\"",
+                                "t": 9,
+                                "sv": "3+",
+                                "w": 14,
+                                "ld": "7+",
+                                "oc": 6
+                        },
+                        "weapons": {
+                                "ranged": [
+                                        {
+                                                "name": "Daemonbreath meltagun",
+                                                "range": "12\"",
+                                                "a": 1,
+                                                "bs": "3+",
+                                                "s": 9,
+                                                "ap": -4,
+                                                "d": "D6",
+                                                "keywords": [
+                                                        "Melta 2"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Diabolus heavy stubber",
+                                                "range": "36\"",
+                                                "a": 3,
+                                                "bs": "3+",
+                                                "s": 5,
+                                                "ap": 0,
+                                                "d": 1,
+                                                "keywords": [
+                                                        "Rapid Fire 3"
+                                                ]
+                                        },
+                                        {
+                                                "name": "War Dog autocannon",
+                                                "range": "48\"",
+                                                "a": 4,
+                                                "bs": "3+",
+                                                "s": 9,
+                                                "ap": -1,
+                                                "d": 3,
+                                                "keywords": []
+                                        }
+                                ],
+                                "melee": [
+                                        {
+                                                "name": "Armoured feet",
+                                                "range": "Melee",
+                                                "a": 4,
+                                                "ws": "3+",
+                                                "s": 6,
+                                                "ap": 0,
+                                                "d": 1,
+                                                "keywords": []
+                                        }
+                                ]
+                        },
+                        "abilities": {
+                                "core": [
+                                        "Deadly Demise D3"
+                                ],
+                                "faction": [
+                                        "Harbingers of Dread"
+                                ],
+                                "wargear": [],
+                                "other": [
+                                        "Executioner"
+                                ]
+                        },
+                        "keywords": [
+                                "Vehicle",
+                                "Walker",
+                                "Chaos",
+                                "War Dog",
+                                "Executioner"
+                        ],
+                        "factionKeywords": [
+                                "Chaos Knights"
+                        ],
+                        "compositionText": "1 War Dog Executioner This model is equipped with: diabolus heavy stubber; 2 War Dog autocannons; armoured feet. DAMAGED: 1-5 WOUNDS REMAINING While this model has 1-5 wounds remaining, subtract 3 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+                },
+                {
+                        "id": "ck-war-dog-huntsman",
+                        "name": "War Dog Huntsman",
+                        "role": "vehicle",
+                        "points": [
+                                {
+                                        "models": 1,
+                                        "cost": 140
+                                }
+                        ],
+                        "stats": {
+                                "m": "12\"",
+                                "t": 9,
+                                "sv": "3+",
+                                "w": 14,
+                                "ld": "7+",
+                                "oc": 6
+                        },
+                        "weapons": {
+                                "ranged": [
+                                        {
+                                                "name": "Daemonbreath meltagun",
+                                                "range": "12\"",
+                                                "a": 1,
+                                                "bs": "3+",
+                                                "s": 9,
+                                                "ap": -4,
+                                                "d": "D6",
+                                                "keywords": [
+                                                        "Melta 2"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Daemonbreath spear",
+                                                "range": "18\"",
+                                                "a": 2,
+                                                "bs": "3+",
+                                                "s": 12,
+                                                "ap": -4,
+                                                "d": "D6",
+                                                "keywords": [
+                                                        "Melta 4"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Diabolus heavy stubber",
+                                                "range": "36\"",
+                                                "a": 3,
+                                                "bs": "3+",
+                                                "s": 5,
+                                                "ap": 0,
+                                                "d": 1,
+                                                "keywords": [
+                                                        "Rapid Fire 3"
+                                                ]
+                                        }
+                                ],
+                                "melee": [
+                                        {
+                                                "name": "Reaper chaintalon – strike",
+                                                "range": "Melee",
+                                                "a": 4,
+                                                "ws": "3+",
+                                                "s": 10,
+                                                "ap": -3,
+                                                "d": 3,
+                                                "keywords": []
+                                        },
+                                        {
+                                                "name": "Reaper chaintalon – sweep",
+                                                "range": "Melee",
+                                                "a": 8,
+                                                "ws": "3+",
+                                                "s": 8,
+                                                "ap": -2,
+                                                "d": 1,
+                                                "keywords": []
+                                        }
+                                ]
+                        },
+                        "abilities": {
+                                "core": [
+                                        "Deadly Demise D3"
+                                ],
+                                "faction": [
+                                        "Harbingers of Dread"
+                                ],
+                                "wargear": [],
+                                "other": [
+                                        "Huntsman"
+                                ]
+                        },
+                        "keywords": [
+                                "Vehicle",
+                                "Walker",
+                                "Chaos",
+                                "War Dog",
+                                "Huntsman"
+                        ],
+                        "factionKeywords": [
+                                "Chaos Knights"
+                        ],
+                        "compositionText": "1 War Dog Huntsman This model is equipped with: daemonbreath spear; diabolus heavy stubber; reaper chaintalon. DAMAGED: 1-5 WOUNDS REMAINING While this model has 1-5 wounds remaining, subtract 3 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+                },
+                {
+                        "id": "ck-war-dog-karnivore",
+                        "name": "War Dog Karnivore",
+                        "role": "vehicle",
+                        "points": [
+                                {
+                                        "models": 1,
+                                        "cost": 150
+                                }
+                        ],
+                        "stats": {
+                                "m": "14\"",
+                                "t": 9,
+                                "sv": "3+",
+                                "w": 14,
+                                "ld": "7+",
+                                "oc": 6
+                        },
+                        "weapons": {
+                                "ranged": [
+                                        {
+                                                "name": "Diabolus heavy stubber",
+                                                "range": "36\"",
+                                                "a": 3,
+                                                "bs": "3+",
+                                                "s": 5,
+                                                "ap": 0,
+                                                "d": 1,
+                                                "keywords": [
+                                                        "Rapid Fire 3"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Havoc multi-launcher",
+                                                "range": "48\"",
+                                                "a": "D6",
+                                                "bs": "3+",
+                                                "s": 5,
+                                                "ap": 0,
+                                                "d": 1,
+                                                "keywords": [
+                                                        "Blast",
+                                                        "Indirect Fire"
+                                                ]
+                                        }
+                                ],
+                                "melee": [
+                                        {
+                                                "name": "Reaper chaintalon",
+                                                "range": "Melee",
+                                                "a": 12,
+                                                "ws": "3+",
+                                                "s": 8,
+                                                "ap": -2,
+                                                "d": 1,
+                                                "keywords": [
+                                                        "Sustained Hits 1"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Slaughterclaw",
+                                                "range": "Melee",
+                                                "a": 6,
+                                                "ws": "3+",
+                                                "s": 12,
+                                                "ap": -3,
+                                                "d": "D6+2",
+                                                "keywords": [
+                                                        "Sustained Hits 1"
+                                                ]
+                                        }
+                                ]
+                        },
+                        "abilities": {
+                                "core": [
+                                        "Deadly Demise D3"
+                                ],
+                                "faction": [
+                                        "Harbingers of Dread"
+                                ],
+                                "wargear": [],
+                                "other": [
+                                        "Karnivore"
+                                ]
+                        },
+                        "keywords": [
+                                "Vehicle",
+                                "Walker",
+                                "Chaos",
+                                "War Dog",
+                                "Karnivore"
+                        ],
+                        "factionKeywords": [
+                                "Chaos Knights"
+                        ],
+                        "compositionText": "1 War Dog Karnivore This model is equipped with: diabolus heavy stubber; reaper chaintalon; slaughterclaw. DAMAGED: 1-5 WOUNDS REMAINING While this model has 1-5 wounds remaining, subtract 3 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+                },
+                {
+                        "id": "ck-war-dog-stalker",
+                        "name": "War Dog Stalker",
+                        "role": "vehicle",
+                        "points": [
+                                {
+                                        "models": 1,
+                                        "cost": 140
+                                }
+                        ],
+                        "stats": {
+                                "m": "12\"",
+                                "t": 9,
+                                "sv": "3+",
+                                "w": 14,
+                                "ld": "7+",
+                                "oc": 6
+                        },
+                        "weapons": {
+                                "ranged": [
+                                        {
+                                                "name": "Avenger chaincannon",
+                                                "range": "24\"",
+                                                "a": 12,
+                                                "bs": "3+",
+                                                "s": 6,
+                                                "ap": -1,
+                                                "d": 1,
+                                                "keywords": []
+                                        },
+                                        {
+                                                "name": "Daemonbreath spear",
+                                                "range": "18\"",
+                                                "a": 2,
+                                                "bs": "3+",
+                                                "s": 12,
+                                                "ap": -4,
+                                                "d": "D6",
+                                                "keywords": [
+                                                        "Melta 4"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Diabolus heavy stubber",
+                                                "range": "36\"",
+                                                "a": 3,
+                                                "bs": "3+",
+                                                "s": 5,
+                                                "ap": 0,
+                                                "d": 1,
+                                                "keywords": [
+                                                        "Rapid Fire 3"
+                                                ]
+                                        },
+                                        {
+                                                "name": "Havoc multi-launcher",
+                                                "range": "48\"",
+                                                "a": "D6",
+                                                "bs": "3+",
+                                                "s": 5,
+                                                "ap": 0,
+                                                "d": 1,
+                                                "keywords": [
+                                                        "Blast",
+                                                        "Indirect Fire"
+                                                ]
+                                        }
+                                ],
+                                "melee": [
+                                        {
+                                                "name": "Reaper chaintalon – strike",
+                                                "range": "Melee",
+                                                "a": 4,
+                                                "ws": "3+",
+                                                "s": 10,
+                                                "ap": -3,
+                                                "d": 3,
+                                                "keywords": []
+                                        },
+                                        {
+                                                "name": "Reaper chaintalon – sweep",
+                                                "range": "Melee",
+                                                "a": 8,
+                                                "ws": "3+",
+                                                "s": 8,
+                                                "ap": -2,
+                                                "d": 1,
+                                                "keywords": []
+                                        },
+                                        {
+                                                "name": "Slaughterclaw",
+                                                "range": "Melee",
+                                                "a": 4,
+                                                "ws": "3+",
+                                                "s": 12,
+                                                "ap": -3,
+                                                "d": "D6+2",
+                                                "keywords": []
+                                        }
+                                ]
+                        },
+                        "abilities": {
+                                "core": [
+                                        "Deadly Demise D3",
+                                        "Scouts 6\""
+                                ],
+                                "faction": [
+                                        "Harbingers of Dread"
+                                ],
+                                "wargear": [],
+                                "other": [
+                                        "Stalker"
+                                ]
+                        },
+                        "keywords": [
+                                "Vehicle",
+                                "Walker",
+                                "Chaos",
+                                "War Dog",
+                                "Stalker"
+                        ],
+                        "factionKeywords": [
+                                "Chaos Knights"
+                        ],
+                        "compositionText": "1 War Dog Stalker This model is equipped with: avenger chaincannon; diabolus heavy stubber; slaughterclaw. DAMAGED: 1-5 WOUNDS REMAINING While this model has 1-5 wounds remaining, subtract 3 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+                }
+        ]
+    };
+
+    window.W40K_FACTIONS = window.W40K_FACTIONS || { "10th": [], "11th": [] };
+    window.W40K_FACTIONS["10th"].push(ck);
+})();
