@@ -19,7 +19,98 @@
         armyRules: [
             { name: "Acts of Faith", flavour: "", text: "" }
         ],
-        detachments: [],
+        detachments: [
+            {
+                name: "Hallowed Martyrs",
+                rule: { name: "The Blood of Martyrs" },
+                enhancements: [
+                    { name: "Saintly Example", cost: 10, restriction: "ADEPTA SORORITAS model only." },
+                    { name: "Through Suffering, Strength", cost: 25, restriction: "ADEPTA SORORITAS model only." },
+                    { name: "Chaplet of Sacrifice", cost: 25, restriction: "ADEPTA SORORITAS model only." },
+                    { name: "Mantle of Ophelia", cost: 20, restriction: "CANONESS or PALATINE model only." },
+                ],
+                stratagems: [
+                    { name: "Divine Intervention", cp: 1, type: "Epic Deed" },
+                    { name: "Suffering and Sacrifice", cp: 1, type: "Strategic Ploy" },
+                    { name: "Righteous Vengeance", cp: 1, type: "Battle Tactic" },
+                    { name: "Sanctified Immolation", cp: 1, type: "Strategic Ploy" },
+                    { name: "Spirit of the Martyr", cp: 2, type: "Strategic Ploy" },
+                    { name: "Praise the Fallen", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Penitent Host",
+                rule: { name: "Desperate for Redemption" },
+                enhancements: [
+                    { name: "Psalm of Righteous Judgement", cost: 30, restriction: "ADEPTA SORORITAS model only." },
+                    { name: "Verse of Holy Piety", cost: 15, restriction: "PENITENT model only." },
+                    { name: "Refrain of Enduring Faith", cost: 25, restriction: "PENITENT model only." },
+                    { name: "Catechism of Divine Penitence", cost: 20, restriction: "CANONESS, PALATINE or MINISTORUM PRIEST model only." },
+                ],
+                stratagems: [
+                    { name: "Final Redemption", cp: 1, type: "Epic Deed" },
+                    { name: "Purity of Suffering", cp: 1, type: "Battle Tactic" },
+                    { name: "Passion of the Penitent", cp: 1, type: "Battle Tactic" },
+                    { name: "Lash of Guilt", cp: 1, type: "Battle Tactic" },
+                    { name: "Boundless Zeal", cp: 1, type: "Strategic Ploy" },
+                    { name: "Devout Fanaticism", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Bringers of Flame",
+                rule: { name: "Fervent Purgation" },
+                enhancements: [
+                    { name: "Righteous Rage", cost: 15, restriction: "ADEPTA SORORITAS model only." },
+                    { name: "Manual of Saint Griselda", cost: 20, restriction: "ADEPTA SORORITAS model only." },
+                    { name: "Fire and Fury", cost: 30, restriction: "ADEPTA SORORITAS model only." },
+                    { name: "Iron Surplice of Saint Istalela", cost: 10, restriction: "CANONESS or PALATINE model only." },
+                ],
+                stratagems: [
+                    { name: "Shield of Aversion", cp: 1, type: "Battle Tactic" },
+                    { name: "Righteous Blows", cp: 1, type: "Battle Tactic" },
+                    { name: "Carry Forth the Faithful", cp: 1, type: "Strategic Ploy" },
+                    { name: "Cleansing Flames", cp: 2, type: "Battle Tactic" },
+                    { name: "Rites of Fire", cp: 1, type: "Battle Tactic" },
+                    { name: "Blazing Ire", cp: 2, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Army of Faith",
+                rule: { name: "Sacred Rites" },
+                enhancements: [
+                    { name: "Litanies of Faith", cost: 10, restriction: "CANONESS or PALATINE model only." },
+                    { name: "Blade of Saint Ellynor", cost: 15, restriction: "ADEPTA SORORITAS model only." },
+                    { name: "Divine Aspect", cost: 5, restriction: "ADEPTA SORORITAS model only." },
+                    { name: "Triptych of the Macharian Crusade", cost: 20, restriction: "ADEPTA SORORITAS model only." },
+                ],
+                stratagems: [
+                    { name: "Shield of Faith", cp: 1, type: "Battle Tactic" },
+                    { name: "Light of the Emperor", cp: 1, type: "Battle Tactic" },
+                    { name: "Faith and Fury", cp: 1, type: "Battle Tactic" },
+                    { name: "Blinding Radiance", cp: 1, type: "Strategic Ploy" },
+                    { name: "Divine Guidance", cp: 1, type: "Battle Tactic" },
+                    { name: "Angelic Descent", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Champions of Faith",
+                rule: { name: "Righteous Purpose" },
+                enhancements: [
+                    { name: "Triptych of Judgement", cost: 15, restriction: "ADEPTA SORORITAS model only." },
+                    { name: "Mark of Devotion", cost: 30, restriction: "ADEPTA SORORITAS model only." },
+                    { name: "Eyes of the Oracle", cost: 10, restriction: "ADEPTA SORORITAS model only." },
+                    { name: "Sanctified Amulet", cost: 25, restriction: "ADEPTA SORORITAS model only." },
+                ],
+                stratagems: [
+                    { name: "Shield of Denial", cp: 1, type: "Battle Tactic" },
+                    { name: "Suffer not the Unfaithful", cp: 1, type: "Strategic Ploy" },
+                    { name: "To the Heart of Heresy", cp: 1, type: "Battle Tactic" },
+                    { name: "Path of the Righteous", cp: 1, type: "Battle Tactic" },
+                    { name: "Bastion of Faith", cp: 1, type: "Battle Tactic" },
+                    { name: "Indefatigable Dedication", cp: 1, type: "Strategic Ploy" },
+                ]
+            }
+        ],
         units: [
                 {
                         "id": "as-aestred-thurga-and-agathae-dolan",
