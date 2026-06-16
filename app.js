@@ -886,10 +886,16 @@ function parseLeaderTargets(ref) {
     let rest = lt.slice(idx + "attached to".length);
     const colon = rest.indexOf(":");
     if (colon >= 0 && colon < 60) rest = rest.slice(colon + 1);
-    rest = rest.replace(/\.\s*$/, "").trim();
+    // Keep only the unit-list clause — drop trailing explanatory prose that
+    // follows the first sentence break (e.g. "…Tactical Squad. You can attach…").
+    const sentenceEnd = rest.search(/\.\s/);
+    if (sentenceEnd >= 0) rest = rest.slice(0, sentenceEnd);
+    // Remove parenthetical wargear clarifications so an inner " or " can't be
+    // mistaken for a unit separator (e.g. "Ironkin Steeljacks (… or …)").
+    rest = rest.replace(/\(.*?\)/g, "").replace(/\.\s*$/, "").trim();
     return rest
-        .split(/[;,]| and (?=[A-Z])/)
-        .map(s => s.replace(/\(.*?\)/g, "").replace(/^the following units?:?/i, "").replace(/\s+/g, " ").trim().toLowerCase())
+        .split(/[;,]| and (?=[A-Z])| or (?=[A-Z])/)
+        .map(s => s.replace(/^the following units?:?/i, "").replace(/\s+/g, " ").trim().toLowerCase())
         .filter(Boolean);
 }
 
