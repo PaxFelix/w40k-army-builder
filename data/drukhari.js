@@ -19,7 +19,122 @@
         armyRules: [
             { name: "Power From Pain", flavour: "", text: "" }
         ],
-        detachments: [],
+        detachments: [
+            {
+                name: "Realspace Raiders",
+                flavour: "",
+                rule: { name: "Alliance of Agony", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Dark Vitality", cost: 25, restriction: "DRUKHARI model only." },
+                    { name: "Labyrinthine Cunning", cost: 25, restriction: "ARCHON model only." },
+                    { name: "Eye of Spite", cost: 15, restriction: "SUCCUBUS model only." },
+                    { name: "Crucible of Malediction", cost: 20, restriction: "HAEMONCULUS model only." },
+                ],
+                stratagems: [
+                    { name: "Insensible to Pain", cp: 2, type: "Battle Tactic" },
+                    { name: "Fighting Shadows", cp: 1, type: "Battle Tactic" },
+                    { name: "Instinctive Spite", cp: 1, type: "Battle Tactic" },
+                    { name: "Dark Harvest", cp: 1, type: "Strategic Ploy" },
+                    { name: "Eager for the Kill", cp: 1, type: "Battle Tactic" },
+                    { name: "Raid and Fade", cp: 2, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Skysplinter Assault",
+                flavour: "",
+                rule: { name: "Rain of Cruelty", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Phantasmal Smoke", cost: 15, restriction: "DRUKHARI model only." },
+                    { name: "Sadistic Fulcrum", cost: 15, restriction: "DRUKHARI model only." },
+                    { name: "Spiteful Raider", cost: 10, restriction: "DRUKHARI model only." },
+                    { name: "Nightmare Shroud", cost: 20, restriction: "DRUKHARI model only." },
+                ],
+                stratagems: [
+                    { name: "Vicious Blades", cp: 1, type: "Strategic Ploy" },
+                    { name: "Wraithlike Retreat", cp: 1, type: "Strategic Ploy" },
+                    { name: "Pounce on the Prey", cp: 1, type: "Strategic Ploy" },
+                    { name: "Skyborne Annihilation", cp: 1, type: "Battle Tactic" },
+                    { name: "Swooping Mockery", cp: 1, type: "Strategic Ploy" },
+                    { name: "Night Shield", cp: 1, type: "Wargear" },
+                ]
+            },
+            {
+                name: "Spectacle of Spite",
+                flavour: "",
+                rule: { name: "Combat Drugs", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Pharmacophex", cost: 15, restriction: "SUCCUBUS model only." },
+                    { name: "Chronoshard", cost: 15, restriction: "SUCCUBUS model only." },
+                    { name: "Periapt of Torments", cost: 25, restriction: "SUCCUBUS model only." },
+                    { name: "Morghenna's Curse", cost: 20, restriction: "SUCCUBUS model only." },
+                ],
+                stratagems: [
+                    { name: "Berserk Fugue", cp: 2, type: "Strategic Ploy" },
+                    { name: "Deadly Debut", cp: 1, type: "Battle Tactic" },
+                    { name: "Feigned Weakness", cp: 1, type: "Strategic Ploy" },
+                    { name: "Preternatural Agility", cp: 1, type: "Strategic Ploy" },
+                    { name: "A Challenge Met", cp: 2, type: "Battle Tactic" },
+                    { name: "Acrobatic Display", cp: 1, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Covenite Coterie",
+                flavour: "",
+                rule: { name: "Stitchflesh Abominations", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Master Regenesist", cost: 25, restriction: "HAEMONCULUS model only." },
+                    { name: "Master Nemesine", cost: 5, restriction: "HAEMONCULUS model only." },
+                    { name: "Master Artisan", cost: 20, restriction: "HAEMONCULUS model only." },
+                    { name: "Master Repugnomancer (Aura)", cost: 15, restriction: "HAEMONCULUS model only." },
+                ],
+                stratagems: [
+                    { name: "Postmortality", cp: 1, type: "Epic Deed" },
+                    { name: "Symphony of Suffering", cp: 1, type: "Epic Deed" },
+                    { name: "Poisoner's Art", cp: 1, type: "Epic Deed" },
+                    { name: "Distillers of Fear", cp: 2, type: "Strategic Ploy" },
+                    { name: "Connoisseurs of Pain", cp: 1, type: "Battle Tactic" },
+                    { name: "Enfolding Nightmare", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Kabalite Cartel",
+                flavour: "",
+                rule: { name: "Murderous Agenda", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Leechbite Plate", cost: 5, restriction: "ARCHON model only." },
+                    { name: "Webway Awl", cost: 25, restriction: "ARCHON model only." },
+                    { name: "Informant Network", cost: 30, restriction: "ARCHON model only." },
+                    { name: "Towering Arrogance", cost: 20, restriction: "ARCHON model only." },
+                ],
+                stratagems: [
+                    { name: "Double-cross", cp: 1, type: "Strategic Ploy" },
+                    { name: "Taken Alive", cp: 1, type: "Battle Tactic" },
+                    { name: "Tailored Toxins", cp: 1, type: "Epic Deed" },
+                    { name: "Enemies Without Number", cp: 1, type: "Epic Deed" },
+                    { name: "Making a Point", cp: 1, type: "Battle Tactic" },
+                    { name: "Deadly Deceivers", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Reaper's Wager",
+                flavour: "",
+                rule: { name: "Callous Competition", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Archraider", cost: 15, restriction: "HARLEQUINS or DRUKHARI model only." },
+                    { name: "Webway Walker", cost: 15, restriction: "HARLEQUINS or DRUKHARI model only." },
+                    { name: "Reaper's Cowl", cost: 25, restriction: "HARLEQUINS model only." },
+                    { name: "Conductor of Torment", cost: 20, restriction: "DRUKHARI model only." },
+                ],
+                stratagems: [
+                    { name: "Malicious Frenzy", cp: 1, type: "Battle Tactic" },
+                    { name: "Fateful Role", cp: 1, type: "Strategic Ploy" },
+                    { name: "Murderer's Circus", cp: 1, type: "Battle Tactic" },
+                    { name: "Shorten the Odds", cp: 1, type: "Strategic Ploy" },
+                    { name: "Scintillating Tempo", cp: 1, type: "Strategic Ploy" },
+                    { name: "Dance Macabre", cp: 2, type: "Strategic Ploy" },
+                ]
+            }
+        ],
         units: [
                 {
                         "id": "dru-archon",

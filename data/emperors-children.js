@@ -19,7 +19,141 @@
         armyRules: [
             { name: "Flawless to a Fault", flavour: "", text: "" }
         ],
-        detachments: [],
+        detachments: [
+            {
+                name: "Mercurial Host",
+                flavour: "",
+                rule: { name: "Quicksilver Grace", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Steeped in Suffering", cost: 20, restriction: "EMPEROR'S CHILDREN model only." },
+                    { name: "Intoxicating Musk", cost: 20, restriction: "EMPEROR'S CHILDREN model only." },
+                    { name: "Tactical Perfection", cost: 15, restriction: "EMPEROR'S CHILDREN model only." },
+                    { name: "Loathsome Dexterity", cost: 10, restriction: "EMPEROR'S CHILDREN model only." },
+                ],
+                stratagems: [
+                    { name: "Violent Excess", cp: 1, type: "Battle Tactic" },
+                    { name: "Combat Stimms", cp: 2, type: "Battle Tactic" },
+                    { name: "Honour the Prince", cp: 1, type: "Battle Tactic" },
+                    { name: "Dark Vigour", cp: 1, type: "Strategic Ploy" },
+                    { name: "Capricious Reactions", cp: 1, type: "Battle Tactic" },
+                    { name: "Cruel Raiders", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Peerless Bladesmen",
+                flavour: "",
+                rule: { name: "Exquisite Swordsmanship", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Faultless Opportunist", cost: 15, restriction: "EMPEROR'S CHILDREN model only." },
+                    { name: "Blinding Speed", cost: 25, restriction: "EMPEROR'S CHILDREN model only." },
+                    { name: "Distortion", cost: 25, restriction: "EMPEROR'S CHILDREN model only." },
+                    { name: "Rise to the Challenge", cost: 30, restriction: "EMPEROR'S CHILDREN INFANTRY model only." },
+                ],
+                stratagems: [
+                    { name: "Deft Parry", cp: 1, type: "Battle Tactic" },
+                    { name: "Death Ecstasy", cp: 2, type: "Strategic Ploy" },
+                    { name: "Incessant Violence", cp: 1, type: "Battle Tactic" },
+                    { name: "Cruel Bladesman", cp: 1, type: "Battle Tactic" },
+                    { name: "Terrifying Spectacle", cp: 1, type: "Strategic Ploy" },
+                    { name: "Cut Down the Weak", cp: 2, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Rapid Evisceration",
+                flavour: "",
+                rule: { name: "Mechanised Murder", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Sublime Prescience", cost: 25, restriction: "EMPEROR'S CHILDREN INFANTRY model only." },
+                    { name: "Spearhead Striker", cost: 20, restriction: "EMPEROR'S CHILDREN INFANTRY model only." },
+                    { name: "Accomplished Tactician", cost: 35, restriction: "EMPEROR'S CHILDREN INFANTRY model only." },
+                    { name: "Heretek Adept", cost: 35, restriction: "EMPEROR'S CHILDREN INFANTRY model only." },
+                ],
+                stratagems: [
+                    { name: "Onto the Next", cp: 1, type: "Strategic Ploy" },
+                    { name: "Advance and Claim", cp: 1, type: "Strategic Ploy" },
+                    { name: "Dynamic Breakthrough", cp: 1, type: "Epic Deed" },
+                    { name: "Ceaseless Onslaught", cp: 1, type: "Strategic Ploy" },
+                    { name: "Reactive Disembarkation", cp: 1, type: "Strategic Ploy" },
+                    { name: "Outflanking Strike", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Carnival of Excess",
+                flavour: "",
+                rule: { name: "Daemonic Empowerment", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Empyric Suffusion", cost: 15, restriction: "EMPEROR'S CHILDREN model only." },
+                    { name: "Dark Blessings", cost: 10, restriction: "EMPEROR'S CHILDREN INFANTRY model only." },
+                    { name: "Possessed Blade", cost: 25, restriction: "EMPEROR'S CHILDREN model only." },
+                    { name: "Warp Walker", cost: 30, restriction: "EMPEROR'S CHILDREN or KEEPER OF SECRETS model only." },
+                ],
+                stratagems: [
+                    { name: "Sustained by Agony", cp: 1, type: "Battle Tactic" },
+                    { name: "Ecstatic Slaughter", cp: 1, type: "Strategic Ploy" },
+                    { name: "Violent Crescendo", cp: 2, type: "Strategic Ploy" },
+                    { name: "Sycophantic Surge", cp: 1, type: "Battle Tactic" },
+                    { name: "Uncanny Reactions", cp: 1, type: "Battle Tactic" },
+                    { name: "Dark Apparitions", cp: 2, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Coterie of the Conceited",
+                flavour: "",
+                rule: { name: "Pledges to the Dark Prince", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Pledge of Eternal Servitude", cost: 25, restriction: "EMPEROR'S CHILDREN model only." },
+                    { name: "Pledge of Dark Glory", cost: 25, restriction: "EMPEROR'S CHILDREN model only." },
+                    { name: "Pledge of Mortal Pain", cost: 15, restriction: "EMPEROR'S CHILDREN model only." },
+                    { name: "Pledge of Unholy Fortune", cost: 30, restriction: "EMPEROR'S CHILDREN model only." },
+                ],
+                stratagems: [
+                    { name: "Protection of the Dark Prince", cp: 1, type: "Strategic Ploy" },
+                    { name: "Unshakeable Opponents", cp: 1, type: "Epic Deed" },
+                    { name: "Embrace the Pain", cp: 1, type: "Strategic Ploy" },
+                    { name: "Martial Perfection", cp: 1, type: "Battle Tactic" },
+                    { name: "Unbound Arrogance", cp: 1, type: "Epic Deed" },
+                    { name: "Armour of Abhorrence", cp: 1, type: "Wargear" },
+                ]
+            },
+            {
+                name: "Slaanesh's Chosen",
+                flavour: "",
+                rule: { name: "Internal Rivalries", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Eager to Prove", cost: 15, restriction: "EMPEROR'S CHILDREN model only." },
+                    { name: "Repulsed by Weakness", cost: 25, restriction: "EMPEROR'S CHILDREN model only." },
+                    { name: "Proud and Vainglorious", cost: 20, restriction: "EMPEROR'S CHILDREN model only." },
+                    { name: "Slayer of Champions", cost: 15, restriction: "EMPEROR'S CHILDREN model only." },
+                ],
+                stratagems: [
+                    { name: "Devoted Duellists", cp: 1, type: "Battle Tactic" },
+                    { name: "Beautiful Death", cp: 1, type: "Strategic Ploy" },
+                    { name: "Heightened Jealousy", cp: 1, type: "Battle Tactic" },
+                    { name: "Diabolic Majesty", cp: 1, type: "Epic Deed" },
+                    { name: "Refusal to Be Outdone", cp: 1, type: "Battle Tactic" },
+                    { name: "Vengeful Surge", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Court of the Phoenician",
+                flavour: "",
+                rule: { name: "Sensational Performance", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Tears of the Phoenix", cost: 25, restriction: "EMPEROR'S CHILDREN model only." },
+                    { name: "Exalted Patron", cost: 15, restriction: "LORD EXULTANT model only." },
+                    { name: "Soulstain Made Manifest", cost: 15, restriction: "EMPEROR'S CHILDREN model only." },
+                    { name: "Spiritsliver", cost: 20, restriction: "EMPEROR'S CHILDREN DAEMON PRINCE model only." },
+                ],
+                stratagems: [
+                    { name: "Contemptuous Disregard", cp: 1, type: "" },
+                    { name: "Prideful Superiority", cp: 2, type: "" },
+                    { name: "Sinuous Breach", cp: 1, type: "" },
+                    { name: "Close-quarters Excruciation", cp: 1, type: "" },
+                    { name: "Euphoric Inspiration", cp: 1, type: "" },
+                    { name: "Catalytic Stimulus", cp: 1, type: "" },
+                ]
+            }
+        ],
         units: [
                 {
                         "id": "ec-daemon-prince-of-slaanesh",
