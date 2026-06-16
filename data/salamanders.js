@@ -36,50 +36,267 @@
                 name: "Gladius Task Force",
                 flavour: "",
                 rule: { name: "Combat Doctrines", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Artificer Armour", cost: 10, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "The Honour Vehement", cost: 15, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Adept of the Codex", cost: 20, restriction: "CAPTAIN model only." },
+                    { name: "Fire Discipline", cost: 25, restriction: "ADEPTUS ASTARTES model only." },
+                ],
+                stratagems: [
+                    { name: "Armour of Contempt", cp: 1, type: "Battle Tactic" },
+                    { name: "Only in Death Does Duty End", cp: 2, type: "Epic Deed" },
+                    { name: "Honour the Chapter", cp: 1, type: "Battle Tactic" },
+                    { name: "Adaptive Strategy", cp: 1, type: "Strategic Ploy" },
+                    { name: "Storm of Fire", cp: 1, type: "Battle Tactic" },
+                    { name: "Squad Tactics", cp: 1, type: "Strategic Ploy" },
+                ]
             },
             {
                 name: "Anvil Siege Force",
                 flavour: "",
                 rule: { name: "Shield of the Imperium", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
-            },
-            {
-                name: "Firestorm Assault Force",
-                flavour: "",
-                rule: { name: "Close-range Eradication", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Indomitable Fury", cost: 20, restriction: "GRAVIS model only." },
+                    { name: "Fleet Commander", cost: 15, restriction: "CAPTAIN model only." },
+                    { name: "Stoic Defender", cost: 15, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Architect of War", cost: 25, restriction: "ADEPTUS ASTARTES model only." },
+                ],
+                stratagems: [
+                    { name: "Armour of Contempt", cp: 1, type: "Battle Tactic" },
+                    { name: "Rigid Discipline", cp: 1, type: "Strategic Ploy" },
+                    { name: "Not One Backwards Step", cp: 1, type: "Strategic Ploy" },
+                    { name: "No Threat Too Great", cp: 2, type: "Battle Tactic" },
+                    { name: "Battle Drill Recall", cp: 1, type: "Battle Tactic" },
+                    { name: "Hail of Vengeance", cp: 2, type: "Strategic Ploy" },
+                ]
             },
             {
                 name: "Ironstorm Spearhead",
                 flavour: "",
                 rule: { name: "Armoured Wrath", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Target Augury Web", cost: 30, restriction: "TECHMARINE model only." },
+                    { name: "The Flesh is Weak", cost: 10, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Adept of the Omnissiah", cost: 35, restriction: "TECHMARINE model only." },
+                    { name: "Master of Machine War", cost: 20, restriction: "ADEPTUS ASTARTES model only." },
+                ],
+                stratagems: [
+                    { name: "Unbowed Conviction", cp: 1, type: "Battle Tactic" },
+                    { name: "Armour of Contempt", cp: 1, type: "Battle Tactic" },
+                    { name: "Mercy Is Weakness", cp: 2, type: "Battle Tactic" },
+                    { name: "Vengeful Animus", cp: 1, type: "Epic Deed" },
+                    { name: "Ancient Fury", cp: 1, type: "Epic Deed" },
+                    { name: "Power of the Machine Spirit", cp: 1, type: "Epic Deed" },
+                ]
+            },
+            {
+                name: "Firestorm Assault Force",
+                flavour: "",
+                rule: { name: "Close-range Eradication", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Champion of Humanity", cost: 10, restriction: "TACTICUS model only." },
+                    { name: "War-tempered Artifice", cost: 25, restriction: "ADEPTUS ASTARTES INFANTRY model only." },
+                    { name: "Forged in Battle", cost: 15, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Adamantine Mantle", cost: 20, restriction: "ADEPTUS ASTARTES model only." },
+                ],
+                stratagems: [
+                    { name: "Armour of Contempt", cp: 1, type: "Battle Tactic" },
+                    { name: "Crucible of Battle", cp: 1, type: "Battle Tactic" },
+                    { name: "Rapid Embarkation", cp: 1, type: "Strategic Ploy" },
+                    { name: "Immolation Protocols", cp: 2, type: "Battle Tactic" },
+                    { name: "Onslaught of Fire", cp: 1, type: "Battle Tactic" },
+                    { name: "Burning Vengeance", cp: 1, type: "Battle Tactic" },
+                ]
             },
             {
                 name: "Stormlance Task Force",
                 flavour: "",
                 rule: { name: "Lightning Assault", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
-            },
-            {
-                name: "1st Company Task Force",
-                flavour: "",
-                rule: { name: "Extremis-level Threat", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Fury of the Storm", cost: 25, restriction: "ADEPTUS ASTARTES MOUNTED model only." },
+                    { name: "Portents of Wisdom", cost: 15, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Feinting Withdrawal", cost: 10, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Hunter's Instincts", cost: 25, restriction: "ADEPTUS ASTARTES MOUNTED model only." },
+                ],
+                stratagems: [
+                    { name: "Armour of Contempt", cp: 1, type: "Battle Tactic" },
+                    { name: "Blitzing Fusillade", cp: 1, type: "Battle Tactic" },
+                    { name: "Full Throttle", cp: 2, type: "Wargear" },
+                    { name: "Shock Assault", cp: 1, type: "Battle Tactic" },
+                    { name: "Ride Hard, Ride Fast", cp: 1, type: "Battle Tactic" },
+                    { name: "Wind-swift Evasion", cp: 1, type: "Strategic Ploy" },
+                ]
             },
             {
                 name: "Vanguard Spearhead",
                 flavour: "",
                 rule: { name: "Shadow Masters", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "The Blade Driven Deep", cost: 25, restriction: "ADEPTUS ASTARTES INFANTRY model only." },
+                    { name: "Ghostweave Cloak", cost: 15, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Execute and Redeploy", cost: 20, restriction: "PHOBOS model only." },
+                    { name: "Shadow War Veteran", cost: 30, restriction: "PHOBOS model only." },
+                ],
+                stratagems: [
+                    { name: "A Deadly Prize", cp: 1, type: "Wargear" },
+                    { name: "Armour of Contempt", cp: 1, type: "Battle Tactic" },
+                    { name: "Surgical Strikes", cp: 2, type: "Battle Tactic" },
+                    { name: "Strike from the Shadows", cp: 1, type: "Battle Tactic" },
+                    { name: "Calculated Feint", cp: 1, type: "Strategic Ploy" },
+                    { name: "Guerrilla Tactics", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "1st Company Task Force",
+                flavour: "",
+                rule: { name: "Extremis-level Threat", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "The Imperium's Sword", cost: 25, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Fear Made Manifest (Aura)", cost: 30, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Rites of War", cost: 10, restriction: "ADEPTUS ASTARTES TERMINATOR model only." },
+                    { name: "Iron Resolve", cost: 15, restriction: "ADEPTUS ASTARTES TERMINATOR model only." },
+                ],
+                stratagems: [
+                    { name: "Armour of Contempt", cp: 1, type: "Battle Tactic" },
+                    { name: "Heroes of the Chapter", cp: 1, type: "Battle Tactic" },
+                    { name: "Terrifying Proficiency", cp: 1, type: "Strategic Ploy" },
+                    { name: "Duty and Honour", cp: 1, type: "Strategic Ploy" },
+                    { name: "Orbital Teleportarium", cp: 1, type: "Strategic Ploy" },
+                    { name: "Legendary Fortitude", cp: 1, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Librarius Conclave",
+                flavour: "",
+                rule: { name: "Psychic Disciplines", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Prescience", cost: 25 },
+                    { name: "Celerity", cost: 30, restriction: "ADEPTUS ASTARTES PSYKER model only." },
+                    { name: "Obfuscation", cost: 20, restriction: "ADEPTUS ASTARTES PSYKER model only." },
+                    { name: "Fusillade", cost: 35, restriction: "ADEPTUS ASTARTES PSYKER model only." },
+                ],
+                stratagems: [
+                    { name: "Sensory Assault", cp: 1, type: "Strategic Ploy" },
+                    { name: "Armour of Contempt", cp: 1, type: "Strategic Ploy" },
+                    { name: "Fiery Shield", cp: 1, type: "Strategic Ploy" },
+                    { name: "Iron Arm", cp: 1, type: "Strategic Ploy" },
+                    { name: "Assail", cp: 1, type: "Strategic Ploy" },
+                    { name: "Prescient Precision", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Bastion Task Force",
+                flavour: "",
+                rule: { name: "Interlocking Tactics", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Eye of the Primarch", cost: 10, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Hero of the Chapter", cost: 20, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Blades of Valour", cost: 15, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Bombast Omnivox", cost: 15, restriction: "ADEPTUS ASTARTES model only." },
+                ],
+                stratagems: [
+                    { name: "Codex Discipline", cp: 1, type: "Battle Tactic" },
+                    { name: "Guided Disruption", cp: 1, type: "Strategic Ploy" },
+                    { name: "Light of Vengeance", cp: 1, type: "Battle Tactic" },
+                    { name: "Shock Bombardment", cp: 1, type: "Strategic Ploy" },
+                    { name: "Angels Defiant", cp: 1, type: "Battle Tactic" },
+                    { name: "Heresy Undone", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Orbital Assault Force",
+                flavour: "",
+                rule: { name: "Rapid-drop Deployment", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Laurels of Thunder", cost: 15, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Veteran of the Vanguard", cost: 20, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Orbital Uplink Reliquary", cost: 25, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Dedicated Gunship", cost: 15, restriction: "ADEPTUS ASTARTES TERMINATOR model only." },
+                ],
+                stratagems: [
+                    { name: "Suppression Strafing", cp: 1, type: "Strategic Ploy" },
+                    { name: "Tactical Decapitation", cp: 1, type: "Battle Tactic" },
+                    { name: "Shock Onslaught", cp: 1, type: "Strategic Ploy" },
+                    { name: "Auto-sense Coordination", cp: 1, type: "Battle Tactic" },
+                    { name: "Blind Screen", cp: 1, type: "Strategic Ploy" },
+                    { name: "Onward for the Emperor", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Ceramite Sentinels",
+                flavour: "",
+                rule: { name: "Adaptive Defence", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Honour Indefatigable", cost: 25, restriction: "GRAVIS model only." },
+                    { name: "Castellum Omnivox", cost: 20, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Spy-skull Data Link", cost: 15, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Defensive Mastery", cost: 25, restriction: "ADEPTUS ASTARTES model only." },
+                ],
+                stratagems: [
+                    { name: "Unyielding Might", cp: 1, type: "Battle Tactic" },
+                    { name: "Priority Strike", cp: 2, type: "Battle Tactic" },
+                    { name: "Armour of Contempt", cp: 1, type: "Battle Tactic" },
+                    { name: "Stand to the End", cp: 1, type: "Epic Deed" },
+                    { name: "Augmented Targeting", cp: 1, type: "Battle Tactic" },
+                    { name: "Evasive Repositioning", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Armoured Speartip",
+                flavour: "",
+                rule: { name: "Rapid Deployment", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Liberator", cost: 15, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Tip of the Spear", cost: 40, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Shock Deployment", cost: 20, restriction: "ADEPTUS ASTARTES TERMINATOR or GRAVIS model only." },
+                    { name: "Armoured Commander", cost: 25, restriction: "ADEPTUS ASTARTES model only." },
+                ],
+                stratagems: [
+                    { name: "Machine Wrath", cp: 1, type: "Epic Deed" },
+                    { name: "Armour of Contempt", cp: 1, type: "Strategic Ploy" },
+                    { name: "Rapid Embarkation", cp: 1, type: "Wargear" },
+                    { name: "Ceramite Sledgehammer", cp: 1, type: "Strategic Ploy" },
+                    { name: "Advanced Deployment", cp: 1, type: "Strategic Ploy" },
+                    { name: "Purgation Doctrine", cp: 1, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Headhunter Task Force",
+                flavour: "",
+                rule: { name: "Target Sighted", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Redoubtable Machine Spirit", cost: 25, restriction: "ADEPTUS ASTARTES VEHICLE model only." },
+                    { name: "Gunnery Honours", cost: 20, restriction: "ADEPTUS ASTARTES VEHICLE model only." },
+                    { name: "Firestorm Coordinators", cost: 20, restriction: "ADEPTUS ASTARTES VEHICLE model only." },
+                    { name: "Astartes Tank Ace (Aura)", cost: 40, restriction: "ADEPTUS ASTARTES VEHICLE model only." },
+                ],
+                stratagems: [
+                    { name: "Armour of Contempt", cp: 1, type: "Strategic Ploy" },
+                    { name: "Target Weak Point", cp: 1, type: "Battle Tactic" },
+                    { name: "Kill Shot", cp: 1, type: "Battle Tactic" },
+                    { name: "Rapid Gunnery", cp: 1, type: "Strategic Ploy" },
+                    { name: "Reactive Repositioning", cp: 1, type: "Strategic Ploy" },
+                    { name: "Machine Vengeance", cp: 1, type: "Epic Deed" },
+                ]
+            },
+            {
+                name: "Forgefather's Seekers",
+                flavour: "",
+                rule: { name: "Vulkan's Quest", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Immolator", cost: 10, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "War-tempered Artifice", cost: 25, restriction: "ADEPTUS ASTARTES INFANTRY model only." },
+                    { name: "Forged in Battle", cost: 15, restriction: "ADEPTUS ASTARTES model only." },
+                    { name: "Adamantine Mantle", cost: 20, restriction: "ADEPTUS ASTARTES model only." },
+                ],
+                stratagems: [
+                    { name: "Armour of Contempt", cp: 1, type: "Battle Tactic" },
+                    { name: "Crucible of Battle", cp: 1, type: "Battle Tactic" },
+                    { name: "Wrathful Inferno", cp: 1, type: "Strategic Ploy" },
+                    { name: "Immolation Protocols", cp: 2, type: "Battle Tactic" },
+                    { name: "Burning Vengeance", cp: 1, type: "Battle Tactic" },
+                    { name: "Blazing Earth", cp: 1, type: "Strategic Ploy" },
+                ]
             }
         ],
 
