@@ -14,9 +14,10 @@ const state = {
     army: {
         name: "New Army List",
         faction: null,
+        detachment: null,
         edition: "10th",
         pointsLimit: 2000,
-        units: [] // { unitRef, selectedModelCount, id }
+        units: [] // { unitRef, selectedModelCount, id, enhancement }
     },
     nextUnitId: 1
 };
@@ -859,13 +860,80 @@ function removeUnitFromArmy(armyUnitId) {
     state.army.units = state.army.units.filter(u => u.id !== armyUnitId);
     if (state.army.units.length === 0) {
         state.army.faction = null;
+        state.army.detachment = null;
     }
     saveArmyToStorage();
     renderArmyView();
 }
 
 function getArmyTotalPoints() {
-    return state.army.units.reduce((sum, u) => sum + u.points, 0);
+    return state.army.units.reduce((sum, u) => sum + unitTotalPoints(u), 0);
+}
+
+// ─── ENHANCEMENTS ──────────────────────────────────────────────────────────────
+// Enhancements are detachment-scoped: the army picks one detachment, and only
+// that detachment's enhancements may be assigned (to non-Epic-Hero Characters).
+
+// The detachment object currently selected for the army, or null.
+function getArmyDetachment() {
+    if (!state.army.faction || !state.army.detachment) return null;
+    const faction = getFactions().find(f => f.id === state.army.faction);
+    if (!faction || !Array.isArray(faction.detachments)) return null;
+    return faction.detachments.find(d => d.name === state.army.detachment) || null;
+}
+
+// Enhancements offered by the selected detachment (empty if none selected).
+function availableEnhancements() {
+    const det = getArmyDetachment();
+    return det && Array.isArray(det.enhancements) ? det.enhancements : [];
+}
+
+function getEnhancementByName(name) {
+    return availableEnhancements().find(e => e.name === name) || null;
+}
+
+// Eligible to take an enhancement? Characters that are not Epic Heroes.
+function canTakeEnhancement(armyUnit) {
+    const ref = armyUnit.unitRef;
+    const kws = (ref.keywords || []).map(k => k.toLowerCase());
+    const isCharacter = ref.role === "character" || kws.includes("character");
+    return isCharacter && !kws.includes("epic hero");
+}
+
+// Points contributed by a unit's assigned enhancement (0 if none/invalid).
+function enhancementCost(armyUnit) {
+    if (!armyUnit.enhancement) return 0;
+    const enh = getEnhancementByName(armyUnit.enhancement);
+    return enh ? (enh.cost || 0) : 0;
+}
+
+// A unit's full cost including any enhancement.
+function unitTotalPoints(armyUnit) {
+    return armyUnit.points + enhancementCost(armyUnit);
+}
+
+// Switch the army's detachment, dropping any enhancements no longer available.
+function setArmyDetachment(name) {
+    state.army.detachment = name || null;
+    const valid = new Set(availableEnhancements().map(e => e.name));
+    state.army.units.forEach(u => {
+        if (u.enhancement && !valid.has(u.enhancement)) delete u.enhancement;
+    });
+    saveArmyToStorage();
+    renderArmyView();
+}
+
+// Assign (or clear) an enhancement on an army unit.
+function setUnitEnhancement(armyUnitId, enhName) {
+    const u = state.army.units.find(x => x.id === armyUnitId);
+    if (!u) return;
+    if (enhName && getEnhancementByName(enhName) && canTakeEnhancement(u)) {
+        u.enhancement = enhName;
+    } else {
+        delete u.enhancement;
+    }
+    saveArmyToStorage();
+    renderArmyView();
 }
 
 // ─── LEADER / BODYGUARD LOGIC ──────────────────────────────────────────────────
@@ -1006,12 +1074,61 @@ function renderArmyView() {
     // Attached leaders render nested inside their squad, not at the top level.
     const topLevel = state.army.units.filter(u => !u.attachedTo);
 
-    dom.armyList.innerHTML = topLevel.map(u => {
+    dom.armyList.innerHTML = renderDetachmentBar() + topLevel.map(u => {
         const leader = getAttachedLeader(u);
         return leader ? renderLedSquad(u, leader) : renderArmyEntry(u);
     }).join("");
 
     bindArmyControls();
+}
+
+// Detachment picker — shown when the army's faction has detachments. Enhancements
+// can only be assigned once a detachment is chosen.
+function renderDetachmentBar() {
+    const faction = getFactions().find(f => f.id === state.army.faction);
+    const dets = faction && Array.isArray(faction.detachments) ? faction.detachments : [];
+    if (!dets.length) return "";
+    const cur = state.army.detachment || "";
+    const hasEnh = availableEnhancements().length > 0;
+    const hint = cur
+        ? (hasEnh ? "Assign enhancements to Characters below" : "This detachment has no enhancements")
+        : "Select a detachment to unlock enhancements";
+    return `<div class="detachment-bar">
+        <label class="detachment-bar-label">✦ Detachment</label>
+        <select id="army-detachment-select" class="role-filter">
+            <option value="">— None —</option>
+            ${dets.map(d => `<option value="${escapeHtml(d.name)}"${d.name === cur ? " selected" : ""}>${escapeHtml(d.name)}</option>`).join("")}
+        </select>
+        <span class="detachment-bar-hint">${hint}</span>
+    </div>`;
+}
+
+// Enhancement selector for an eligible Character army unit (or "" if N/A).
+function renderEnhancementControl(armyUnit) {
+    if (!canTakeEnhancement(armyUnit)) return "";
+    const enhs = availableEnhancements();
+    if (!enhs.length) return "";
+    const taken = new Set(state.army.units
+        .filter(u => u.id !== armyUnit.id && u.enhancement)
+        .map(u => u.enhancement));
+    const current = armyUnit.enhancement || "";
+    const options = enhs
+        .filter(e => !taken.has(e.name) || e.name === current)
+        .map(e => `<option value="${escapeHtml(e.name)}"${e.name === current ? " selected" : ""}>${escapeHtml(e.name)} (+${e.cost} pts)</option>`)
+        .join("");
+    const select = `<select class="enhancement-select role-filter" data-army-unit-id="${armyUnit.id}">
+        <option value="">✦ Enhancement…</option>
+        ${options}
+    </select>`;
+    let detail = "";
+    if (current) {
+        const enh = getEnhancementByName(current);
+        if (enh) {
+            const tip = [enh.restriction, enh.text].filter(Boolean).join(" — ");
+            detail = `<span class="enh-chosen has-tip" tabindex="0" role="button" aria-label="${escapeHtml(enh.name)}. Activate for description." data-tip="${escapeHtml(tip)}">${escapeHtml(enh.name)}<span class="tip-ind" aria-hidden="true">?</span></span>`;
+        }
+    }
+    return `<div class="enh-attach-row">${select}${detail}</div>`;
 }
 
 // A standalone army unit (with attach controls when relevant).
@@ -1046,10 +1163,11 @@ function renderArmyEntry(u) {
                 <div class="army-unit-name">${escapeHtml(ref.name)}${leaderBadge}</div>
                 <div class="army-unit-meta">${capitalize(ref.role)} · ${u.selectedModelCount} model${u.selectedModelCount > 1 ? 's' : ''}</div>
                 ${controls ? `<div class="attach-row">${controls}</div>` : ""}
+                ${renderEnhancementControl(u)}
             </div>
             <div class="army-unit-actions">
                 ${renderModelCountSelector(u)}
-                <span class="army-unit-points">${u.points} pts</span>
+                <span class="army-unit-points">${unitTotalPoints(u)} pts</span>
                 <button class="btn-remove-unit" data-army-unit-id="${u.id}" title="Remove">&times;</button>
             </div>
         </div>`;
@@ -1059,7 +1177,7 @@ function renderArmyEntry(u) {
 function renderLedSquad(body, leader) {
     const b = body.unitRef;
     const l = leader.unitRef;
-    const squadPts = body.points + leader.points;
+    const squadPts = unitTotalPoints(body) + unitTotalPoints(leader);
 
     const buffs = leaderAbilityNames(l).map(n => {
         const desc = abilityDescription(n, l);
@@ -1079,7 +1197,7 @@ function renderLedSquad(body, leader) {
                 </div>
                 <div class="army-unit-actions">
                     ${renderModelCountSelector(body)}
-                    <span class="army-unit-points">${body.points} pts</span>
+                    <span class="army-unit-points">${unitTotalPoints(body)} pts</span>
                     <button class="btn-remove-unit" data-army-unit-id="${body.id}" title="Remove unit">&times;</button>
                 </div>
             </div>
@@ -1087,10 +1205,11 @@ function renderLedSquad(body, leader) {
                 <div class="leader-line">
                     <span class="leader-icon">★</span>
                     <span class="leader-led">Led by <strong>${escapeHtml(l.name)}</strong></span>
-                    <span class="army-unit-points">${leader.points} pts</span>
+                    <span class="army-unit-points">${unitTotalPoints(leader)} pts</span>
                     <button class="btn-detach-leader" data-leader-id="${leader.id}" title="Detach leader">Detach</button>
                     <button class="btn-remove-unit" data-army-unit-id="${leader.id}" title="Remove leader">&times;</button>
                 </div>
+                ${renderEnhancementControl(leader)}
                 ${buffs ? `<div class="leader-buffs">
                     <div class="buffs-label">Joins the unit — abilities now in effect <span class="buff-key">(✦ = applies to the whole unit)</span>:</div>
                     <div class="ability-list">${buffs}</div>
@@ -1149,6 +1268,19 @@ function bindArmyControls() {
             detachLeader(parseInt(btn.dataset.leaderId));
         });
     });
+
+    // Detachment selector
+    const detSel = document.getElementById("army-detachment-select");
+    if (detSel) {
+        detSel.addEventListener("change", (e) => setArmyDetachment(e.target.value));
+    }
+
+    // Enhancement selectors
+    dom.armyList.querySelectorAll(".enhancement-select").forEach(sel => {
+        sel.addEventListener("change", (e) => {
+            setUnitEnhancement(parseInt(e.target.dataset.armyUnitId), e.target.value);
+        });
+    });
 }
 
 
@@ -1183,6 +1315,12 @@ function renderValidation(total, limit) {
     const characters = state.army.units.filter(u => u.unitRef.role === "character");
     if (characters.length > 0 && state.army.units.length === characters.length) {
         msgs.push({ type: "warning", text: "Army contains only Characters — consider adding other units" });
+    }
+
+    // Enhancement limit (standard armies may include up to 3 enhancements)
+    const enhCount = state.army.units.filter(u => u.enhancement).length;
+    if (enhCount > 3) {
+        msgs.push({ type: "warning", text: `${enhCount} enhancements assigned — standard armies allow a maximum of 3` });
     }
 
     dom.armyValidation.innerHTML = msgs.map(m =>
@@ -1268,6 +1406,7 @@ function saveArmyToStorage() {
     const saveData = {
         name: state.army.name,
         faction: state.army.faction,
+        detachment: state.army.detachment,
         edition: state.army.edition,
         pointsLimit: state.army.pointsLimit,
         units: state.army.units.map(u => ({
@@ -1276,7 +1415,8 @@ function saveArmyToStorage() {
             factionId: u.factionId,
             selectedModelCount: u.selectedModelCount,
             points: u.points,
-            attachedTo: u.attachedTo || null
+            attachedTo: u.attachedTo || null,
+            enhancement: u.enhancement || null
         }))
     };
     localStorage.setItem(CURRENT_ARMY_KEY, JSON.stringify(saveData));
@@ -1290,6 +1430,7 @@ function loadArmyFromStorage() {
         const data = JSON.parse(saved);
         state.army.name = data.name || "New Army List";
         state.army.faction = data.faction;
+        state.army.detachment = data.detachment || null;
         state.army.edition = data.edition || "10th";
         state.army.pointsLimit = data.pointsLimit || 2000;
         state.edition = data.edition || "10th";
@@ -1313,7 +1454,8 @@ function loadArmyFromStorage() {
                 selectedModelCount: saved.selectedModelCount,
                 points: saved.points,
                 factionId: saved.factionId,
-                ...(saved.attachedTo ? { attachedTo: saved.attachedTo } : {})
+                ...(saved.attachedTo ? { attachedTo: saved.attachedTo } : {}),
+                ...(saved.enhancement ? { enhancement: saved.enhancement } : {})
             });
             if (saved.id > maxId) maxId = saved.id;
         }
@@ -1334,6 +1476,7 @@ function saveArmy() {
         id: Date.now(),
         name: name,
         faction: state.army.faction,
+        detachment: state.army.detachment,
         edition: state.army.edition,
         pointsLimit: state.army.pointsLimit,
         totalPoints: getArmyTotalPoints(),
@@ -1345,7 +1488,8 @@ function saveArmy() {
             factionId: u.factionId,
             selectedModelCount: u.selectedModelCount,
             points: u.points,
-            attachedTo: u.attachedTo || null
+            attachedTo: u.attachedTo || null,
+            enhancement: u.enhancement || null
         }))
     };
 
@@ -1368,6 +1512,7 @@ function loadSavedList(listId) {
     state.edition = list.edition || "10th";
     state.army.name = list.name;
     state.army.faction = list.faction;
+    state.army.detachment = list.detachment || null;
     state.army.edition = list.edition;
     state.army.pointsLimit = list.pointsLimit;
     dom.editionSelect.value = state.edition;
@@ -1393,7 +1538,8 @@ function loadSavedList(listId) {
             selectedModelCount: saved.selectedModelCount,
             points: saved.points,
             factionId: saved.factionId,
-            ...(saved.attachedTo ? { attachedTo: saved.attachedTo } : {})
+            ...(saved.attachedTo ? { attachedTo: saved.attachedTo } : {}),
+            ...(saved.enhancement ? { enhancement: saved.enhancement } : {})
         });
     }
     state.nextUnitId = maxId + 1;
@@ -1415,6 +1561,7 @@ function clearArmy() {
     if (!confirm("Clear current army list?")) return;
     state.army.units = [];
     state.army.faction = null;
+    state.army.detachment = null;
     state.army.name = "New Army List";
     saveArmyToStorage();
     renderArmyView();
