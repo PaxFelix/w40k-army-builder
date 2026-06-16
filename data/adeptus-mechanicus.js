@@ -19,7 +19,141 @@
         armyRules: [
             { name: "Doctrina Imperatives", flavour: "", text: "" }
         ],
-        detachments: [],
+        detachments: [
+            {
+                name: "Rad-zone Corps",
+                flavour: "",
+                rule: { name: "Rad-bombardment", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Radial Suffusion", cost: 25, restriction: "ADEPTUS MECHANICUS model only." },
+                    { name: "Malphonic Susurrus", cost: 20, restriction: "ADEPTUS MECHANICUS model only." },
+                    { name: "Peerless Eradicator", cost: 20, restriction: "ADEPTUS MECHANICUS model only." },
+                    { name: "Autoclavic Denunciation", cost: 15, restriction: "ADEPTUS MECHANICUS model only." },
+                ],
+                stratagems: [
+                    { name: "Baleful Halo", cp: 2, type: "Battle Tactic" },
+                    { name: "Extinction Order", cp: 1, type: "Strategic Ploy" },
+                    { name: "Aggressor Imperative", cp: 1, type: "Battle Tactic" },
+                    { name: "Pre-calibrated Purge Solution", cp: 1, type: "Battle Tactic" },
+                    { name: "Lethal Dosage", cp: 1, type: "Wargear" },
+                    { name: "Bulwark Imperative", cp: 2, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Skitarii Hunter Cohort",
+                flavour: "",
+                rule: { name: "Stealth Optimisation", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Cantic Thrallnet", cost: 25, restriction: "SKITARII MARSHAL model only." },
+                    { name: "Clandestine Infiltrator", cost: 20, restriction: "SKITARII model only." },
+                    { name: "Veiled Hunter", cost: 10, restriction: "SKITARII MARSHAL model only." },
+                    { name: "Battle-sphere Uplink", cost: 30, restriction: "SKITARII model only." },
+                ],
+                stratagems: [
+                    { name: "Bionic Endurance", cp: 1, type: "Strategic Ploy" },
+                    { name: "Binharic Offence", cp: 2, type: "Strategic Ploy" },
+                    { name: "Expedited Purge Protocol", cp: 1, type: "Strategic Ploy" },
+                    { name: "Isolate and Destroy", cp: 1, type: "Strategic Ploy" },
+                    { name: "Shroud Protocols", cp: 1, type: "Strategic Ploy" },
+                    { name: "Programmed Withdrawal", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Data-psalm Conclave",
+                flavour: "",
+                rule: { name: "Benedictions of the Omnissiah", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Mechanicus Locum", cost: 10, restriction: "TECH-PRIEST model only." },
+                    { name: "Mantle of the Gnosticarch", cost: 15, restriction: "TECH-PRIEST model only." },
+                    { name: "Data-blessed Autosermon", cost: 20, restriction: "TECH-PRIEST model only." },
+                    { name: "Temporcopia", cost: 25, restriction: "TECH-PRIEST model only." },
+                ],
+                stratagems: [
+                    { name: "Incantation of the Iron Soul", cp: 1, type: "Battle Tactic" },
+                    { name: "Chant of the Remorseless Fist", cp: 1, type: "Battle Tactic" },
+                    { name: "Verse of Vengeance", cp: 1, type: "Strategic Ploy" },
+                    { name: "Tribute of Emphatic Veneration", cp: 1, type: "Strategic Ploy" },
+                    { name: "Litany of the Electromancer", cp: 1, type: "Strategic Ploy" },
+                    { name: "Luminescent Blessing", cp: 1, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Explorator Maniple",
+                flavour: "",
+                rule: { name: "Acquisition at Any Cost", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Magos", cost: 15, restriction: "TECH-PRIEST model only." },
+                    { name: "Genetor", cost: 25, restriction: "TECH-PRIEST model only." },
+                    { name: "Logis", cost: 20, restriction: "TECH-PRIEST model only." },
+                    { name: "Artisan", cost: 15, restriction: "TECH-PRIEST model only." },
+                ],
+                stratagems: [
+                    { name: "Cached Acquisition", cp: 1, type: "Epic Deed" },
+                    { name: "Priority Reclamation", cp: 1, type: "Battle Tactic" },
+                    { name: "Infoslave Skull", cp: 1, type: "Wargear" },
+                    { name: "Auto-oracular Retrieval", cp: 2, type: "Battle Tactic" },
+                    { name: "Incense Exhausts", cp: 1, type: "Wargear" },
+                    { name: "Reactive Safeguard", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Cohort Cybernetica",
+                flavour: "",
+                rule: { name: "Cyber-Psalm Programming", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Necromechanic", cost: 25, restriction: "TECH-PRIEST model only." },
+                    { name: "Lord of Machines", cost: 20, restriction: "TECH-PRIEST model only." },
+                    { name: "Emotionless Clarity", cost: 15, restriction: "TECH-PRIEST model only." },
+                    { name: "Arch-negator", cost: 10, restriction: "TECH-PRIEST model only." },
+                ],
+                stratagems: [
+                    { name: "Motive Imperative", cp: 1, type: "Battle Tactic" },
+                    { name: "Auto-divinatory Targeting", cp: 1, type: "Battle Tactic" },
+                    { name: "Machine Spirit Resurgent", cp: 1, type: "Epic Deed" },
+                    { name: "Machine Superiority", cp: 1, type: "Epic Deed" },
+                    { name: "Transcendent Cogitation", cp: 1, type: "Strategic Ploy" },
+                    { name: "Benevolence of the Omnissiah", cp: 1, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Eradication Cohort",
+                flavour: "",
+                rule: { name: "Murderous Imperative", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Omnicogitator", cost: 25, restriction: "SKITARII MARSHAL model only." },
+                    { name: "Martial Signatum Amplificator", cost: 15, restriction: "TECH-PRIEST model only." },
+                    { name: "Belicosa-Class Capacitor Vanes", cost: 30, restriction: "ADEPTUS MECHANICUS model only." },
+                    { name: "Omnissiah's Fury", cost: 10, restriction: "SKITARII MARSHAL model only." },
+                ],
+                stratagems: [
+                    { name: "Servo-Driven Charge", cp: 1, type: "Wargear" },
+                    { name: "Unrelenting Aggression", cp: 1, type: "Strategic Ploy" },
+                    { name: "Unshackled Wrath", cp: 1, type: "Wargear" },
+                    { name: "Threat-Cogitation Targeters", cp: 1, type: "Wargear" },
+                    { name: "Precision Onslaught", cp: 1, type: "Battle Tactic" },
+                    { name: "Analytic Reprisals", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Haloscreed Battle Clade",
+                flavour: "",
+                rule: { name: "Noospheric Transference", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Transoracular Dyad Wafers", cost: 15, restriction: "CYBERNETICA DATASMITH model only." },
+                    { name: "Cognitive Reinforcement", cost: 35 },
+                    { name: "Sanctified Ordnance", cost: 10, restriction: "ADEPTUS MECHANICUS model only." },
+                    { name: "Inloaded Lethality", cost: 15, restriction: "TECH-PRIEST DOMINUS or TECH-PRIEST MANIPULUS model only." },
+                ],
+                stratagems: [
+                    { name: "Eradication Protocols", cp: 1, type: "Battle Tactic" },
+                    { name: "Targeting Override", cp: 1, type: "Battle Tactic" },
+                    { name: "Neural Overload", cp: 1, type: "Strategic Ploy" },
+                    { name: "Aggressive Impulse", cp: 1, type: "Strategic Ploy" },
+                    { name: "Guided Retreat", cp: 1, type: "Strategic Ploy" },
+                    { name: "Analytical Divination", cp: 1, type: "Strategic Ploy" },
+                ]
+            }
+        ],
         units: [
                 {
                         "id": "admech-thulia-ghuld",

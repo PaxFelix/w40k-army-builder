@@ -19,7 +19,236 @@
         armyRules: [
             { name: "Strands of Fate", flavour: "", text: "" }
         ],
-        detachments: [],
+        detachments: [
+            {
+                name: "Warhost",
+                flavour: "",
+                rule: { name: "Martial Grace", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Phoenix Gem", cost: 35, restriction: "ASURYANI model only." },
+                    { name: "Timeless Strategist", cost: 15, restriction: "ASURYANI model only." },
+                    { name: "Gift of Foresight", cost: 15, restriction: "ASURYANI model only." },
+                    { name: "Psychic Destroyer", cost: 30, restriction: "ASURYANI PSYKER model only." },
+                ],
+                stratagems: [
+                    { name: "Lightning-fast Reactions", cp: 1, type: "Battle Tactic" },
+                    { name: "Skyborne Sanctuary", cp: 1, type: "Strategic Ploy" },
+                    { name: "Feigned Retreat", cp: 1, type: "Strategic Ploy" },
+                    { name: "Blitzing Firepower", cp: 1, type: "Battle Tactic" },
+                    { name: "Fire and Fade", cp: 1, type: "Strategic Ploy" },
+                    { name: "Webway Tunnel", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Windrider Host",
+                flavour: "",
+                rule: { name: "Ride the Wind", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Firstdrawn Blade", cost: 10, restriction: "ASURYANI MOUNTED model only." },
+                    { name: "Mirage Field", cost: 25, restriction: "ASURYANI MOUNTED model only." },
+                    { name: "Seersight Strike", cost: 15, restriction: "ASURYANI MOUNTED PSYKER model only." },
+                    { name: "Echoes of Ulthanesh", cost: 20, restriction: "ASURYANI MOUNTED model only." },
+                ],
+                stratagems: [
+                    { name: "Death from on High", cp: 1, type: "Battle Tactic" },
+                    { name: "Overflight", cp: 1, type: "Strategic Ploy" },
+                    { name: "Wind of Blades", cp: 1, type: "Strategic Ploy" },
+                    { name: "Daring Riders", cp: 1, type: "Strategic Ploy" },
+                    { name: "Focused Firepower", cp: 1, type: "Battle Tactic" },
+                    { name: "Spiralling Evasion", cp: 1, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Spirit Conclave",
+                flavour: "",
+                rule: { name: "Shepherds of the Dead", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Light of Clarity", cost: 30, restriction: "SPIRITSEER model only." },
+                    { name: "Stave of Kurnous", cost: 15, restriction: "SPIRITSEER model only." },
+                    { name: "Rune of Mists", cost: 10, restriction: "SPIRITSEER model only." },
+                    { name: "Higher Duty", cost: 25, restriction: "SPIRITSEER model only." },
+                ],
+                stratagems: [
+                    { name: "Seer's Eye", cp: 1, type: "Battle Tactic" },
+                    { name: "Wraithbone Armour", cp: 1, type: "Battle Tactic" },
+                    { name: "Blades from Beyond", cp: 1, type: "Battle Tactic" },
+                    { name: "Soul Bridge", cp: 1, type: "Strategic Ploy" },
+                    { name: "Spirit Token", cp: 1, type: "Strategic Ploy" },
+                    { name: "Crushing Strides", cp: 1, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Guardian Battlehost",
+                flavour: "",
+                rule: { name: "Defend at All Costs", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Craftworld's Champion", cost: 25, restriction: "ASURYANI model only." },
+                    { name: "Ethereal Pathway", cost: 30, restriction: "ASURYANI model only." },
+                    { name: "Protector of the Paths", cost: 20, restriction: "ASURYANI model only." },
+                    { name: "Breath of Vaul", cost: 10, restriction: "ASURYANI model only." },
+                ],
+                stratagems: [
+                    { name: "Warding Salvoes", cp: 1, type: "Battle Tactic" },
+                    { name: "Shield Nodes", cp: 1, type: "Battle Tactic" },
+                    { name: "Vaul's Vengeance", cp: 1, type: "Battle Tactic" },
+                    { name: "Time to Strike", cp: 1, type: "Strategic Ploy" },
+                    { name: "Blades of Asuryan", cp: 1, type: "Battle Tactic" },
+                    { name: "Cost of Victory", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Ghosts of the Webway",
+                flavour: "",
+                rule: { name: "Acrobatic Onslaught", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Cegorach's Coil", cost: 25, restriction: "TROUPE MASTER model only." },
+                    { name: "Mask of Secrets", cost: 15, restriction: "HARLEQUINS model only." },
+                    { name: "Murder's Jest", cost: 20, restriction: "DEATH JESTER model only." },
+                    { name: "Mistweave", cost: 15, restriction: "SHADOWSEER model only." },
+                ],
+                stratagems: [
+                    { name: "Staged Death", cp: 1, type: "Strategic Ploy" },
+                    { name: "Heroes' Fall", cp: 1, type: "Strategic Ploy" },
+                    { name: "Mocking Flight", cp: 1, type: "Strategic Ploy" },
+                    { name: "Tricksters' Retort", cp: 1, type: "Strategic Ploy" },
+                    { name: "Bloody Dance", cp: 1, type: "Strategic Ploy" },
+                    { name: "Exit the Stage", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Devoted of Ynnead",
+                flavour: "",
+                rule: { name: "Strength from Death", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Gaze of Ynnead", cost: 15, restriction: "FARSEER model only." },
+                    { name: "Storm of Whispers", cost: 10, restriction: "WARLOCK model only." },
+                    { name: "Borrowed Vigour", cost: 10, restriction: "ARCHON model only." },
+                    { name: "Morbid Might", cost: 15, restriction: "SUCCUBUS model only." },
+                ],
+                stratagems: [
+                    { name: "Pall of Dread", cp: 1, type: "Strategic Ploy" },
+                    { name: "Macabre Resilience", cp: 1, type: "Battle Tactic" },
+                    { name: "Emissaries of Ynnead", cp: 1, type: "Battle Tactic" },
+                    { name: "Parting the Veil", cp: 2, type: "Strategic Ploy" },
+                    { name: "Soulsight", cp: 1, type: "Battle Tactic" },
+                    { name: "Death Answers Death", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Seer Council",
+                flavour: "",
+                rule: { name: "Strands of Fate", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Lucid Eye", cost: 30, restriction: "ASURYANI PSYKER model only." },
+                    { name: "Runes of Warding", cost: 25, restriction: "ASURYANI PSYKER model only." },
+                    { name: "Stone of Eldritch Fury", cost: 15, restriction: "ASURYANI PSYKER model only." },
+                    { name: "Torc of Morai-Heg", cost: 20, restriction: "ASURYANI PSYKER model only." },
+                ],
+                stratagems: [
+                    { name: "Presentiment of Dread", cp: 1, type: "Strategic Ploy" },
+                    { name: "Forewarned", cp: 1, type: "Strategic Ploy" },
+                    { name: "Unshrouded Truth", cp: 1, type: "Strategic Ploy" },
+                    { name: "Fate Inescapable", cp: 1, type: "Battle Tactic" },
+                    { name: "Isha's Fury", cp: 1, type: "Epic Deed" },
+                    { name: "Psychic Shield", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Aspect Host",
+                flavour: "",
+                rule: { name: "Path of the Warrior", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Aspect of Murder", cost: 25, restriction: "AUTARCH or AUTARCH WAYLEAPER model only." },
+                    { name: "Mantle of Wisdom", cost: 30, restriction: "AUTARCH or AUTARCH WAYLEAPER model only." },
+                    { name: "Shimmerstone", cost: 15, restriction: "AUTARCH or AUTARCH WAYLEAPER model only." },
+                    { name: "Strategic Savant", cost: 15, restriction: "AUTARCH or AUTARCH WAYLEAPER model only." },
+                ],
+                stratagems: [
+                    { name: "Warrior Focus", cp: 1, type: "Battle Tactic" },
+                    { name: "To Their Final Breath", cp: 1, type: "Strategic Ploy" },
+                    { name: "Skyborne Sanctuary", cp: 1, type: "Strategic Ploy" },
+                    { name: "Doom Inescapable", cp: 1, type: "Battle Tactic" },
+                    { name: "Preternatural Precision", cp: 1, type: "Battle Tactic" },
+                    { name: "Khaine's Vengeance", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Armoured Warhost",
+                flavour: "",
+                rule: { name: "Skilled Crews", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Guiding Presence", cost: 25, restriction: "AELDARI PSYKER model only." },
+                    { name: "Harmonisation Matrix", cost: 30, restriction: "AELDARI model only." },
+                    { name: "Spirit Stone of Raelyth", cost: 20, restriction: "AELDARI PSYKER model only." },
+                    { name: "Guileful Strategist", cost: 15, restriction: "AELDARI model only." },
+                ],
+                stratagems: [
+                    { name: "Layered Wards", cp: 1, type: "Strategic Ploy" },
+                    { name: "Swift Deployment", cp: 1, type: "Strategic Ploy" },
+                    { name: "Vectored Engines", cp: 1, type: "Strategic Ploy" },
+                    { name: "Cloudstrike", cp: 1, type: "Strategic Ploy" },
+                    { name: "Soulsight", cp: 1, type: "Strategic Ploy" },
+                    { name: "Anti-grav Repulsion", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Serpent's Brood",
+                flavour: "",
+                rule: { name: "Boons of the Brood", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Key of Ghosts", cost: 20 },
+                    { name: "Weavers' Wail", cost: 20, restriction: "TROUPE MASTER model only." },
+                    { name: "Fanged Leer", cost: 10, restriction: "DEATH JESTER model only." },
+                    { name: "Shedskin Raiment", cost: 25, restriction: "SHADOWSEER model only." },
+                ],
+                stratagems: [
+                    { name: "Fangs of the Brood", cp: 1, type: "" },
+                    { name: "Venomous Wrath", cp: 1, type: "" },
+                    { name: "Striking Stride", cp: 1, type: "" },
+                    { name: "Weavers' Coils", cp: 1, type: "" },
+                    { name: "Weaving Stride", cp: 1, type: "" },
+                    { name: "Skyward Lunge", cp: 1, type: "" },
+                ]
+            },
+            {
+                name: "Eldritch Raiders",
+                flavour: "",
+                rule: { name: "Yriel's Own", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Pirate Prince", cost: 15, restriction: "PRINCE YRIEL unit only." },
+                    { name: "Alacritous Assault", cost: 20, restriction: "ANHRATHE unit only." },
+                    { name: "Exotic Munitions", cost: 15, restriction: "ANHRATHE unit only." },
+                    { name: "Adrenal Infusions", cost: 20, restriction: "ANHRATHE INFANTRY unit only." },
+                ],
+                stratagems: [
+                    { name: "Raiders' Spoils", cp: 1, type: "Strategic Ploy" },
+                    { name: "Ruthless Killers", cp: 1, type: "Strategic Ploy" },
+                    { name: "Yriel's Example", cp: 1, type: "Epic Deed" },
+                    { name: "No Prey Too Big", cp: 1, type: "Battle Tactic" },
+                    { name: "Impeding Fire", cp: 1, type: "Wargear" },
+                    { name: "Withdraw and Reinforce", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Corsair Coterie",
+                flavour: "",
+                rule: { name: "Relentless Raiders", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Infamy (Aura)", cost: 25, restriction: "ANHRATHE unit only." },
+                    { name: "Webway Pathstone", cost: 25, restriction: "ANHRATHE unit only." },
+                    { name: "Archraider", cost: 35, restriction: "ANHRATHE CHARACTER unit only." },
+                    { name: "Voidstone", cost: 15, restriction: "ANHRATHE INFANTRY unit only." },
+                ],
+                stratagems: [
+                    { name: "Pirates' Due", cp: 1, type: "Battle Tactic" },
+                    { name: "Lethal Ruse", cp: 1, type: "Strategic Ploy" },
+                    { name: "Outcast Ambush", cp: 1, type: "Strategic Ploy" },
+                    { name: "Into the Breach", cp: 1, type: "Strategic Ploy" },
+                    { name: "Cloak and Shadow", cp: 1, type: "Strategic Ploy" },
+                    { name: "Vengeful Sorrow", cp: 1, type: "Strategic Ploy" },
+                ]
+            }
+        ],
         units: [
                 {
                         "id": "ae-asurmen",
