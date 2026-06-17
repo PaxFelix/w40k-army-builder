@@ -35,43 +35,115 @@
                 name: "Grand Coven",
                 flavour: "",
                 rule: { name: "Kindred Sorcery", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Lord of Forbidden Lore", cost: 20, restriction: "THOUSAND SONS model only." },
+                    { name: "Incandaeum", cost: 15, restriction: "EXALTED SORCERER model only." },
+                    { name: "Umbralefic Crystal", cost: 20, restriction: "THOUSAND SONS model only." },
+                    { name: "Eldritch Vortex of E'taph", cost: 35, restriction: "THOUSAND SONS model only." },
+                ],
+                stratagems: [
+                    { name: "Psychic Dominion", cp: 1, type: "Epic Deed" },
+                    { name: "Destined by Fate", cp: 1, type: "Epic Deed" },
+                    { name: "Egotistical Power", cp: 1, type: "Strategic Ploy" },
+                    { name: "Desecration of Worlds", cp: 1, type: "Epic Deed" },
+                    { name: "Arcane Focus", cp: 1, type: "Epic Deed" },
+                    { name: "Devastating Sorcery", cp: 2, type: "Battle Tactic" },
+                ]
             },
             {
                 name: "Changehost of Deceit",
                 flavour: "",
                 rule: { name: "Infernal Pacts", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Nethershriek Mind-eater", cost: 10, restriction: "THOUSAND SONS or LORD OF CHANGE model only." },
+                    { name: "Diabolic Savant", cost: 20, restriction: "THOUSAND SONS INFANTRY model only." },
+                    { name: "Duplicitous Malediction", cost: 15, restriction: "THOUSAND SONS or LORD OF CHANGE model only." },
+                    { name: "Tome of True Names", cost: 20, restriction: "THOUSAND SONS INFANTRY model only." },
+                ],
+                stratagems: [
+                    { name: "Sulphurous Veil", cp: 1, type: "Battle Tactic" },
+                    { name: "Deceptive Glamour", cp: 2, type: "Strategic Ploy" },
+                    { name: "Ethereal Phantasm", cp: 1, type: "Strategic Ploy" },
+                    { name: "Fractal Disjunction", cp: 1, type: "Strategic Ploy" },
+                    { name: "Chronosorcerous Bleed", cp: 1, type: "Strategic Ploy" },
+                    { name: "Glimmershift Portal", cp: 1, type: "Strategic Ploy" },
+                ]
             },
             {
                 name: "Warpmeld Pact",
                 flavour: "",
-                rule: { name: "Witchsight", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                rule: { name: "Warpmeld Sacrifice", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Warpmeld Dagger", cost: 10, restriction: "TZAANGOR SHAMAN model only." },
+                    { name: "Diamond of Distortion", cost: 20, restriction: "TZAANGOR SHAMAN model only." },
+                    { name: "Bray Lord", cost: 15, restriction: "SORCERER or INFERNAL MASTER model only." },
+                    { name: "Flowing Flesh", cost: 10, restriction: "TZAANGOR SHAMAN model only." },
+                ],
+                stratagems: [
+                    { name: "Gift of Change", cp: 1, type: "Epic Deed" },
+                    { name: "Warped Vicissitude", cp: 1, type: "Strategic Ploy" },
+                    { name: "Deranged Ferocity", cp: 1, type: "Strategic Ploy" },
+                    { name: "Blessed Transmutations", cp: 1, type: "Strategic Ploy" },
+                    { name: "Touched by Tzeentch", cp: 1, type: "Strategic Ploy" },
+                    { name: "Twisted Mirage", cp: 1, type: "Strategic Ploy" },
+                ]
             },
             {
                 name: "Rubricae Phalanx",
                 flavour: "",
-                rule: { name: "All is Dust", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                rule: { name: "All Is Dust", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Risen Rubricae", cost: 30, restriction: "THOUSAND SONS model only." },
+                    { name: "Arcane Thralls (Aura)", cost: 5, restriction: "THOUSAND SONS model only." },
+                    { name: "Lord of the Rubricae", cost: 15, restriction: "THOUSAND SONS model only." },
+                    { name: "The Stave Abominus", cost: 20, restriction: "THOUSAND SONS INFANTRY model only." },
+                ],
+                stratagems: [
+                    { name: "Ardent Automata", cp: 1, type: "Strategic Ploy" },
+                    { name: "Inexorable Advance", cp: 1, type: "Strategic Ploy" },
+                    { name: "Infernal Fusillade", cp: 2, type: "Wargear" },
+                    { name: "Revenge of the Rubricae", cp: 1, type: "Strategic Ploy" },
+                    { name: "Implacable Guardians", cp: 2, type: "Strategic Ploy" },
+                    { name: "Unwavering Phalanx", cp: 1, type: "Battle Tactic" },
+                ]
             },
             {
                 name: "Warpforged Cabal",
                 flavour: "",
-                rule: { name: "Methodical Conquest", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                rule: { name: "Warpfire Infusion", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Warp Syphon", cost: 5, restriction: "THOUSAND SONS model only." },
+                    { name: "The Perplexing Cloak", cost: 20, restriction: "THOUSAND SONS INFANTRY model only." },
+                    { name: "Biomechanical Mutation", cost: 15, restriction: "THOUSAND SONS model only." },
+                    { name: "Warp-cursed Runemaster", cost: 10, restriction: "THOUSAND SONS model only." },
+                ],
+                stratagems: [
+                    { name: "Hex-marked Armour", cp: 1, type: "Battle Tactic" },
+                    { name: "Mutate Landscape", cp: 1, type: "Epic Deed" },
+                    { name: "Cyberspirit Machinations", cp: 1, type: "Strategic Ploy" },
+                    { name: "Malevolent Animus", cp: 1, type: "Epic Deed" },
+                    { name: "Ensorcelled Infusion", cp: 1, type: "Battle Tactic" },
+                    { name: "Warpflame Gargoyles", cp: 1, type: "Wargear" },
+                ]
             },
             {
                 name: "Hexwarp Thrallband",
                 flavour: "",
                 rule: { name: "Flow of Magic", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Arcane Might", cost: 20, restriction: "THOUSAND SONS model only." },
+                    { name: "Empowered Manifestation", cost: 20, restriction: "THOUSAND SONS model only." },
+                    { name: "Empyric Onslaught", cost: 25, restriction: "THOUSAND SONS model only." },
+                    { name: "Noctilith Mantle", cost: 15, restriction: "THOUSAND SONS model only." },
+                ],
+                stratagems: [
+                    { name: "Warding Hex", cp: 1, type: "Epic Deed" },
+                    { name: "Wrath of the Doomed", cp: 1, type: "Strategic Ploy" },
+                    { name: "Strands of Time", cp: 1, type: "Strategic Ploy" },
+                    { name: "Through the Veil", cp: 1, type: "Epic Deed" },
+                    { name: "Scouring Warpflame", cp: 1, type: "Strategic Ploy" },
+                    { name: "Kaleidoscopic Tempest", cp: 1, type: "Battle Tactic" },
+                ]
             }
         ],
 

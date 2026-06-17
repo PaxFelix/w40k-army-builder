@@ -19,7 +19,122 @@
         armyRules: [
             { name: "For the Greater Good", flavour: "", text: "" }
         ],
-        detachments: [],
+        detachments: [
+            {
+                name: "Kauyon",
+                flavour: "",
+                rule: { name: "Patient Hunter", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Exemplar of the Kauyon", cost: 20 },
+                    { name: "Precision of the Patient Hunter", cost: 15, restriction: "T'AU EMPIRE model only." },
+                    { name: "Solid-image Projection Unit", cost: 30, restriction: "T'AU EMPIRE model only." },
+                    { name: "Through Unity, Devastation", cost: 40 },
+                ],
+                stratagems: [
+                    { name: "A Tempting Trap", cp: 1, type: "Battle Tactic" },
+                    { name: "Point-blank Ambush", cp: 1, type: "Battle Tactic" },
+                    { name: "Coordinate to Engage", cp: 1, type: "Battle Tactic" },
+                    { name: "Combat Embarkation", cp: 1, type: "Wargear" },
+                    { name: "Photon Grenades", cp: 1, type: "Wargear" },
+                    { name: "Wall of Mirrors", cp: 1, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Mont'ka",
+                flavour: "",
+                rule: { name: "Killing Blow", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Coordinated Exploitation", cost: 40 },
+                    { name: "Exemplar of the Mont'ka", cost: 10 },
+                    { name: "Strategic Conqueror", cost: 15, restriction: "T'AU EMPIRE model only." },
+                    { name: "Strike Swiftly", cost: 25, restriction: "T'AU EMPIRE model only." },
+                ],
+                stratagems: [
+                    { name: "Pinpoint Counter-offensive", cp: 1, type: "Battle Tactic" },
+                    { name: "Aggressive Mobility", cp: 1, type: "Battle Tactic" },
+                    { name: "Focused Fire", cp: 1, type: "Battle Tactic" },
+                    { name: "Combat Debarkation", cp: 1, type: "Battle Tactic" },
+                    { name: "Pulse Onslaught", cp: 2, type: "Strategic Ploy" },
+                    { name: "Counterfire Defence Systems", cp: 2, type: "Wargear" },
+                ]
+            },
+            {
+                name: "Retaliation Cadre",
+                flavour: "",
+                rule: { name: "Bonded Heroes", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Internal Grenade Racks", cost: 20, restriction: "T'AU EMPIRE BATTLESUIT model only." },
+                    { name: "Prototype Weapon System", cost: 15, restriction: "T'AU EMPIRE BATTLESUIT model only." },
+                    { name: "Puretide Engram Neurochip", cost: 25, restriction: "T'AU EMPIRE BATTLESUIT model only." },
+                    { name: "Starflare Ignition System", cost: 20, restriction: "T'AU EMPIRE BATTLESUIT model only." },
+                ],
+                stratagems: [
+                    { name: "Fail-safe Detonator", cp: 2, type: "Epic Deed" },
+                    { name: "Stimm Injectors", cp: 1, type: "Wargear" },
+                    { name: "The Shortened Blade", cp: 2, type: "Strategic Ploy" },
+                    { name: "The Arro'kon Protocol", cp: 1, type: "Battle Tactic" },
+                    { name: "The Torchstar Gambit", cp: 1, type: "Strategic Ploy" },
+                    { name: "Grav-inhibitor Field", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Kroot Hunting Pack",
+                flavour: "",
+                rule: { name: "Hunter's Instincts", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Borthrod Gland", cost: 15, restriction: "Kroot Flesh Shaper only." },
+                    { name: "Kroothawk Flock", cost: 10, restriction: "KROOT model only." },
+                    { name: "Nomadic Hunter", cost: 20, restriction: "KROOT TRAIL SHAPER model only." },
+                    { name: "Root-carved Weapons", cost: 10, restriction: "Kroot War Shaper model only." },
+                ],
+                stratagems: [
+                    { name: "Join the Hunt", cp: 2, type: "Battle Tactic" },
+                    { name: "A Trap Well Laid", cp: 1, type: "Battle Tactic" },
+                    { name: "Emp Grenades", cp: 1, type: "Wargear" },
+                    { name: "The Grisly Feast", cp: 1, type: "Strategic Ploy" },
+                    { name: "Guerrilla Warriors", cp: 1, type: "Strategic Ploy" },
+                    { name: "Hidden Hunters", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Auxiliary Cadre",
+                flavour: "",
+                rule: { name: "Integrated Command Structure", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Student of Kauyon", cost: 15, restriction: "KROOT SHAPER model only." },
+                    { name: "Admired Leader", cost: 20, restriction: "T'AU EMPIRE model (excluding KROOT models) only." },
+                    { name: "Fanatical Convert", cost: 10, restriction: "KROOT model only." },
+                    { name: "Transponder Lock Module", cost: 25, restriction: "T'AU EMPIRE WALKER model with the Deep Strike ability only." },
+                ],
+                stratagems: [
+                    { name: "Experimental Modifications", cp: 1, type: "Strategic Ploy" },
+                    { name: "Multisensory Scanning", cp: 1, type: "Battle Tactic" },
+                    { name: "Interlocking Manouevres", cp: 1, type: "Strategic Ploy" },
+                    { name: "Pheromone Waypoints", cp: 1, type: "Strategic Ploy" },
+                    { name: "Alien Expertise", cp: 1, type: "Battle Tactic" },
+                    { name: "Guided Fire", cp: 1, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Experimental Prototype Cadre",
+                flavour: "",
+                rule: { name: "Superior Craftsmanship", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Supernova Launcher", cost: 15, restriction: "T'AU EMPIRE model only." },
+                    { name: "Thermoneutronic Projector", cost: 20, restriction: "T'AU EMPIRE model only." },
+                    { name: "Plasma Accelerator Rifle", cost: 10, restriction: "T'AU EMPIRE model only." },
+                    { name: "Fusion Blades", cost: 25, restriction: "T'AU EMPIRE model only." },
+                ],
+                stratagems: [
+                    { name: "Automated Repair Drones", cp: 1, type: "Strategic Ploy" },
+                    { name: "Reactive Impact Dampeners", cp: 1, type: "Battle Tactic" },
+                    { name: "Experimental Weaponry", cp: 1, type: "Battle Tactic" },
+                    { name: "Experimental Ammunition", cp: 1, type: "Wargear" },
+                    { name: "Threat Assessment Analyser", cp: 1, type: "Wargear" },
+                    { name: "Neuroweb System Jammer", cp: 1, type: "Wargear" },
+                ]
+            }
+        ],
         units: [
                 {
                         "id": "tau-cadre-fireblade",
