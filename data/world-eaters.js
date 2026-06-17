@@ -19,7 +19,122 @@
         armyRules: [
             { name: "Blessings of Khorne", flavour: "", text: "" }
         ],
-        detachments: [],
+        detachments: [
+            {
+                name: "Berzerker Warband",
+                flavour: "",
+                rule: { name: "Relentless Rage", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Berzerker Glaive", cost: 35, restriction: "WORLD EATERS model only." },
+                    { name: "Helm of Brazen Ire", cost: 30, restriction: "WORLD EATERS model only." },
+                    { name: "Favoured of Khorne", cost: 15, restriction: "WORLD EATERS model only." },
+                    { name: "Battle-lust", cost: 10, restriction: "WORLD EATERS model only." },
+                ],
+                stratagems: [
+                    { name: "Blood Offering", cp: 1, type: "Epic Deed" },
+                    { name: "Hack and Slash", cp: 1, type: "Battle Tactic" },
+                    { name: "Frenzied Resilience", cp: 2, type: "Battle Tactic" },
+                    { name: "Skulls for the Skull Throne!", cp: 1, type: "Strategic Ploy" },
+                    { name: "Apoplectic Frenzy", cp: 1, type: "Strategic Ploy" },
+                    { name: "Berzerker's Wrath", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Cult of Blood",
+                flavour: "",
+                rule: { name: "Idols of Khorne", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Chosen of the Blood God", cost: 15, restriction: "WORLD EATERS MONSTER model only." },
+                    { name: "Butcher Lord", cost: 10, restriction: "WORLD EATERS INFANTRY model only." },
+                    { name: "Brazen Form", cost: 25, restriction: "WORLD EATERS MONSTER model only." },
+                    { name: "Strategic Slaughter", cost: 20, restriction: "WORLD EATERS model only." },
+                ],
+                stratagems: [
+                    { name: "Bloody Vengeance", cp: 1, type: "Epic Deed" },
+                    { name: "Drawn to the Slaughter", cp: 2, type: "Strategic Ploy" },
+                    { name: "In the Shadow of Brass Idols", cp: 1, type: "Strategic Ploy" },
+                    { name: "Bloodthirsty Horde", cp: 1, type: "Battle Tactic" },
+                    { name: "Fail not the Blood God", cp: 1, type: "Strategic Ploy" },
+                    { name: "Brazen Idol", cp: 2, type: "Epic Deed" },
+                ]
+            },
+            {
+                name: "Khorne Daemonkin",
+                flavour: "",
+                rule: { name: "Blood Tithe", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Icon of War", cost: 25, restriction: "WORLD EATERS model only." },
+                    { name: "Blood-forged Armour", cost: 20, restriction: "BLOOD LEGIONS or WORLD EATERS model only." },
+                    { name: "Disciple of Khorne", cost: 15, restriction: "LORD ON JUGGERNAUT model only." },
+                    { name: "Blade of Endless Bloodshed", cost: 30, restriction: "WORLD EATERS model only." },
+                ],
+                stratagems: [
+                    { name: "Summoned by Slaughter", cp: 1, type: "Strategic Ploy" },
+                    { name: "Daemonic Fury", cp: 1, type: "Battle Tactic" },
+                    { name: "A Worthy Skull", cp: 1, type: "Epic Deed" },
+                    { name: "Blessing of Burning Blood", cp: 1, type: "Battle Tactic" },
+                    { name: "Daemontide", cp: 1, type: "Strategic Ploy" },
+                    { name: "Murder-call", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Possessed Slaughterband",
+                flavour: "",
+                rule: { name: "Brazen Fury", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Malicious Vigour", cost: 30, restriction: "SLAUGHTERBOUND model only." },
+                    { name: "Killing Clarity", cost: 15, restriction: "WORLD EATERS DAEMON model only." },
+                    { name: "Frenzied Focus", cost: 20, restriction: "WORLD EATERS DAEMON model only." },
+                    { name: "Violent Demise", cost: 10, restriction: "WORLD EATERS DAEMON model only." },
+                ],
+                stratagems: [
+                    { name: "Daemonic Resistance", cp: 2, type: "Battle Tactic" },
+                    { name: "Daemonic Strength", cp: 1, type: "Battle Tactic" },
+                    { name: "Immortal Fury", cp: 2, type: "Battle Tactic" },
+                    { name: "Rapid Manifestation", cp: 1, type: "Strategic Ploy" },
+                    { name: "Warp Stalkers", cp: 1, type: "Strategic Ploy" },
+                    { name: "Horrifying Violence", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Goretrack Onslaught",
+                flavour: "",
+                rule: { name: "Rush to the Fray", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Murderous Onslaught", cost: 5, restriction: "WORLD EATERS model only." },
+                    { name: "Aggressive Deployment", cost: 20, restriction: "WORLD EATERS model only." },
+                    { name: "Unleash Hell", cost: 10, restriction: "WORLD EATERS model only." },
+                    { name: "Infernal Infusion", cost: 25, restriction: "WORLD EATERS model only." },
+                ],
+                stratagems: [
+                    { name: "Endless Pursuit of Violence", cp: 1, type: "Strategic Ploy" },
+                    { name: "Smash Through", cp: 1, type: "Strategic Ploy" },
+                    { name: "Aggressive Disembarkation", cp: 1, type: "Strategic Ploy" },
+                    { name: "Full-throttle Assault", cp: 1, type: "Strategic Ploy" },
+                    { name: "Unrelenting Advance", cp: 1, type: "Strategic Ploy" },
+                    { name: "Fury Unleashed", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Vessels of Wrath",
+                flavour: "",
+                rule: { name: "Wrath of Khorne", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Archslaughterer", cost: 25, restriction: "WORLD EATERS model only." },
+                    { name: "Vox-diabolus", cost: 20, restriction: "WORLD EATERS model only." },
+                    { name: "Avenger's Crown", cost: 15, restriction: "WORLD EATERS model only." },
+                    { name: "Gateways to Glory", cost: 10, restriction: "WORLD EATERS DAEMON PRINCE or WORLD EATERS MOUNTED model only." },
+                ],
+                stratagems: [
+                    { name: "Aspire to Infamy", cp: 1, type: "Battle Tactic" },
+                    { name: "Overshadowed by None", cp: 1, type: "Battle Tactic" },
+                    { name: "Gory Dedication", cp: 1, type: "Strategic Ploy" },
+                    { name: "Punish the Craven", cp: 1, type: "Strategic Ploy" },
+                    { name: "Meet Force with Force", cp: 1, type: "Strategic Ploy" },
+                    { name: "Brazen Contempt", cp: 1, type: "Battle Tactic" },
+                ]
+            }
+        ],
         units: [
                 {
                         "id": "we-angron",
