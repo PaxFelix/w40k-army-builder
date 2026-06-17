@@ -19,7 +19,160 @@
         armyRules: [
             { name: "Synapse", flavour: "", text: "" }
         ],
-        detachments: [],
+        detachments: [
+            {
+                name: "Invasion Fleet",
+                flavour: "",
+                rule: { name: "Hyper-adaptations", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Alien Cunning", cost: 30, restriction: "TYRANIDS model only." },
+                    { name: "Perfectly Adapted", cost: 15, restriction: "TYRANIDS model only." },
+                    { name: "Synaptic Linchpin", cost: 20, restriction: "TYRANIDS model only." },
+                    { name: "Adaptive Biology", cost: 25, restriction: "TYRANIDS model only." },
+                ],
+                stratagems: [
+                    { name: "Rapid Regeneration", cp: 1, type: "Battle Tactic" },
+                    { name: "Adrenal Surge", cp: 2, type: "Battle Tactic" },
+                    { name: "Death Frenzy", cp: 1, type: "Strategic Ploy" },
+                    { name: "Overrun", cp: 1, type: "Strategic Ploy" },
+                    { name: "Predatory Imperative", cp: 1, type: "Strategic Ploy" },
+                    { name: "Endless Swarm", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Crusher Stampede",
+                flavour: "",
+                rule: { name: "Enraged Behemoths", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Ominous Presence", cost: 15, restriction: "TYRANIDS MONSTER model only." },
+                    { name: "Enraged Reserves", cost: 20, restriction: "TYRANIDS MONSTER model only." },
+                    { name: "Null Nodules", cost: 10, restriction: "TYRANIDS MONSTER model only." },
+                    { name: "Monstrous Nemesis", cost: 25, restriction: "TYRANIDS MONSTER model only." },
+                ],
+                stratagems: [
+                    { name: "Corrosive Viscera", cp: 1, type: "Strategic Ploy" },
+                    { name: "Rampaging Monstrosities", cp: 1, type: "Battle Tactic" },
+                    { name: "Savage Roar", cp: 1, type: "Battle Tactic" },
+                    { name: "Untrammelled Ferocity", cp: 1, type: "Strategic Ploy" },
+                    { name: "Swarm-guided Salvoes", cp: 1, type: "Battle Tactic" },
+                    { name: "Massive Impact", cp: 1, type: "Epic Deed" },
+                ]
+            },
+            {
+                name: "Unending Swarm",
+                flavour: "",
+                rule: { name: "Insurmountable Odds", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Relentless Hunger", cost: 20, restriction: "TYRANIDS model only." },
+                    { name: "Naturalised Camouflage", cost: 30, restriction: "TYRANIDS model only." },
+                    { name: "Piercing Talons", cost: 25, restriction: "TYRANIDS model only." },
+                    { name: "Adrenalised Onslaught", cost: 15, restriction: "TYRANIDS model only." },
+                ],
+                stratagems: [
+                    { name: "Synaptic Goading", cp: 1, type: "Strategic Ploy" },
+                    { name: "Unending Waves", cp: 2, type: "Strategic Ploy" },
+                    { name: "Teeming Masses", cp: 1, type: "Battle Tactic" },
+                    { name: "Swarming Masses", cp: 1, type: "Battle Tactic" },
+                    { name: "Bounding Advance", cp: 1, type: "Battle Tactic" },
+                    { name: "Preservation Imperative", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Assimilation Swarm",
+                flavour: "",
+                rule: { name: "Feed the Swarm", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Regenerating Monstrosity", cost: 20 },
+                    { name: "Instinctive Defence", cost: 15, restriction: "TYRANIDS model only." },
+                    { name: "Biophagic Flow (Aura)", cost: 10, restriction: "TYRANIDS model only." },
+                    { name: "Parasitic Biomorphology", cost: 25, restriction: "TYRANIDS model only." },
+                ],
+                stratagems: [
+                    { name: "Broodguard Impulse", cp: 1, type: "Epic Deed" },
+                    { name: "Reclaim Biomass", cp: 1, type: "Strategic Ploy" },
+                    { name: "Tyrannoformed", cp: 1, type: "Strategic Ploy" },
+                    { name: "Ablative Carapace", cp: 2, type: "Epic Deed" },
+                    { name: "Secure Biomass", cp: 1, type: "Strategic Ploy" },
+                    { name: "Rapacious Hunger", cp: 1, type: "Battle Tactic" },
+                ]
+            },
+            {
+                name: "Vanguard Onslaught",
+                flavour: "",
+                rule: { name: "Questing Tendrils", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Hunting Grounds", cost: 20, restriction: "TYRANIDS model only." },
+                    { name: "Chameleonic", cost: 15, restriction: "VANGUARD INVADER model only." },
+                    { name: "Stalker", cost: 10, restriction: "VANGUARD INVADER model only." },
+                    { name: "Neuronode", cost: 20, restriction: "TYRANIDS model only." },
+                ],
+                stratagems: [
+                    { name: "Surprise Assault", cp: 1, type: "Battle Tactic" },
+                    { name: "Assassin Beasts", cp: 1, type: "Battle Tactic" },
+                    { name: "Seeded Broods", cp: 1, type: "Strategic Ploy" },
+                    { name: "Hypersensory Scillia", cp: 2, type: "Strategic Ploy" },
+                    { name: "Unseen Lurkers", cp: 1, type: "Strategic Ploy" },
+                    { name: "Invisible Hunter", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Synaptic Nexus",
+                flavour: "",
+                rule: { name: "Synaptic Imperatives", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Power of the Hive Mind", cost: 10, restriction: "TYRANIDS PSYKER model only." },
+                    { name: "Psychostatic Disruption", cost: 30, restriction: "TYRANIDS SYNAPSE model only." },
+                    { name: "Synaptic Control", cost: 20, restriction: "TYRANIDS SYNAPSE model only." },
+                    { name: "The Dirgeheart of Kharis (Aura)", cost: 15, restriction: "TYRANIDS SYNAPSE model only." },
+                ],
+                stratagems: [
+                    { name: "The Smothering Shadow", cp: 1, type: "Strategic Ploy" },
+                    { name: "Synaptic Channelling", cp: 1, type: "Battle Tactic" },
+                    { name: "Irresistible Will", cp: 1, type: "Battle Tactic" },
+                    { name: "Reinforced Hive Node", cp: 1, type: "Battle Tactic" },
+                    { name: "Imperative Dominance", cp: 1, type: "Strategic Ploy" },
+                    { name: "Override Instincts", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Subterranean Assault",
+                flavour: "",
+                rule: { name: "Surprise Assault", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Synaptic Strategy", cost: 15, restriction: "TYRANIDS model only." },
+                    { name: "Tremor Senses", cost: 20, restriction: "TYRANIDS model only." },
+                    { name: "Vanguard Intellect", cost: 15, restriction: "TYRANIDS model with the Deep Strike ability only." },
+                    { name: "Trygon Prime", cost: 20, restriction: "TRYGON model only." },
+                ],
+                stratagems: [
+                    { name: "Adaptive Optimisation", cp: 1, type: "Wargear" },
+                    { name: "Replenishing Swarms", cp: 1, type: "Wargear" },
+                    { name: "Enfilading Emergence", cp: 1, type: "Strategic Ploy" },
+                    { name: "Tunnel Network", cp: 1, type: "Strategic Ploy" },
+                    { name: "Swarming Assault", cp: 1, type: "Strategic Ploy" },
+                    { name: "Retreat Below", cp: 1, type: "Strategic Ploy" },
+                ]
+            },
+            {
+                name: "Warrior Bioform Onslaught",
+                flavour: "",
+                rule: { name: "Leader-beasts", flavour: "", text: "", restrictions: "" },
+                enhancements: [
+                    { name: "Synaptic Tyrant", cost: 10, restriction: "Neurotyrant model only." },
+                    { name: "Ocular Adaptation", cost: 20, restriction: "WINGED TYRANID PRIME or Tyranid Prime with Lash Whip model only." },
+                    { name: "Sensory Assimilation", cost: 20, restriction: "WINGED TYRANID PRIME or Tyranid Prime with Lash Whip model only." },
+                    { name: "Elevated Might", cost: 30, restriction: "TYRANIDS model only." },
+                ],
+                stratagems: [
+                    { name: "Synaptic Amplification", cp: 1, type: "Strategic Ploy" },
+                    { name: "Spontaneous Hypercorrosion", cp: 1, type: "Wargear" },
+                    { name: "Restorative Impulse", cp: 1, type: "Strategic Ploy" },
+                    { name: "Synaptic Micronodes", cp: 1, type: "Strategic Ploy" },
+                    { name: "Parasitic Payload", cp: 1, type: "Strategic Ploy" },
+                    { name: "Synaptic Shield", cp: 1, type: "Strategic Ploy" },
+                ]
+            }
+        ],
         units: [
                 {
                         "id": "tyr-broodlord",
