@@ -35,50 +35,134 @@
                 name: "Needgaârd Oathband",
                 flavour: "",
                 rule: { name: "Martial Leverage", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Oathbound Speculator", cost: 30, restriction: "LEAGUES OF VOTANN model only." },
+                    { name: "Dead Reckoning", cost: 10, restriction: "LEAGUES OF VOTANN model only." },
+                    { name: "Iron Ambassador", cost: 5, restriction: "LEAGUES OF VOTANN model equipped with an Autoch-pattern combi-bolter only." },
+                    { name: "Ancestral Crest", cost: 15, restriction: "LEAGUES OF VOTANN model only." },
+                ],
+                stratagems: [
+                    { name: "Void Hardened", cp: 1, type: "Wargear" },
+                    { name: "Honour of the Hold", cp: 1, type: "Battle Tactic" },
+                    { name: "Ordered Retreat", cp: 1, type: "Strategic Ploy" },
+                    { name: "Ancestral Sentence", cp: 1, type: "Battle Tactic" },
+                    { name: "Huntr\u2019s Mark", cp: 1, type: "Battle Tactic" },
+                    { name: "Reactive Reprisal", cp: 2, type: "Strategic Ploy" },
+                ]
             },
             {
                 name: "Persecution Prospect",
                 flavour: "",
                 rule: { name: "Assailed from Every Angle", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Eye for Weakness", cost: 25, restriction: "LEAGUES OF VOTANN model only." },
+                    { name: "Writ of Acquisition", cost: 10, restriction: "LEAGUES OF VOTANN model only." },
+                    { name: "Surgical Saboteur", cost: 10, restriction: "LEAGUES OF VOTANN model only." },
+                    { name: "Nomad Strategist", cost: 20, restriction: "LEAGUES OF VOTANN model only." },
+                ],
+                stratagems: [
+                    { name: "Adaptable Avarice", cp: 1, type: "Strategic Ploy" },
+                    { name: "Frontier Momentum", cp: 1, type: "Battle Tactic" },
+                    { name: "Exposed Flaws", cp: 1, type: "Battle Tactic" },
+                    { name: "Ranger Tactics", cp: 1, type: "Battle Tactic" },
+                    { name: "Claimstaker Reflex", cp: 1, type: "Strategic Ploy" },
+                    { name: "Dispersed Formation", cp: 1, type: "Strategic Ploy" },
+                ]
             },
             {
                 name: "Dêlve Assault Shift",
                 flavour: "",
                 rule: { name: "Fury from the Dêlve", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Dêlvwerke Navigator", cost: 25, restriction: "LEAGUES OF VOTANN model only." },
+                    { name: "Multiwave System Jammer", cost: 10, restriction: "LEAGUES OF VOTANN model only." },
+                    { name: "Quake Supervisor", cost: 20, restriction: "LEAGUES OF VOTANN model only." },
+                    { name: "Piledriver", cost: 15, restriction: "LEAGUES OF VOTANN model only." },
+                ],
+                stratagems: [
+                    { name: "Cyberstimm Infusion", cp: 1, type: "Battle Tactic" },
+                    { name: "Unstoppable Force", cp: 1, type: "Strategic Ploy" },
+                    { name: "Augmented Assault", cp: 1, type: "Strategic Ploy" },
+                    { name: "Tectonic Fracture", cp: 1, type: "Strategic Ploy" },
+                    { name: "Weavewërke Buttress", cp: 1, type: "Strategic Ploy" },
+                    { name: "Hidden Accessways", cp: 1, type: "Strategic Ploy" },
+                ]
             },
             {
                 name: "Brandfast Oathband",
                 flavour: "",
                 rule: { name: "Mobile Sensor Relays", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Tactical Alchemy", cost: 10, restriction: "KÂHL model only." },
+                    { name: "Trivärg Cyber Implant", cost: 40, restriction: "LEAGUES OF VOTANN model only." },
+                    { name: "Precursive Judgement", cost: 15, restriction: "KÂHL model only." },
+                    { name: "Signature Restoration", cost: 5, restriction: "IRON-MASTER model only." },
+                ],
+                stratagems: [
+                    { name: "Secure Positions", cp: 1, type: "Strategic Ploy" },
+                    { name: "Bastion Running", cp: 1, type: "Battle Tactic" },
+                    { name: "Illuminated Priority", cp: 1, type: "Wargear" },
+                    { name: "Inexorable Efficiency", cp: 1, type: "Strategic Ploy" },
+                    { name: "Opportunistic Escalation", cp: 1, type: "Strategic Ploy" },
+                    { name: "Vengeance Flare", cp: 2, type: "Strategic Ploy" },
+                ]
             },
             {
                 name: "Hearthfyre Arsenal",
                 flavour: "",
                 rule: { name: "Optimal Application", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Fârstrydr Node", cost: 20, restriction: "IRON-MASTER or MEMNYR STRATEGIST model only." },
+                    { name: "Calculated Tenacity", cost: 15, restriction: "IRON-MASTER or MEMNYR STRATEGIST model only." },
+                    { name: "Mantle of Elders", cost: 10, restriction: "MEMNYR STRATEGIST model only." },
+                    { name: "Graviton Vault", cost: 5, restriction: "IRON-MASTER model only." },
+                ],
+                stratagems: [
+                    { name: "Unwavering Accuracy", cp: 2, type: "Battle Tactic" },
+                    { name: "First Concern", cp: 1, type: "Strategic Ploy" },
+                    { name: "Delayed-fire Rounds", cp: 1, type: "Wargear" },
+                    { name: "Wall of Steel", cp: 1, type: "Battle Tactic" },
+                    { name: "Preventative Purge", cp: 1, type: "Strategic Ploy" },
+                    { name: "Cogitated Need", cp: 1, type: "Strategic Ploy" },
+                ]
             },
             {
                 name: "Hearthband",
                 flavour: "",
                 rule: { name: "Methodical Annihilation", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Bastion Shield", cost: 25, restriction: "LEAGUES OF VOTANN model only." },
+                    { name: "Quake Multigenerator", cost: 15, restriction: "KÂHL model only." },
+                    { name: "Ironskein", cost: 10, restriction: "LEAGUES OF VOTANN model only." },
+                    { name: "High Kâhl", cost: 30, restriction: "KÂHL model only." },
+                ],
+                stratagems: [
+                    { name: "Brëkkeknots", cp: 1, type: "Battle Tactic" },
+                    { name: "Sure of Purpose", cp: 1, type: "Strategic Ploy" },
+                    { name: "Superior Craftsmanship", cp: 2, type: "Battle Tactic" },
+                    { name: "Unyielding Aggression", cp: 1, type: "Strategic Ploy" },
+                    { name: "Materialisation Matrices", cp: 1, type: "Strategic Ploy" },
+                    { name: "Fury of the Hearth", cp: 1, type: "Battle Tactic" },
+                ]
             },
             {
                 name: "Mercenary Oathband",
                 flavour: "",
                 rule: { name: "Ruthless Reinvestment", flavour: "", text: "", restrictions: "" },
-                enhancements: [],
-                stratagems: []
+                enhancements: [
+                    { name: "Mercenary Prospector", cost: 20, restriction: "KÂHL model only." },
+                    { name: "Metaphysical Brokerage", cost: 20, restriction: "MEMNYR STRATEGIST model only." },
+                    { name: "Etacarn SB9 Targeting Implant", cost: 15, restriction: "LEAGUES OF VOTANN model only." },
+                    { name: "Asset Manipulator", cost: 25, restriction: "LEAGUES OF VOTANN model only." },
+                ],
+                stratagems: [
+                    { name: "Auxiliary Contract", cp: 1, type: "Strategic Ploy" },
+                    { name: "Optimal Expenditure", cp: 1, type: "Wargear" },
+                    { name: "Grand Artifice", cp: 1, type: "Strategic Ploy" },
+                    { name: "Privateer Arsenal", cp: 1, type: "Wargear" },
+                    { name: "New Horizons", cp: 1, type: "Strategic Ploy" },
+                    { name: "Mobile Exploitation", cp: 1, type: "Strategic Ploy" },
+                ]
             }
         ],
 
