@@ -24,8 +24,8 @@
         armyRules: [
             {
                 name: "Martial Ka\u2019tah",
-                flavour: "",
-                text: ""
+                flavour: "Specialised disciplines mastered by Custodians over decades if not centuries, each ka'tah equips its practitioner to overmaster any foe in a particular discipline or philosophy. Martial ka'tahs allow the warriors of the Adeptus Custodes to deploy stances, movements, war philosophies and lethal skills that enhance their already terrifying martial prowess and focus it against particular threats.",
+                text: "Each time a unit from your army with this ability is selected to fight, select one of the Ka'tah Stances below. Until that unit has finished making its attacks, the selected Stance is active for it and it gains the relevant ability:\n\nDacatarai Stance: Those Custodians skilled in the Dacatarai Ka'tah are able to turn their enemies' numerical advantage against them. Reserved for when the Custodians must battle seething hordes of foes, this stance sees them reap a terrible tally.\nMelee weapons equipped by models in this unit have the [Sustained Hits 1] ability.\n\nRendax Stance: Masters of Rendax are superlative monster and war machine hunters. They have studied every aspect of how to do battle with a foe far larger than themselves, how to evade its powerful attacks, exploit its blind spots and lay it low.\nMelee weapons equipped by models in this unit have the [Lethal Hits] ability."
             }
         ],
 
