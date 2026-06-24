@@ -188,7 +188,7 @@
                 wargearOptions: ["None"],
                 composition: { min: 1, max: 1 },
                 compositionText: "1 High Marshal Helbrecht — Epic Hero. This model is equipped with: Ferocity; Sword of the High Marshals.",
-                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Intercessor Squad.",
+                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Intercessor Squad; Crusader Squad; Sword Brethren Squad.",
                 keywords: ["Infantry", "Character", "Epic Hero", "Grenades", "Imperium", "Tacticus", "Chapter Master", "High Marshal Helbrecht"],
                 factionKeywords: ["Adeptus Astartes", "Black Templars"]
             },
@@ -222,7 +222,7 @@
                 wargearOptions: ["None"],
                 composition: { min: 1, max: 1 },
                 compositionText: "1 Emperor's Champion. This model is equipped with: bolt pistol; Black Sword.",
-                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Intercessor Squad; Sternguard Veteran Squad.",
+                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Intercessor Squad; Crusader Squad; Sternguard Veteran Squad; Sword Brethren Squad.",
                 keywords: ["Infantry", "Character", "Grenades", "Imperium", "Tacticus", "Emperor's Champion"],
                 factionKeywords: ["Adeptus Astartes", "Black Templars"]
             },
@@ -305,7 +305,7 @@
                 wargearOptions: ["This model's plasma pistol can be replaced with one combi-weapon."],
                 composition: { min: 1, max: 1 },
                 compositionText: "1 Marshal. This model is equipped with: plasma pistol; master-crafted power weapon.",
-                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Infernus Squad; Intercessor Squad; Sternguard Veteran Squad.",
+                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Infernus Squad; Intercessor Squad; Crusader Squad; Sternguard Veteran Squad; Sword Brethren Squad.",
                 keywords: ["Infantry", "Character", "Grenades", "Imperium", "Tacticus", "Captain", "Marshal"],
                 factionKeywords: ["Adeptus Astartes", "Black Templars"]
             },
@@ -338,7 +338,7 @@
                 wargearOptions: ["None"],
                 composition: { min: 1, max: 1 },
                 compositionText: "1 Judiciar. This model is equipped with: absolvor bolt pistol; executioner relic blade.",
-                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Bladeguard Veteran Squad; Infernus Squad; Intercessor Squad; Sternguard Veteran Squad; Tactical Squad.",
+                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Bladeguard Veteran Squad; Infernus Squad; Intercessor Squad; Tactical Squad; Crusader Squad; Sternguard Veteran Squad; Sword Brethren Squad.",
                 keywords: ["Infantry", "Character", "Imperium", "Tacticus", "Judiciar"],
                 factionKeywords: ["Adeptus Astartes", "Black Templars"]
             },
@@ -379,7 +379,7 @@
                 wargearOptions: ["None"],
                 composition: { min: 4, max: 4 },
                 compositionText: "1 Chaplain Grimaldus — Epic Hero; 3 Cenobyte Servitors. If this unit's Chaplain Grimaldus model is ever destroyed, all of this unit's remaining Cenobyte Servitor models are also destroyed. While embarking within a TRANSPORT and while embarked within a TRANSPORT, each Cenobyte Servitor model in this unit takes up the space of 0 models. Chaplain Grimaldus is equipped with: plasma pistol; artificer crozius. Every Cenobyte Servitor is equipped with: close combat weapon.",
-                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Infernus Squad; Intercessor Squad.",
+                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Infernus Squad; Intercessor Squad; Crusader Squad; Sword Brethren Squad.",
                 keywords: ["Infantry", "Imperium", "Tacticus", "Character", "Epic Hero", "Grenades", "Chaplain Grimaldus", "Cenobyte Servitor"],
                 keywordsNote: "KEYWORDS – ALL MODELS: Infantry, Imperium, Tacticus. GRIMALDUS: Character, Epic Hero, Grenades, Chaplain Grimaldus.",
                 factionKeywords: ["Adeptus Astartes", "Black Templars"]
@@ -416,7 +416,7 @@
                 ],
                 composition: { min: 1, max: 1 },
                 compositionText: "1 Castellan. This model is equipped with: combi-weapon; master-crafted power weapon.",
-                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Infernus Squad; Intercessor Squad; Sternguard Veteran Squad. You can attach this model to one of those units even if one CAPTAIN or CHAPTER MASTER model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.",
+                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Infernus Squad; Intercessor Squad; Crusader Squad; Sternguard Veteran Squad; Sword Brethren Squad. You can attach this model to one of those units even if one CAPTAIN or CHAPTER MASTER model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.",
                 keywords: ["Infantry", "Character", "Grenades", "Imperium", "Tacticus", "Lieutenant", "Castellan"],
                 factionKeywords: ["Adeptus Astartes", "Black Templars"]
             },
@@ -491,7 +491,7 @@
                 wargearOptions: ["None"],
                 composition: { min: 1, max: 1 },
                 compositionText: "1 Chaplain. This model is equipped with: absolvor bolt pistol; crozius arcanum.",
-                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Bladeguard Veteran Squad; Hellblaster Squad; Infernus Squad; Intercessor Squad; Sternguard Veteran Squad; Tactical Squad.",
+                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Bladeguard Veteran Squad; Hellblaster Squad; Infernus Squad; Intercessor Squad; Tactical Squad; Crusader Squad; Sternguard Veteran Squad; Sword Brethren Squad.",
                 keywords: ["Infantry", "Character", "Grenades", "Imperium", "Tacticus", "Chaplain"],
                 factionKeywords: ["Adeptus Astartes", "Black Templars"]
             },
@@ -567,8 +567,76 @@
                 ],
                 composition: { min: 1, max: 1 },
                 compositionText: "1 Ancient. This model is equipped with: bolt pistol; bolt rifle; close combat weapon.",
-                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Desolation Squad; Devastator Squad; Hellblaster Squad; Infernus Squad; Intercessor Squad; Sternguard Veteran Squad; Tactical Squad. You can attach this model to one of the above units even if one CAPTAIN, CHAPTER MASTER or LIEUTENANT model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.",
+                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Desolation Squad; Devastator Squad; Hellblaster Squad; Infernus Squad; Intercessor Squad; Tactical Squad; Crusader Squad; Sternguard Veteran Squad; Sword Brethren Squad. You can attach this model to one of the above units even if one CAPTAIN, CHAPTER MASTER or LIEUTENANT model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.",
                 keywords: ["Infantry", "Character", "Grenades", "Imperium", "Tacticus", "Ancient"],
+                factionKeywords: ["Adeptus Astartes", "Black Templars"]
+            },
+            {
+                id: "bt-crusade-ancient",
+                name: "Crusade Ancient",
+                role: "character",
+                points: [{ models: 1, cost: 55 }],
+                stats: { m: "6\"", t: 4, sv: "3+", w: 4, ld: "6+", oc: 1 },
+                baseSize: "40mm",
+                weapons: {
+                    ranged: [
+                        { name: "Bolt pistol", range: "12\"", a: 1, bs: "3+", s: 4, ap: 0, d: 1, keywords: ["Pistol"] }
+                    ],
+                    melee: [
+                        { name: "Master-crafted power weapon", range: "Melee", a: 5, ws: "2+", s: 5, ap: -2, d: 2, keywords: ["Lethal Hits"] }
+                    ]
+                },
+                abilities: {
+                    core: ["Leader"],
+                    faction: ["Templar Vows"],
+                    wargear: [],
+                    other: [
+                        { name: "Vengeful Exhortation", text: "While this model is leading a unit, each time a model in that unit is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play." },
+                        { name: "Martial Honour", text: "The first time a model in this model's unit makes a melee attack that destroys one or more enemy units, until the end of the battle, while this model's unit is not Battle-shocked, add 5 to this model's Objective Control characteristic." }
+                    ]
+                },
+                wargearOptions: ["None"],
+                composition: { min: 1, max: 1 },
+                compositionText: "1 Crusade Ancient. This model is equipped with: bolt pistol; master-crafted power weapon.",
+                leaderText: "This model can be attached to the following units: Crusader Squad; Sword Brethren Squad. You can attach this model to one of the above units even if one CAPTAIN, CHAPTER MASTER, EXECRATOR or LIEUTENANT model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.",
+                keywords: ["Infantry", "Character", "Grenades", "Imperium", "Tacticus", "Ancient", "Crusade Ancient"],
+                factionKeywords: ["Adeptus Astartes", "Black Templars"]
+            },
+            {
+                id: "bt-execrator",
+                name: "Execrator",
+                role: "character",
+                points: [{ models: 1, cost: 60 }],
+                stats: { m: "6\"", t: 4, sv: "3+", w: 4, ld: "5+", oc: 1 },
+                invuln: "4+",
+                baseSize: "40mm",
+                weapons: {
+                    ranged: [
+                        { name: "Absolvor bolt pistol", range: "18\"", a: 1, bs: "3+", s: 5, ap: -1, d: 2, keywords: ["Pistol"] },
+                        { name: "Pyre pistol", range: "12\"", a: "D6", bs: "N/A", s: 4, ap: 0, d: 1, keywords: ["Ignores Cover", "Pistol", "Torrent"] }
+                    ],
+                    melee: [
+                        { name: "Crozius arcanum", range: "Melee", a: 5, ws: "2+", s: 6, ap: -1, d: 2, keywords: [] },
+                        { name: "Master-crafted power weapon", range: "Melee", a: 3, ws: "2+", s: 5, ap: -2, d: 2, keywords: ["Extra Attacks", "Lethal Hits"] }
+                    ]
+                },
+                abilities: {
+                    core: ["Leader"],
+                    faction: ["Templar Vows"],
+                    wargear: [],
+                    other: [
+                        { name: "Remorseless Persecution", text: "While this model is leading a unit, that unit is eligible to declare a charge in a turn in which it Advanced." },
+                        { name: "Condemnatory Annihilation", text: "Each time this model's unit has fought, if one or more enemy units were destroyed as a result of those attacks, each enemy unit within 6\" of this model must take a Battle-shock test." }
+                    ]
+                },
+                wargearOptions: [
+                    "This model's absolvor bolt pistol can be replaced with 1 pyre pistol.",
+                    "If this model is equipped with an absolvor bolt pistol, it can be equipped with 1 master-crafted power weapon (this model's absolvor bolt pistol cannot be replaced)."
+                ],
+                composition: { min: 1, max: 1 },
+                compositionText: "1 Execrator. This model is equipped with: absolvor bolt pistol; crozius arcanum.",
+                leaderText: "This model can be attached to the following units: Crusader Squad; Sword Brethren Squad.",
+                keywords: ["Infantry", "Character", "Grenades", "Imperium", "Tacticus", "Chaplain", "Execrator"],
                 factionKeywords: ["Adeptus Astartes", "Black Templars"]
             },
             {
@@ -599,7 +667,7 @@
                 wargearOptions: ["None"],
                 composition: { min: 1, max: 1 },
                 compositionText: "1 Apothecary. This model is equipped with: absolvor bolt pistol; reductor pistol; close combat weapon.",
-                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Desolation Squad; Devastator Squad; Hellblaster Squad; Infernus Squad; Intercessor Squad; Sternguard Veteran Squad; Tactical Squad. You can attach this model to one of the above units even if one CAPTAIN, CHAPTER MASTER or LIEUTENANT model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.",
+                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Desolation Squad; Devastator Squad; Hellblaster Squad; Infernus Squad; Intercessor Squad; Tactical Squad; Crusader Squad; Sternguard Veteran Squad; Sword Brethren Squad. You can attach this model to one of the above units even if one CAPTAIN, CHAPTER MASTER or LIEUTENANT model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.",
                 keywords: ["Infantry", "Character", "Grenades", "Imperium", "Tacticus", "Apothecary"],
                 factionKeywords: ["Adeptus Astartes", "Black Templars"]
             },
@@ -767,7 +835,7 @@
                 ],
                 composition: { min: 1, max: 1 },
                 compositionText: "1 Captain. This model is equipped with: bolt pistol; master-crafted bolter; close combat weapon.",
-                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Bladeguard Veteran Squad*; Company Heroes; Hellblaster Squad*; Infernus Squad; Intercessor Squad; Sternguard Veteran Squad; Tactical Squad. * This model cannot be attached to a BLADEGUARD VETERAN SQUAD unless this model is equipped with a relic shield, and cannot be attached to a HELLBLASTER SQUAD unless this model is equipped with a plasma pistol.",
+                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Bladeguard Veteran Squad*; Company Heroes; Hellblaster Squad*; Infernus Squad; Intercessor Squad; Tactical Squad; Crusader Squad; Sternguard Veteran Squad; Sword Brethren Squad. * This model cannot be attached to a BLADEGUARD VETERAN SQUAD unless this model is equipped with a relic shield, and cannot be attached to a HELLBLASTER SQUAD unless this model is equipped with a plasma pistol.",
                 keywords: ["Infantry", "Character", "Grenades", "Imperium", "Tacticus", "Captain"],
                 factionKeywords: ["Adeptus Astartes", "Black Templars"]
             },
@@ -812,7 +880,7 @@
                 ],
                 composition: { min: 1, max: 1 },
                 compositionText: "1 Lieutenant. This model is equipped with: bolt pistol; master-crafted bolter; close combat weapon.",
-                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Bladeguard Veteran Squad; Company Heroes; Hellblaster Squad; Infernus Squad; Intercessor Squad; Sternguard Veteran Squad; Tactical Squad. You can attach this model to a unit it can lead even if one CAPTAIN or CHAPTER MASTER model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.",
+                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Bladeguard Veteran Squad; Company Heroes; Hellblaster Squad; Infernus Squad; Intercessor Squad; Tactical Squad; Crusader Squad; Sternguard Veteran Squad; Sword Brethren Squad. You can attach this model to a unit it can lead even if one CAPTAIN or CHAPTER MASTER model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.",
                 keywords: ["Infantry", "Character", "Grenades", "Imperium", "Tacticus", "Lieutenant"],
                 factionKeywords: ["Adeptus Astartes", "Black Templars"]
             },
@@ -846,7 +914,7 @@
                 wargearOptions: ["None"],
                 composition: { min: 1, max: 1 },
                 compositionText: "1 Techmarine. This model is equipped with: forge bolter; grav-pistol; Omnissian power axe; servo-arm.",
-                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Desolation Squad; Devastator Squad; Intercessor Squad; Tactical Squad.",
+                leaderText: "This model can be attached to the following units: Assault Intercessor Squad; Desolation Squad; Devastator Squad; Intercessor Squad; Tactical Squad; Crusader Squad; Sword Brethren Squad.",
                 keywords: ["Infantry", "Character", "Grenades", "Imperium", "Tacticus", "Techmarine"],
                 factionKeywords: ["Adeptus Astartes", "Black Templars"]
             }

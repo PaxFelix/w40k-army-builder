@@ -25,18 +25,18 @@
                 flavour: "",
                 rule: { name: "Deathwatch Mission Tactics", flavour: "", text: "", restrictions: "" },
                 enhancements: [
-                    { name: "Amulet of Auto-Chastisement", cost: 25, restriction: "WATCH MASTER model only." },
-                    { name: "Beacon Angelis", cost: 30, restriction: "WATCH MASTER model only." },
-                    { name: "Blackweave Shroud", cost: 15, restriction: "AGENTS OF THE IMPERIUM model only." },
-                    { name: "Universal Anathema", cost: 10, restriction: "AGENTS OF THE IMPERIUM model only." },
+                    { name: "Amulet of Auto-Chastisement", cost: 25, restriction: "WATCH MASTER model only.", text: "" },
+                    { name: "Beacon Angelis", cost: 30, restriction: "WATCH MASTER model only.", text: "" },
+                    { name: "Blackweave Shroud", cost: 15, restriction: "AGENTS OF THE IMPERIUM model only.", text: "" },
+                    { name: "Universal Anathema", cost: 10, restriction: "AGENTS OF THE IMPERIUM model only.", text: "" },
                 ],
                 stratagems: [
-                    { name: "Armour of Contempt", cp: 1, type: "Battle Tactic" },
-                    { name: "Adaptive Tactics", cp: 1, type: "Strategic Ploy" },
-                    { name: "Hellfire Rounds", cp: 1, type: "Wargear" },
-                    { name: "Dragonfire Rounds", cp: 1, type: "Wargear" },
-                    { name: "Kraken Rounds", cp: 1, type: "Wargear" },
-                    { name: "Rapid Tactical Relocation", cp: 1, type: "Strategic Ploy" },
+                    { name: "Armour of Contempt", cp: 1, type: "Battle Tactic", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Adaptive Tactics", cp: 1, type: "Strategic Ploy", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Hellfire Rounds", cp: 1, type: "Wargear", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Dragonfire Rounds", cp: 1, type: "Wargear", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Kraken Rounds", cp: 1, type: "Wargear", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Rapid Tactical Relocation", cp: 1, type: "Strategic Ploy", when: "", target: "", effect: "", restrictions: "" },
                 ]
             },
             {
@@ -44,18 +44,18 @@
                 flavour: "",
                 rule: { name: "Root Out Heresy", flavour: "", text: "", restrictions: "" },
                 enhancements: [
-                    { name: "Ignis Judicium", cost: 10, restriction: "INQUISITOR or MINISTORUM PRIEST model only." },
-                    { name: "Liber Heresius", cost: 10, restriction: "INQUISITOR or MINISTORUM PRIEST model only." },
-                    { name: "No Escape (Aura)", cost: 25, restriction: "INQUISITOR model only." },
-                    { name: "Witch Hunter", cost: 15, restriction: "INQUISITOR or MINISTORUM PRIEST model only." },
+                    { name: "Ignis Judicium", cost: 10, restriction: "INQUISITOR or MINISTORUM PRIEST model only.", text: "" },
+                    { name: "Liber Heresius", cost: 10, restriction: "INQUISITOR or MINISTORUM PRIEST model only.", text: "" },
+                    { name: "No Escape (Aura)", cost: 25, restriction: "INQUISITOR model only.", text: "" },
+                    { name: "Witch Hunter", cost: 15, restriction: "INQUISITOR or MINISTORUM PRIEST model only.", text: "" },
                 ],
                 stratagems: [
-                    { name: "Stun Grenades", cp: 1, type: "Wargear" },
-                    { name: "Dispense Justice", cp: 1, type: "Battle Tactic" },
-                    { name: "Inviolate Jurisdiction", cp: 1, type: "Strategic Ploy" },
-                    { name: "Execution Order", cp: 2, type: "Epic Deed" },
-                    { name: "Line of Fire", cp: 1, type: "Strategic Ploy" },
-                    { name: "Exact Punishment", cp: 1, type: "Strategic Ploy" },
+                    { name: "Stun Grenades", cp: 1, type: "Wargear", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Dispense Justice", cp: 1, type: "Battle Tactic", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Inviolate Jurisdiction", cp: 1, type: "Strategic Ploy", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Execution Order", cp: 2, type: "Epic Deed", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Line of Fire", cp: 1, type: "Strategic Ploy", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Exact Punishment", cp: 1, type: "Strategic Ploy", when: "", target: "", effect: "", restrictions: "" },
                 ]
             },
             {
@@ -63,18 +63,18 @@
                 flavour: "",
                 rule: { name: "Destroy the Daemonic", flavour: "", text: "", restrictions: "" },
                 enhancements: [
-                    { name: "Daemon Slayer", cost: 10, restriction: "INQUISITOR model only." },
-                    { name: "Formidable Resolve", cost: 5, restriction: "INQUISITOR model only." },
-                    { name: "Gift of the Prescient", cost: 20, restriction: "INQUISITOR model only." },
-                    { name: "Grimoire of True Names (Aura)", cost: 10, restriction: "INQUISITOR model only." },
+                    { name: "Daemon Slayer", cost: 10, restriction: "INQUISITOR model only.", text: "" },
+                    { name: "Formidable Resolve", cost: 5, restriction: "INQUISITOR model only.", text: "" },
+                    { name: "Gift of the Prescient", cost: 20, restriction: "INQUISITOR model only.", text: "" },
+                    { name: "Grimoire of True Names (Aura)", cost: 10, restriction: "INQUISITOR model only.", text: "" },
                 ],
                 stratagems: [
-                    { name: "Ritual of Warding", cp: 1, type: "Strategic Ploy" },
-                    { name: "Rites of Exorcism", cp: 1, type: "Strategic Ploy" },
-                    { name: "Steel Heart", cp: 1, type: "Strategic Ploy" },
-                    { name: "Truesilver Armour", cp: 1, type: "Wargear" },
-                    { name: "Hexagrammic Wards", cp: 1, type: "Wargear" },
-                    { name: "Psybolt Ammunition", cp: 1, type: "Wargear" },
+                    { name: "Ritual of Warding", cp: 1, type: "Strategic Ploy", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Rites of Exorcism", cp: 1, type: "Strategic Ploy", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Steel Heart", cp: 1, type: "Strategic Ploy", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Truesilver Armour", cp: 1, type: "Wargear", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Hexagrammic Wards", cp: 1, type: "Wargear", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Psybolt Ammunition", cp: 1, type: "Wargear", when: "", target: "", effect: "", restrictions: "" },
                 ]
             },
             {
@@ -82,18 +82,18 @@
                 flavour: "",
                 rule: { name: "At All Costs", flavour: "", text: "", restrictions: "" },
                 enhancements: [
-                    { name: "Clandestine Operation", cost: 15, restriction: "AGENTS OF THE IMPERIUM model only." },
-                    { name: "Combat Landers", cost: 10, restriction: "VOIDFARERS model only." },
-                    { name: "Digital Weapons", cost: 10, restriction: "AGENTS OF THE IMPERIUM model only." },
-                    { name: "Fleetmaster", cost: 20, restriction: "VOIDFARERS model only." },
+                    { name: "Clandestine Operation", cost: 15, restriction: "AGENTS OF THE IMPERIUM model only.", text: "" },
+                    { name: "Combat Landers", cost: 10, restriction: "VOIDFARERS model only.", text: "" },
+                    { name: "Digital Weapons", cost: 10, restriction: "AGENTS OF THE IMPERIUM model only.", text: "" },
+                    { name: "Fleetmaster", cost: 20, restriction: "VOIDFARERS model only.", text: "" },
                 ],
                 stratagems: [
-                    { name: "Violent Acquisition", cp: 2, type: "Strategic Ploy" },
-                    { name: "Masters of the Void", cp: 1, type: "Epic Deed" },
-                    { name: "Close-quarters Barrage", cp: 1, type: "Battle Tactic" },
-                    { name: "Emperor's Will", cp: 1, type: "Strategic Ploy" },
-                    { name: "Displacer Field", cp: 1, type: "Wargear" },
-                    { name: "Selfless Bodyguard", cp: 1, type: "Epic Deed" },
+                    { name: "Violent Acquisition", cp: 2, type: "Strategic Ploy", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Masters of the Void", cp: 1, type: "Epic Deed", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Close-quarters Barrage", cp: 1, type: "Battle Tactic", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Emperor's Will", cp: 1, type: "Strategic Ploy", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Displacer Field", cp: 1, type: "Wargear", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Selfless Bodyguard", cp: 1, type: "Epic Deed", when: "", target: "", effect: "", restrictions: "" },
                 ]
             },
             {
@@ -101,18 +101,18 @@
                 flavour: "",
                 rule: { name: "Extremis Sanction", flavour: "", text: "", restrictions: "" },
                 enhancements: [
-                    { name: "Decoy Targets", cost: 40, restriction: "CALLIDUS ASSASSIN models only." },
-                    { name: "Esoteric Explosives", cost: 40, restriction: "CULEXUS ASSASSIN models only." },
-                    { name: "Intraneural Biotech", cost: 35, restriction: "EVERSOR ASSASSIN models only." },
-                    { name: "Micromelta Rounds", cost: 45, restriction: "VINDICARE ASSASSIN models only." },
+                    { name: "Decoy Targets", cost: 40, restriction: "CALLIDUS ASSASSIN models only.", text: "" },
+                    { name: "Esoteric Explosives", cost: 40, restriction: "CULEXUS ASSASSIN models only.", text: "" },
+                    { name: "Intraneural Biotech", cost: 35, restriction: "EVERSOR ASSASSIN models only.", text: "" },
+                    { name: "Micromelta Rounds", cost: 45, restriction: "VINDICARE ASSASSIN models only.", text: "" },
                 ],
                 stratagems: [
-                    { name: "Prime Target", cp: 1, type: "Battle Tactic" },
-                    { name: "Hyperstimms", cp: 2, type: "Battle Tactic" },
-                    { name: "Will-sapping Salvo", cp: 1, type: "Strategic Ploy" },
-                    { name: "Orbital Oversight", cp: 1, type: "Strategic Ploy" },
-                    { name: "Blind Grenades", cp: 1, type: "Strategic Ploy" },
-                    { name: "Ensnaring Trap", cp: 1, type: "Strategic Ploy" },
+                    { name: "Prime Target", cp: 1, type: "Battle Tactic", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Hyperstimms", cp: 2, type: "Battle Tactic", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Will-sapping Salvo", cp: 1, type: "Strategic Ploy", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Orbital Oversight", cp: 1, type: "Strategic Ploy", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Blind Grenades", cp: 1, type: "Strategic Ploy", when: "", target: "", effect: "", restrictions: "" },
+                    { name: "Ensnaring Trap", cp: 1, type: "Strategic Ploy", when: "", target: "", effect: "", restrictions: "" },
                 ]
             }
         ],
@@ -1342,7 +1342,7 @@
                         "factionKeywords": [
                                 "Agents Of The Imperium"
                         ],
-                        "leaderText": "This model can be attached to the following unit: Aquila Kill Team.",
+                        "leaderText": "This model can be attached to the following units: Aquila Kill Team; Deathwatch Kill Team.",
                         "compositionText": "1 Watch Captain Artemis This model is equipped with: Hellfire Extremis; master-crafted power weapon."
                 },
                 {
@@ -1417,7 +1417,7 @@
                         "factionKeywords": [
                                 "Agents Of The Imperium"
                         ],
-                        "leaderText": "This model can be attached to the following unit: Aquila Kill Team.",
+                        "leaderText": "This model can be attached to the following units: Aquila Kill Team; Deathwatch Kill Team.",
                         "compositionText": "1 Watch Master This model is equipped with: vigil spear. 1 model (AGENTS OF THE IMPERIUM Detachment) 1 model (Assigned Agent)"
                 },
                 {
